@@ -6,10 +6,8 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent { label 'some-agent' }
             steps {
-                echo 'Building...'
-                echo "prepare: ${pwd()}"
+                echo "Building..."
             }
         }
         stage('Test') {
