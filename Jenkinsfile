@@ -1,7 +1,10 @@
 #!/usr/bin/env groovy
 
 pipeline {
-
+    
+    agent {
+    }
+    
     stages {
         stage('Build') {
             steps {
