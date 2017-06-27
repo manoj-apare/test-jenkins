@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    
+
     agent none
-    
+
     stages {
         stage('Build') {
             steps {
@@ -13,6 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
+                echo "prepare: ${pwd()}"
             }
         }
     }
