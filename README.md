@@ -1,2 +1,2 @@
 # test-jenkins
-Repository to test jenkins pipeline with github web hooks.
+Test repository to jenkins pipeline with github web hooks.
