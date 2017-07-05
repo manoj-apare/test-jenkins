@@ -56,7 +56,7 @@
  <target name="lint"
          unless="lint.done"
          description="Perform syntax check of sourcecode files">
-  <apply executable="php" taskname="lint" failonerror="true">
+  <apply executable="php" taskname="lint" failonerror="true" verbose="true">
     <arg value="-l" />
 
     <fileset dir="${basedir}">
@@ -71,7 +71,7 @@
  <target name="phpcs"
          unless="phpcs.done"
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-  <exec executable="${phpcs}" taskname="phpcs" failonerror="true">
+  <exec executable="${phpcs}" taskname="phpcs" failonerror="true" verbose="true">
     <arg value="--standard=Drupal" />
     <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
     <arg value="--ignore=autoload.php" />
