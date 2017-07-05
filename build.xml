@@ -17,11 +17,11 @@
          depends="prepare,static-analysis-parallel,-check-failure"
          description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/>
 
- <target name="quick-build,-check-failure"
-         depends="prepare,lint"
+ <target name="quick-build"
+         depends="prepare,lint,-check-failure"
          description="Performs a lint check and runs the tests (without generating code coverage reports)"/>
 
- <target name="static-analysis,-check-failure"
+ <target name="static-analysis"
          depends="lint,phpcs-ci"
          description="Performs static analysis" />
 
