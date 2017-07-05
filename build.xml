@@ -98,14 +98,4 @@
 
   <property name="phpcs.done" value="true"/>
  </target>
-
- <target name="-check-failure">
-  <fail message="PHPCS did not finish successfully">
-   <condition>
-    <not>
-     <equals arg1="${result.phpcs}" arg2="0"/>
-    </not>
-   </condition>
-  </fail>
- </target>
 </project>
