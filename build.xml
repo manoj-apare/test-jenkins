@@ -10,49 +10,34 @@
  <property name="phpcs"   value="${basedir}/vendor/bin/phpcs"/>-->
 
  <target name="full-build"
-         depends="prepare,static-analysis,-check-failure"
+         depends="lint,phpcs"
          description="Performs static analysis, runs the tests, and generates project documentation"/>
 
- <target name="full-build-parallel"
-         depends="prepare,static-analysis-parallel,-check-failure"
-         description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/>
+ <!-- <target name="full-build-parallel"
+         depends="static-analysis-parallel,-check-failure"
+         description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/> -->
 
- <target name="quick-build"
-         depends="prepare,lint,-check-failure"
-         description="Performs a lint check and runs the tests (without generating code coverage reports)"/>
+ <!-- <target name="quick-build"
+         depends="lint,-check-failure"
+         description="Performs a lint check and runs the tests (without generating code coverage reports)"/> -->
 
- <target name="static-analysis"
+ <!-- <target name="static-analysis"
          depends="lint,phpcs,-check-failure"
-         description="Performs static analysis" />
+         description="Performs static analysis" /> -->
 
  <!-- Adjust the threadCount attribute's value to the number of CPUs -->
- <target name="static-analysis-parallel"
+ <!-- <target name="static-analysis-parallel"
          description="Performs static analysis (executing the tools in parallel)">
   <parallel threadCount="2">
    <antcall target="lint"/>
    <antcall target="phpcs"/>
   </parallel>
- </target>
-
- <target name="clean"
-         unless="clean.done"
-         description="Cleanup build artifacts">
-  <delete dir="${basedir}/build/logs"/>
-  <property name="clean.done" value="true"/>
- </target>
-
- <target name="prepare"
-         unless="prepare.done"
-         depends="clean"
-         description="Prepare for build">
-  <mkdir dir="${basedir}/build/logs"/>
-  <property name="prepare.done" value="true"/>
- </target>
+ </target> -->
 
  <target name="lint"
          unless="lint.done"
          description="Perform syntax check of sourcecode files">
-  <apply executable="php" taskname="lint" failonerror="true" error="${basedir}/build/logs/linter.log">
+  <apply executable="php" taskname="lint" failonerror="true">
     <arg value="-l" />
 
     <fileset dir="${basedir}">
@@ -71,7 +56,7 @@
  <target name="phpcs"
          unless="phpcs.done"
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-  <exec executable="${phpcs}" error="${basedir}/build/logs/phpcs.log" taskname="phpcs" failonerror="true" logError="true">
+  <exec executable="${phpcs}" taskname="phpcs" failonerror="true">
     <arg value="--standard=Drupal" />
     <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
     <arg value="--ignore=autoload.php" />
@@ -81,7 +66,7 @@
   <property name="phpcs.done" value="true"/>
  </target>
 
- <target name="-check-failure">
+ <!-- <target name="-check-failure">
   <fail message="Linter did not finish successfully">
    <condition>
     <not>
@@ -96,5 +81,5 @@
      </not>
     </condition>
    </fail>
- </target>
+ </target> -->
 </project>
