@@ -10,18 +10,18 @@
  <property name="phpcs"   value="${basedir}/vendor/bin/phpcs"/>-->
 
  <target name="full-build"
-         depends="prepare,static-analysis"
+         depends="prepare,static-analysis,-check-failure"
          description="Performs static analysis, runs the tests, and generates project documentation"/>
 
  <target name="full-build-parallel"
-         depends="prepare,static-analysis-parallel"
+         depends="prepare,static-analysis-parallel,-check-failure"
          description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/>
 
- <target name="quick-build"
+ <target name="quick-build,-check-failure"
          depends="prepare,lint"
          description="Performs a lint check and runs the tests (without generating code coverage reports)"/>
 
- <target name="static-analysis"
+ <target name="static-analysis,-check-failure"
          depends="lint,phpcs-ci"
          description="Performs static analysis" />
 
@@ -97,5 +97,22 @@
   </exec>
 
   <property name="phpcs.done" value="true"/>
+ </target>
+
+ <target name="-check-failure">
+  <fail message="Linter did not finish successfully">
+   <condition>
+    <not>
+     <equals arg1="${result.lint}" arg2="0"/>
+    </not>
+   </condition>
+  </fail>
+   <fail message="PHPCS did not finish successfully">
+    <condition>
+     <not>
+      <equals arg1="${result.phpcs}" arg2="0"/>
+     </not>
+    </condition>
+   </fail>
  </target>
 </project>
