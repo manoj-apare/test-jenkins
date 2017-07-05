@@ -22,7 +22,7 @@
          description="Performs a lint check and runs the tests (without generating code coverage reports)"/>
 
  <target name="static-analysis"
-         depends="lint,phpcs-ci"
+         depends="lint,phpcs,-check-failure"
          description="Performs static analysis" />
 
  <!-- Adjust the threadCount attribute's value to the number of CPUs -->
@@ -30,7 +30,7 @@
          description="Performs static analysis (executing the tools in parallel)">
   <parallel threadCount="2">
    <antcall target="lint"/>
-   <antcall target="phpcs-ci"/>
+   <antcall target="phpcs"/>
   </parallel>
  </target>
 
@@ -82,35 +82,18 @@
   <property name="phpcs.done" value="true"/>
  </target>
 
- <target name="phpcs-ci"
-         unless="phpcs.done"
-         depends="prepare"
-         description="Find coding standard violations using PHP_CodeSniffer and log result in XML format. Intended for usage within a continuous integration environment.">
-  <exec executable="${phpcs}" output="/dev/null" taskname="phpcs">
-   <arg value="--report=checkstyle" />
-   <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
-   <arg value="--standard=Drupal" />
-   <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
-   <arg value="--ignore=autoload.php" />
-   <!-- <arg path="${basedir}/src" />
-   <arg path="${basedir}/tests" /> -->
-  </exec>
-
-  <property name="phpcs.done" value="true"/>
- </target>
-
  <target name="-check-failure">
   <fail message="Linter did not finish successfully">
    <condition>
     <not>
-     <equals arg1="${result.lint}" arg2="0"/>
+     <isset property="lint.done"/>
     </not>
    </condition>
   </fail>
    <fail message="PHPCS did not finish successfully">
     <condition>
      <not>
-      <equals arg1="${result.phpcs}" arg2="0"/>
+      <isset property="phpcs.done"/>
      </not>
     </condition>
    </fail>
