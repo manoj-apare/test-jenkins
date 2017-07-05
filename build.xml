@@ -1,85 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="name-of-project" default="full-build">
  <!-- By default, we assume all tools to be on the $PATH -->
- <property name="phpcs" value="/root/.composer/vendor/bin/phpcs"/>
+  <property name="phpcs" value="/root/.composer/vendor/bin/phpcs"/>
 
- <!-- Use this when the tools are located as PHARs in ${basedir}/build/tools
- <property name="phpcs"   value="${basedir}/build/tools/phpcs.phar"/>-->
+  <target name="full-build"
+  depends="lint,phpcs"
+  description="Performs static analysis, runs the tests, and generates project documentation"/>
 
- <!-- Use this when the tools are managed by Composer in ${basedir}/vendor/bin
- <property name="phpcs"   value="${basedir}/vendor/bin/phpcs"/>-->
+  <target name="lint"
+  unless="lint.done"
+  description="Perform syntax check of sourcecode files">
+    <apply executable="php" taskname="lint" failonerror="true">
+      <arg value="-l" />
 
- <target name="full-build"
-         depends="lint,phpcs"
-         description="Performs static analysis, runs the tests, and generates project documentation"/>
+      <fileset dir="${basedir}">
+        <include name="**/*.php" />
+        <include name="**/*.module" />
+        <include name="**/*.inc" />
+        <include name="**/*.install" />
+        <include name="**/*.theme" />
+        <modified />
+      </fileset>
+    </apply>
 
- <!-- <target name="full-build-parallel"
-         depends="static-analysis-parallel,-check-failure"
-         description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/> -->
+    <property name="lint.done" value="true"/>
+  </target>
 
- <!-- <target name="quick-build"
-         depends="lint,-check-failure"
-         description="Performs a lint check and runs the tests (without generating code coverage reports)"/> -->
+  <target name="phpcs"
+  unless="phpcs.done"
+  description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
+    <exec executable="${phpcs}" taskname="phpcs" failonerror="true">
+      <arg value="--standard=Drupal" />
+      <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
+      <arg value="--ignore=autoload.php" />
+      <arg path="${basedir}" />
+    </exec>
 
- <!-- <target name="static-analysis"
-         depends="lint,phpcs,-check-failure"
-         description="Performs static analysis" /> -->
+    <property name="phpcs.done" value="true"/>
+  </target>
 
- <!-- Adjust the threadCount attribute's value to the number of CPUs -->
- <!-- <target name="static-analysis-parallel"
-         description="Performs static analysis (executing the tools in parallel)">
-  <parallel threadCount="2">
-   <antcall target="lint"/>
-   <antcall target="phpcs"/>
-  </parallel>
- </target> -->
-
- <target name="lint"
-         unless="lint.done"
-         description="Perform syntax check of sourcecode files">
-  <apply executable="php" taskname="lint" failonerror="true">
-    <arg value="-l" />
-
-    <fileset dir="${basedir}">
-      <include name="**/*.php" />
-      <include name="**/*.module" />
-      <include name="**/*.inc" />
-      <include name="**/*.install" />
-      <include name="**/*.theme" />
-      <modified />
-    </fileset>
-  </apply>
-
-  <property name="lint.done" value="true"/>
- </target>
-
- <target name="phpcs"
-         unless="phpcs.done"
-         description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-  <exec executable="${phpcs}" taskname="phpcs" failonerror="true">
-    <arg value="--standard=Drupal" />
-    <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
-    <arg value="--ignore=autoload.php" />
-    <arg path="${basedir}" />
-  </exec>
-
-  <property name="phpcs.done" value="true"/>
- </target>
-
- <!-- <target name="-check-failure">
-  <fail message="Linter did not finish successfully">
-   <condition>
-    <not>
-     <isset property="lint.done"/>
-    </not>
-   </condition>
-  </fail>
-   <fail message="PHPCS did not finish successfully">
-    <condition>
-     <not>
-      <isset property="phpcs.done"/>
-     </not>
-    </condition>
-   </fail>
- </target> -->
 </project>
