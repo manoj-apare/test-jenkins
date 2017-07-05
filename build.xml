@@ -37,9 +37,7 @@
  <target name="clean"
          unless="clean.done"
          description="Cleanup build artifacts">
-  <delete dir="${basedir}/build/api"/>
   <delete dir="${basedir}/build/logs"/>
-  <delete dir="${basedir}/build/phpcs"/>
   <property name="clean.done" value="true"/>
  </target>
 
@@ -47,16 +45,14 @@
          unless="prepare.done"
          depends="clean"
          description="Prepare for build">
-  <mkdir dir="${basedir}/build/api"/>
   <mkdir dir="${basedir}/build/logs"/>
-  <mkdir dir="${basedir}/build/phpcs"/>
   <property name="prepare.done" value="true"/>
  </target>
 
  <target name="lint"
          unless="lint.done"
          description="Perform syntax check of sourcecode files">
-  <apply executable="php" taskname="lint" failonerror="true" logError="true">
+  <apply executable="php" taskname="lint" failonerror="true" error="${basedir}/build/logs/linter.log">
     <arg value="-l" />
 
     <fileset dir="${basedir}">
@@ -75,7 +71,7 @@
  <target name="phpcs"
          unless="phpcs.done"
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-  <exec executable="${phpcs}" output="/dev/null" taskname="phpcs" failonerror="true" logError="true">
+  <exec executable="${phpcs}" error="${basedir}/build/logs/phpcs.log" taskname="phpcs" failonerror="true" logError="true">
     <arg value="--standard=Drupal" />
     <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
     <arg value="--ignore=autoload.php" />
