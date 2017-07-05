@@ -36,7 +36,7 @@ class CouponValidationSubscriber implements EventSubscriberInterface {
   public static function getSubscribedEvents() {
     $events['commerce_order.place.post_transition'] = ['couponOrderValidation'];
 
-      return $events;
+    return $events;
   }
 
   /**

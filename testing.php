@@ -8,4 +8,4 @@
  * See COPYRIGHT.txt and LICENSE.txt files in the "core" directory.
  */
 
-echo 'Test';
+echo 'Test'
