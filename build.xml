@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="name-of-project" default="full-build">
  <!-- By default, we assume all tools to be on the $PATH -->
- <property name="phpcs"   value="phpcs"/>
+ <property name="phpcs" value="/root/.composer/vendor/bin/phpcs"/>
 
  <!-- Use this when the tools are located as PHARs in ${basedir}/build/tools
  <property name="phpcs"   value="${basedir}/build/tools/phpcs.phar"/>-->
