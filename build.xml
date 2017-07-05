@@ -65,7 +65,6 @@
       <include name="**/*.inc" />
       <include name="**/*.install" />
       <include name="**/*.theme" />
-      <modified />
     </fileset>
   </apply>
 

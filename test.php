@@ -8,5 +8,5 @@
  * See COPYRIGHT.txt and LICENSE.txt files in the "core" directory.
  */
 
-echo 'Test Jenkins !!!!'
+echo 'Test Jenkins !!!!';
 echo 'Hi Jenkins !!!!';
