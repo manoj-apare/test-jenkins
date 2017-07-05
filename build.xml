@@ -75,8 +75,8 @@
    <arg value="--standard=Drupal" />
    <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
    <arg value="--ignore=autoload.php" />
-   <!-- <arg path="${basedir}/src" />
-   <arg path="${basedir}/tests" /> -->
+   <arg path="${basedir}" />
+   <!-- <arg path="${basedir}/tests" /> -->
   </exec>
 
   <property name="phpcs.done" value="true"/>
