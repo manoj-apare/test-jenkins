@@ -57,12 +57,13 @@
          unless="lint.done"
          description="Perform syntax check of sourcecode files">
   <apply executable="php" taskname="lint">
-   <arg value="-l" />
+    <arg value="-l" />
+    <failonerror value="true"/>
 
-   <fileset dir="${basedir}">
-    <include name="**/*.php" />
-    <modified />
-   </fileset>
+    <fileset dir="${basedir}">
+      <include name="**/*.php" />
+      <modified />
+    </fileset>
   </apply>
 
   <property name="lint.done" value="true"/>
@@ -72,11 +73,11 @@
          unless="phpcs.done"
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
   <exec executable="${phpcs}" taskname="phpcs">
-   <arg value="--standard=Drupal" />
-   <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
-   <arg value="--ignore=autoload.php" />
-   <arg path="${basedir}" />
-   <!-- <arg path="${basedir}/tests" /> -->
+    <arg value="--standard=Drupal" />
+    <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
+    <arg value="--ignore=autoload.php" />
+    <arg path="${basedir}" />
+    <failonerror value="true"/>
   </exec>
 
   <property name="phpcs.done" value="true"/>
