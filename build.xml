@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="name-of-project" default="full-build">
-  <record name="log.txt" action="start"/>
  <!-- By default, we assume all tools to be on the $PATH -->
   <property name="phpcs" value="/root/.composer/vendor/bin/phpcs"/>
 
@@ -11,7 +10,7 @@
   <target name="lint"
   unless="lint.done"
   description="Perform syntax check of sourcecode files">
-    <apply executable="php" taskname="lint" failonerror="true">
+    <apply executable="php" output="/dev/null" taskname="lint" failonerror="true">
       <arg value="-l" />
 
       <fileset dir="${basedir}/docroot/modules/custom">
@@ -30,7 +29,7 @@
   <target name="phpcs"
   unless="phpcs.done"
   description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-    <exec executable="${phpcs}" taskname="phpcs" failonerror="true">
+    <exec executable="${phpcs}" output="/dev/null" taskname="phpcs" failonerror="true">
       <arg value="--standard=Drupal" />
       <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
       <arg value="--ignore=autoload.php" />
@@ -39,5 +38,4 @@
 
     <property name="phpcs.done" value="true"/>
   </target>
-  <record name="log.txt" action="stop"/>
 </project>
