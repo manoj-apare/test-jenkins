@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="name-of-project" default="full-build">
+  <record name="log.txt" action="start"/>
  <!-- By default, we assume all tools to be on the $PATH -->
   <property name="phpcs" value="/root/.composer/vendor/bin/phpcs"/>
 
@@ -38,5 +39,5 @@
 
     <property name="phpcs.done" value="true"/>
   </target>
-
+  <record name="log.txt" action="stop"/>
 </project>
