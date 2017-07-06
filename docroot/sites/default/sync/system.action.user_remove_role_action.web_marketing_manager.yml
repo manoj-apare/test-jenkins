@@ -1,0 +1,14 @@
+uuid: 51a996c1-272a-4732-9aff-d67e78bf2303
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.web_marketing_manager
+  module:
+    - user
+id: user_remove_role_action.web_marketing_manager
+label: 'Remove the Web Marketing Manager role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: web_marketing_manager

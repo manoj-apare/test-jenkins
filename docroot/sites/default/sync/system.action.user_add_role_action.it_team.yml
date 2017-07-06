@@ -1,0 +1,14 @@
+uuid: baa32cd6-9234-4e6a-adf2-ce8dc7121ab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.it_team
+  module:
+    - user
+id: user_add_role_action.it_team
+label: 'Add the IT team role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: it_team

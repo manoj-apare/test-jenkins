@@ -1,0 +1,9 @@
+uuid: fc0b304d-8e2d-44e7-8a0d-8df6a3da0317
+langcode: en
+status: true
+dependencies: {  }
+id: direct_sales
+label: 'Direct Sales'
+weight: 11
+is_admin: null
+permissions: {  }

@@ -1,0 +1,30 @@
+uuid: 191b773d-9653-445c-9742-9d2677bf3937
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - store_mysamples
+    - system
+  theme:
+    - cypress_store
+third_party_settings:
+  block_class:
+    classes: ''
+id: listofpendingapprovalrecords
+theme: cypress_store
+region: content
+weight: -16
+provider: null
+plugin: pending_approval_list
+settings:
+  id: pending_approval_list
+  label: 'List of pending approval records'
+  provider: store_mysamples
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/mysamples\r\n"
+    negate: false
+    context_mapping: {  }

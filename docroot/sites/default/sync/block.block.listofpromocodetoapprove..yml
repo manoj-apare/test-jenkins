@@ -1,0 +1,30 @@
+uuid: 04e7699c-5738-4ee9-a30a-ce8cd610fa4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - store_mysamples
+    - system
+  theme:
+    - cypress_store
+third_party_settings:
+  block_class:
+    classes: ''
+id: listofpromocodetoapprove.
+theme: cypress_store
+region: content
+weight: 0
+provider: null
+plugin: promocode_to_approve
+settings:
+  id: promocode_to_approve
+  label: 'List of promocode to approve.'
+  provider: store_mysamples
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /promocode/pending-approvals
+    negate: false
+    context_mapping: {  }

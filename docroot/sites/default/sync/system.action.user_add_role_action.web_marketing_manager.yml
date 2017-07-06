@@ -1,0 +1,14 @@
+uuid: c90d14b7-4bba-484d-8779-007ddeeccc88
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.web_marketing_manager
+  module:
+    - user
+id: user_add_role_action.web_marketing_manager
+label: 'Add the Web Marketing Manager role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: web_marketing_manager

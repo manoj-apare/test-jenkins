@@ -1,0 +1,14 @@
+uuid: 2b889a2a-9880-4c31-a54b-5ff76f047389
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.marketing_evp
+  module:
+    - user
+id: user_remove_role_action.marketing_evp
+label: 'Remove the Marketing EVP role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: marketing_evp

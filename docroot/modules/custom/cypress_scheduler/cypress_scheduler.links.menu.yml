@@ -1,0 +1,7 @@
+# Vendor entity menu items definition
+cypress_scheduler.DashboardPage:
+  title: 'Dashboard'
+  route_name: cypress_scheduler.dashboard_content
+  description: 'Dashboard'
+  parent: store_mysamples.cypress_configuration
+  weight: 99

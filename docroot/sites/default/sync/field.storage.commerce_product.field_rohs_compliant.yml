@@ -1,0 +1,20 @@
+uuid: 56863353-fa15-4023-922c-aa929f5f21af
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: 1G4jqs7AzV0GxvaTZjKzttGMeu7HPgTsPoSMqYdKr3A
+id: commerce_product.field_rohs_compliant
+field_name: field_rohs_compliant
+entity_type: commerce_product
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

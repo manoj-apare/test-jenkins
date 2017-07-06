@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="988330b0-f52f-40f2-aafe-ef56fc5e3163" name="Default" comment="" />
+    <ignored path="docroot.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DrupalConfiguration" enabled="true" version="8">
+    <drupalPath>$PROJECT_DIR$</drupalPath>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="docroot" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="cml_test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cml_test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+              <folding>
+                <element signature="e#7#235#0#PHP" expanded="true" />
+                <element signature="e#237#266#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cml.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/Cml.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6392">
+              <caret line="378" column="1" lean-forward="false" selection-start-line="378" selection-start-column="1" selection-end-line="378" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cypress_custom_address.services.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/custom/cypress_custom_address/cypress_custom_address.services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$trackingNumber</find>
+      <find>$tracking_number</find>
+      <find>$responseArray</find>
+      <find>$vendorTrackingData</find>
+      <find>$orderId</find>
+      <find>$storeId</find>
+      <find>$subdivisionRepository</find>
+      <find>321</find>
+      <find>Cml</find>
+      <find>'',</find>
+      <find>getCrea</find>
+      <find>time(</find>
+      <find>order-&gt;s</find>
+      <find>recalculateTotalPrice</find>
+      <find>self::REFRESH_ON_SAVE</find>
+      <find>$line_item_count</find>
+      <find>num</find>
+      <find>$this-&gt;entityTypeManager</find>
+      <find>Weight</find>
+      <find>path.c</find>
+      <find>destination</find>
+      <find>SHIP_TO_ORG_ID</find>
+      <find>$om_customer_site_use_id</find>
+      <find>overni</find>
+      <find>$responsibility_key</find>
+      <find>yaml</find>
+      <find>getAdjustments</find>
+      <find>addadjustment</find>
+      <find>setadjustment</find>
+      <find>event_subscriber</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$param_data</replace>
+      <replace>$query_shipment</replace>
+      <replace>$digikey_shipment</replace>
+      <replace>$shipment_id</replace>
+      <replace>$part_number</replace>
+      <replace>$shipping_adress</replace>
+      <replace>$created_timestamp</replace>
+      <replace>$program_id</replace>
+      <replace>$shiment_obj</replace>
+      <replace>$end_point</replace>
+      <replace>$item_count</replace>
+      <replace>$mail_manager</replace>
+      <replace>$tracking_number</replace>
+      <replace>$new_location</replace>
+      <replace>$fedex_response</replace>
+      <replace>$response_array</replace>
+      <replace>$billing_address</replace>
+      <replace>$shipping_address</replace>
+      <replace>$createdtimestamp</replace>
+      <replace>$order_date</replace>
+      <replace>$user_name</replace>
+      <replace>$shipping_option</replace>
+      <replace>$shipments_array</replace>
+      <replace>$vendor_tracking_data</replace>
+      <replace>$order_item</replace>
+      <replace>$order_id</replace>
+      <replace>$product_id</replace>
+      <replace>$product_obj</replace>
+      <replace>$store_id</replace>
+      <replace>$subdivision_repository</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/modules/contrib/commerce</dir>
+      <dir>$PROJECT_DIR$/vendor/composer</dir>
+      <dir>$PROJECT_DIR$/modules/contrib/commerce_shipping</dir>
+      <dir>$PROJECT_DIR$/modules/custom</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/price/src/Plugin/Field/FieldType/PriceItem.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/js/cart_checkout.js" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/modules/contrib/yamlform/src/Plugin/Mail/YamlFormPhpMail.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/cypress_custom_address.routing.yml" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/src/Plugin/views/field/DeliverHere.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce_shipping/src/Plugin/Commerce/CheckoutPane/ShippingInformation.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/PluginForm/PaymentMethodAddForm.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/src/DefaultService.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/src/Plugin/views/field/CartProductImage.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/commerce_payment.module" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/EventSubscriber/OrderSubmitSubscriber.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/EventSubscriber/CypressStoreVendorEventSubscriber.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Packer/CypressPacker.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/DigiKey.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/ShippingConfirmationEmail.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/VendorService.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/Avnet.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/FedEx.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/HarteHanks.php" />
+        <option value="$PROJECT_DIR$/PHPCS.txt" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/src/Controller/CypressAddToCartController.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/src/Plugin/Commerce/CheckoutPane/CypressPaymentInformation.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_coupon_validation/src/EventSubscriber/CouponValidationSubscriber.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_migration/src/Plugin/migrate/process/CypressStoreMigrationAddress.php" />
+        <option value="$PROJECT_DIR$/modules/custom/product_rest/src/Plugin/rest/resource/PartRestResource.php" />
+        <option value="$PROJECT_DIR$/modules/custom/product_rest/src/Plugin/rest/resource/ProductRestResource.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/OrderItem.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/OrderStorage.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/Order.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutFlow/CheckoutFlowBase.php" />
+        <option value="$PROJECT_DIR$/modules/custom/product_rest/src/Plugin/rest/resource/OrderRestResource.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/Plugin/Commerce/PromotionOffer/ProductQuantityFixedOff.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/src/Plugin/Field/FieldWidget/ContactDefaultWidget.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce_shipping/src/Packer/DefaultPacker.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/cypress_checkout_flow.services.yml" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/src/Controller/CypressAddressController.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/src/Plugin/Commerce/CheckoutPane/CypressReview.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/src/PathProcessor/CheckoutPathProcessor.php" />
+        <option value="$PROJECT_DIR$/sites/default/sync/core.extension.yml" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/src/CypressOrderProcessor.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_custom_address/cypress_custom_address.module" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/VendorBase.php" />
+        <option value="$PROJECT_DIR$/cml_test.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/js/cypress_shipping_rate.js" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/src/Plugin/Commerce/CheckoutPane/CypressShipmentMethod.php" />
+        <option value="$PROJECT_DIR$/modules/contrib/commerce_shipping/src/Entity/Shipment.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/Cml.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PHPCodeSnifferProjectConfiguration">
+    <option name="selectedConfigurationId" value="DEFAULT_INTERPRETER" />
+  </component>
+  <component name="PhpDebugGeneral" notify_if_session_was_finished_without_being_paused="false" />
+  <component name="PhpServers">
+    <servers>
+      <server id="3396c9ae-34a1-42bf-8200-b6a51c7bc87f" name="Unnamed" />
+      <server host="st.lo" id="4b596c18-c521-432f-8eb2-91205815b118" name="st.lo" />
+      <server host="localhost" id="efdae607-3126-47bf-bc44-1b02e632005b" name="localhost" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Users/rakeshjames/Sites/extranet/docroot" />
+        </path_mappings>
+      </server>
+      <server host="dc.lo" id="720e5738-b73a-4f04-8d00-c89a7e5533cd" name="dc.lo" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/vendor/simplesamlphp/simplesamlphp/modules/sanitycheck/www" remote-root="/Users/rakeshjames/Sites/drupal" />
+        </path_mappings>
+      </server>
+      <server host="cypress-store.local" id="79879109-d832-4aba-96b3-f315a4ec382e" name="cypress-store.local" />
+      <server host="drupal-core.local" id="aab357a5-22be-42f3-b3f7-6409afdb175a" name="drupal-core.local" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/vendor/simplesamlphp/simplesamlphp/www" remote-root="/home/manoj/public_html/drupal" />
+        </path_mappings>
+      </server>
+      <server host="d8.local" id="5c629486-5ced-4b83-a2b8-71b8fb843369" name="d8.local" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/vendor/simplesamlphp/simplesamlphp/www" remote-root="/home/manoj/public_html/drupal-8.2.5" />
+        </path_mappings>
+      </server>
+      <server host="cypressext.local" id="716f9322-73d7-4197-93f0-00e3e47dc986" name="cypressext.local" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/home/manoj/public_html/cypressext/docroot" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
+  <component name="PhpXdebugProxy" ide_key="netbeans-xdebug" host="127.0.0.1" port="9000" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>Code StylePHP</id>
+          </State>
+          <State>
+            <id>Control FlowPHP</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralPHP</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>PHPDocPHP</id>
+          </State>
+          <State>
+            <id>Probable bugsPHP</id>
+          </State>
+          <State>
+            <id>Type compatibilityPHP</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+          <State>
+            <id>UnusedPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpCSValidationInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docroot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../drupal-8.3.2/composer.json" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="order&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/contrib/commerce/modules/order/src/Entity/Order.php&#10;tempstore&#9;null&#9;null&#10;twigt&#9;null&#9;null&#10;twigen&#9;null&#9;null&#10;index&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/index.php&#10;shipment&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/contrib/commerce_shipping/src/Entity/Shipment.php&#10;cml&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_store_vendor/src/Vendor/Cml.php&#10;shipmen&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/contrib/commerce_shipping/src/Entity/Shipment.php&#10;cypressshipp&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_checkout_flow/src/Plugin/Commerce/CheckoutPane/CypressShipmentMethod.php&#10;shipping&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_checkout_flow/js/cypress_shipping_rate.js&#10;vendor&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_store_vendor/src/Vendor/VendorBase.php&#10;cml_&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/cml_test.php&#10;swiftma&#9;null&#9;null&#10;mailman&#9;null&#9;null&#10;vendorbase&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_store_vendor/src/Vendor/VendorBase.php&#10;buildtotals&#9;null&#9;null&#10;setShipp&#9;null&#9;null&#10;telephone&#9;null&#9;null&#10;orders&#9;null&#9;null&#10;address&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/src/Controller/CypressAddressController.php&#10;cypressship&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_checkout_flow/src/Plugin/Commerce/CheckoutPane/CypressShipmentMethod.php&#10;checkoutflow&#9;null&#9;null&#10;shipping_rat&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_checkout_flow/js/cypress_shipping_rate.js&#10;cypressorde&#9;null&#9;null&#10;core.ext&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/sites/default/sync/core.extension.yml&#10;cypresspack&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_store_vendor/src/Packer/CypressPacker.php&#10;cypress&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/cypress_custom_address.install&#10;custom_address.in&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/cypress_custom_address.install&#10;cypress_cus&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/cypress_custom_address.module&#10;simplesamlphp_auth.m&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/contrib/simplesamlphp_auth/simplesamlphp_auth.module&#10;cypress_cu&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/cypress_custom_address.module&#10;config&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/core/lib/Drupal/Core/Config/Entity/ConfigDependencyManager.php&#10;configdependency&#9;null&#9;null&#10;configde&#9;null&#9;null&#10;cml.php&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_store_vendor/src/Vendor/Cml.php&#10;contactAdd&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/src/Element/ContactAddress.php&#10;payflow&#9;null&#9;null&#10;CurrentPathStack&#9;null&#9;null&#10;drupal&#9;null&#9;null&#10;request&#9;null&#9;null&#10;shippin&#9;null&#9;null&#10;container.php&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/core/lib/Drupal/Component/DependencyInjection/Container.php&#10;orderres&#9;null&#9;null&#10;cypresspacker&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_store_vendor/src/Packer/CypressPacker.php&#10;systemcontr&#9;null&#9;null&#10;promotion&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Promotion.php&#10;paymentinf&#9;null&#9;null&#10;shipping_ra&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_checkout_flow/js/cypress_shipping_rate.js&#10;contact&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/src/Plugin/Field/FieldWidget/ContactDefaultWidget.php&#10;cypressord&#9;FILE&#9;file:///home/manoj/public_html/cypress-store/docroot/modules/custom/cypress_custom_address/src/CypressOrderProcessor.php" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="ToolWindowRemote Host.ShowToolbar" value="false" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/src/Plugin/Commerce/CheckoutPane" />
+      <recent name="$PROJECT_DIR$/sites/default" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_contrib" />
+      <recent name="$PROJECT_DIR$/modules/custom/cypress_checkout_flow/js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.php">
+    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/docroot/index.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED,Show Private Members,Show Constants,Show Fields,ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="988330b0-f52f-40f2-aafe-ef56fc5e3163" name="Default" comment="" />
+      <created>1486971985294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1486971985294</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41238672" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35271904" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="100" y="224" width="1166" height="544" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.3755796" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="60" y="269" width="1293" height="273" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4049459" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39412674" sideWeight="0.42498037" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650274" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32921174" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3276923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="289" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_custom_address/cypress_custom_address.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="106" column="47" lean-forward="false" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Packer/CypressPacker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1037">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/store_mysamples/store_mysamples.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="474" column="0" lean-forward="false" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/drush_delete/src/DeleteContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/drush_delete/drush_delete.drush.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/sync/core.extension.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="86" column="23" lean-forward="false" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_custom_address/src/CypressOrderProcessor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutFlow/CheckoutFlowBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4284">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce_shipping/src/Plugin/Commerce/CheckoutPane/ShippingInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_custom_address/src/Controller/CypressAddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/EventSubscriber/OrderSubmitSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/Entity/Display/EntityFormDisplayInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="96" column="18" lean-forward="false" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/Render/Renderer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="582" column="0" lean-forward="false" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/Form/FormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutFlow/CheckoutFlowWithPanesBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="559" column="0" lean-forward="false" selection-start-line="559" selection-start-column="0" selection-end-line="559" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/Entity/Entity/EntityFormDisplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/modules/telephone/src/Plugin/Field/FieldFormatter/TelephoneLinkFormatter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-841">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/modules/telephone/src/Plugin/Field/FieldType/TelephoneItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/modules/telephone/src/Plugin/Field/FieldWidget/TelephoneDefaultWidget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/OrderInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="245" column="18" lean-forward="false" selection-start-line="245" selection-start-column="18" selection-end-line="245" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/OrderTotalSummary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/TypedData/ListInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="102" column="18" lean-forward="false" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderSet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="135" column="20" lean-forward="false" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/Mail/MailManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-737">
+          <caret line="217" column="18" lean-forward="false" selection-start-line="217" selection-start-column="18" selection-end-line="217" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/swiftmailer/src/Plugin/Mail/SwiftMailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="237" column="59" lean-forward="true" selection-start-line="237" selection-start-column="59" selection-end-line="237" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/swiftmailer/src/Utility/Conversion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="346" column="37" lean-forward="false" selection-start-line="346" selection-start-column="37" selection-end-line="346" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce_shipping/src/Plugin/Field/FieldWidget/ShippingRateWidget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="91" column="85" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="91" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_coupon_validation/src/EventSubscriber/CouponValidationSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_coupon_validation/cypress_coupon_validation.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/product_rest/src/Plugin/rest/resource/OrderRestResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/phpcs.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/VendorBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="178" column="29" lean-forward="false" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_checkout_flow/js/cypress_shipping_rate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_custom_address/cypress_custom_address.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="53" column="63" lean-forward="false" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_checkout_flow/src/Plugin/Commerce/CheckoutPane/CypressShipmentMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3383">
+          <caret line="210" column="15" lean-forward="false" selection-start-line="210" selection-start-column="15" selection-end-line="210" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce_shipping/src/Entity/ShippingMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3479">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce_shipping/src/Entity/Shipment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="405" column="20" lean-forward="false" selection-start-line="405" selection-start-column="20" selection-end-line="405" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/lib/Drupal/Core/Template/TwigEnvironment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7089">
+          <caret line="424" column="48" lean-forward="false" selection-start-line="424" selection-start-column="48" selection-end-line="424" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/modules/user/tests/src/Unit/PrivateTempStoreTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2006">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/modules/image/src/Controller/QuickEditImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2766">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/modules/user/src/PrivateTempStore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="301" column="17" lean-forward="true" selection-start-line="301" selection-start-column="17" selection-end-line="301" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cml_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="e#7#235#0#PHP" expanded="true" />
+            <element signature="e#237#266#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_store_vendor/src/Vendor/Cml.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6392">
+          <caret line="378" column="1" lean-forward="false" selection-start-line="378" selection-start-column="1" selection-end-line="378" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/cypress_custom_address/cypress_custom_address.services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

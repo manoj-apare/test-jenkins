@@ -1,0 +1,21 @@
+uuid: 2a02a989-4eda-4c55-b215-2dc2fadb7ddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_mpn_id
+_core:
+  default_config_hash: 2fDrzF9WSp735ME2YPpbA1N-QAcXYkFA2O_bIk_SaAg
+id: commerce_product.part.field_mpn_id
+field_name: field_mpn_id
+entity_type: commerce_product
+bundle: part
+label: 'MPN ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

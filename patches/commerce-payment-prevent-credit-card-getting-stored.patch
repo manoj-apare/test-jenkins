@@ -1,0 +1,65 @@
+diff --git a/docroot/modules/contrib/commerce/modules/payment/commerce_payment.module b/docroot/modules/contrib/commerce/modules/payment/commerce_payment.module
+index e1db90f..c2155cf 100755
+--- a/docroot/modules/contrib/commerce/modules/payment/commerce_payment.module
++++ b/docroot/modules/contrib/commerce/modules/payment/commerce_payment.module
+@@ -103,12 +103,12 @@ function template_preprocess_commerce_payment_method(array &$variables) {
+  */
+ function commerce_payment_preprocess_commerce_order(&$variables) {
+   /** @var Drupal\commerce_order\Entity\OrderInterface $order */
+-  $order = $variables['elements']['#commerce_order'];
+-  if (!$order->get('payment_method')->isEmpty()) {
+-    $variables['payment_method'] = [
+-      '#markup' => $order->get('payment_method')->first()->entity->label(),
+-    ];
+-  }
++  // $order = $variables['elements']['#commerce_order'];
++  // if (!$order->get('payment_method')->isEmpty()) {
++  //   $variables['payment_method'] = [
++  //     '#markup' => $order->get('payment_method')->first()->entity->label(),
++  //   ];
++  // }
+ }
+ 
+ /**
+diff --git a/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php b/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php
+index c3a9760..aeb2b8e 100644
+--- a/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php
++++ b/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php
+@@ -205,15 +205,15 @@ protected function buildPaymentMethodOptions(array $payment_gateways) {
+     //   }
+     // }
+     // 2) The order's payment method (if not listed above).
+-    if ($order_payment_method && !isset($options[$order_payment_method->id()])) {
+-      $option_id = $order_payment_method->id();
+-      $options[$option_id] = [
+-        'id' => $option_id,
+-        'label' => $order_payment_method->label(),
+-        'payment_gateway' => $order_payment_method->getPaymentGatewayId(),
+-        'payment_method' => $order_payment_method->id(),
+-      ];
+-    }
++    // if ($order_payment_method && !isset($options[$order_payment_method->id()])) {
++    //   $option_id = $order_payment_method->id();
++    //   $options[$option_id] = [
++    //     'id' => $option_id,
++    //     'label' => $order_payment_method->label(),
++    //     'payment_gateway' => $order_payment_method->getPaymentGatewayId(),
++    //     'payment_method' => $order_payment_method->id(),
++    //   ];
++    // }
+     // 3) "Create new $payment_method_type" options.
+     $payment_method_type_counts = [];
+     foreach ($payment_gateways_with_payment_methods as $payment_gateway) {
+diff --git a/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php b/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php
+index fd00295..6545886 100644
+--- a/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php
++++ b/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php
+@@ -518,6 +518,8 @@ public function createPayment(PaymentInterface $payment, $capture = TRUE) {
+         ->setRemoteState('3')
+         ->setAuthorizedTime(REQUEST_TIME)
+         ->save();
++      $payment_method = $payment->getPaymentMethod();
++      $this->deletePaymentMethod($payment_method);
+     }
+     catch (RequestException $e) {
+       throw new HardDeclineException('Could not charge the payment method.');

@@ -1,0 +1,18 @@
+services:
+  cypress_checkout_flow.default:
+    class: Drupal\cypress_checkout_flow\DefaultService
+    arguments: []
+
+  cypress_checkout_flow.path_processor_checkout:
+    class: Drupal\cypress_checkout_flow\PathProcessor\CheckoutPathProcessor
+    tags:
+      - { name: path_processor_outbound}
+      - { name: path_processor_inbound}
+
+  cypress_checkout_flow.encrypt_decrypt:
+    class: Drupal\cypress_checkout_flow\EncryptDecrypt
+    arguments: []
+
+  cypress_checkout_flow.ip_verification:
+    class: Drupal\cypress_checkout_flow\IpVerification
+    arguments: []

@@ -1,0 +1,14 @@
+uuid: e1d4e1e1-6948-4e69-98d7-b75c053ac51b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.university_professor
+  module:
+    - user
+id: user_add_role_action.university_professor
+label: 'Add the University Professor role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: university_professor

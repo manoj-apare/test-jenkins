@@ -1,0 +1,25 @@
+uuid: d5acd0d9-8d9d-4032-a74a-5d5de2430e3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_inventory
+_core:
+  default_config_hash: _mzQ_LnK2327eGuJT0mXetTNZBjDCfxEqBFuD2dTkco
+id: commerce_product.part.field_inventory
+field_name: field_inventory
+entity_type: commerce_product
+bundle: part
+label: Inventory
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,14 @@
+uuid: ed0fd5de-db20-40ae-9014-62bd7749a334
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pre_authenticated_user
+  module:
+    - user
+id: user_add_role_action.pre_authenticated_user
+label: 'Add the pre-authenticated user role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pre_authenticated_user

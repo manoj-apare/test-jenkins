@@ -1,0 +1,14 @@
+uuid: 2abb91ab-a665-47c0-abfa-649f5f571cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.direct_representative
+  module:
+    - user
+id: user_add_role_action.direct_representative
+label: 'Add the Direct Representative role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: direct_representative

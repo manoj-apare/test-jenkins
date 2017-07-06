@@ -1,0 +1,23 @@
+uuid: 0f01f70d-5a71-447b-98b0-63c90b9b5333
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: RmxBFWygQ250tEJTT-EjtXYfmwbmH7eiFad17czxhP8
+id: commerce_product.field_standard_pack_quantity
+field_name: field_standard_pack_quantity
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

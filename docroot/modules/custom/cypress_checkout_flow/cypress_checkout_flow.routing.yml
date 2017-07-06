@@ -1,0 +1,15 @@
+cypress_checkout_flow.content:
+  path: '/addtocart/{mpn}/{promocode}'
+  defaults:
+    _controller: 'Drupal\cypress_checkout_flow\Controller\CypressAddToCartController::addToCart'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+
+cypress_checkout_flow.add_to_cart:
+  path: '/add_to_cart'
+  defaults:
+    _controller: 'Drupal\cypress_checkout_flow\Controller\CypressAddToCartController::addToCartFromD7'
+    _title: ''
+  requirements:
+    _permission: 'access content'

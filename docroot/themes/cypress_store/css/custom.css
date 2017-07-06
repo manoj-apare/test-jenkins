@@ -1,0 +1,137 @@
+.slick-prev:before {
+  content: url('../images/left-arrow.png');
+}
+.slick-next:before {
+  content: url('../images/right-arrow.png');
+}
+.block-views-blockdelivery-address-block-2 .block-title {
+  margin-left: -24px;
+}
+.slick-prev,
+.slick-next {
+  border: 2px solid #a8a8a8;
+  background-size: contain;
+  height: 90px;
+  padding-right: 24px;
+  border-radius: 5px;
+  padding-left: 4px;
+  height: 127px;
+  margin-top: 21px;
+}
+#sm-w {
+  border: 2px solid #a8a8a8;
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  line-height: 22px;
+}
+.address-boxes-sec-1 {
+  margin: 2px auto;
+  border-bottom: 1px solid #7e7a7a;
+  padding: 10px 0px 10px 0px;
+  font-size: 15px;
+}
+.address-boxes-sec-1 .address-name {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.address-boxes-sec-1 .address-icons {
+  display: inline-block;
+  float: right;
+}
+.address-boxes-sec-1 .address-icons .address-delete {
+  display: inline-block;
+}
+.address-boxes-sec-1 .address-icons .address-delete .profile-delete {
+  background: url('../images/rubbish-bin-delete-button.png') no-repeat;
+  color: rgba(255, 255, 255, 0);
+  display: block;
+  width: 25px;
+  margin-right: 7px;
+}
+.address-boxes-sec-1 .address-icons .address-edit {
+  display: inline-block;
+}
+.address-boxes-sec-1 .address-icons .address-edit .profile-edit {
+  background: url('../images/pencil-edit-button.png') no-repeat;
+  color: rgba(255, 255, 255, 0);
+  display: block;
+  width: 25px;
+  height: 30px;
+}
+.address-boxes-sec-2 {
+  padding: 10px 0px 10px 0px;
+  font-size: 15px;
+  color: #636262;
+  margin: 5px;
+}
+.address-boxes-sec-3 {
+  margin: 2px auto;
+  border-top: 1px solid #7e7a7a;
+  padding: 5px;
+  color: #5d5b5b;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .slick-prev,
+  .slick-next {
+    margin: 0 !important;
+  }
+}
+.slick-prev {
+  left: -13px !important;
+}
+.slick-next {
+  right: -13px !important;
+}
+.slick-list {
+  margin: 0 15px;
+}
+/* My samples page */
+.view-id-mysamples .view-header,
+.view-id-mysamples .view-filters {
+  text-align: center;
+  padding-bottom: 12px;
+}
+#block-listofpromocodetoapprove .table th,
+#block-listofpendingapprovalrecords .table th,
+.view-id-mysamples .table th {
+  color: white;
+  border: 1px solid #ddd;
+  text-align: left;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  font-weight: normal;
+  background: -webkit-linear-gradient(to bottom, #36364F, #2e6da4, #36364F);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to bottom, #36364F, #2e6da4, #36364F);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to bottom, #36364F, #2e6da4, #36364F);
+  /* For Firefox 3.6 to 15 */
+  /* Standard syntax */
+  background: linear-gradient(to bottom, #36364F, #2e6da4, #36364F);
+}
+#block-listofpromocodetoapprove .table td,
+#block-listofpendingapprovalrecords .table td,
+.view-id-mysamples .table td {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.block-views-blockmysamples-block-1 h2 {
+  text-align: center;
+}
+.requested-promocode {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* My samples page */
+/* Delegation form */
+.form-item-approver-name .form-control {
+  display: inline-block;
+  width: auto;
+}
+.form-item-approver-from-date,
+.form-item-approver-to-date {
+  display: inline-block;
+}
+/* Delegation form */

@@ -1,0 +1,20 @@
+uuid: 3615d418-0833-4ed8-bf6b-3078a683e6fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: Zz2iFY8nJIcf79W8TzNX1KiY1MnJJn0HRXdnLMg37E8
+id: commerce_product.field_show_price
+field_name: field_show_price
+entity_type: commerce_product
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: b44a25a6-439f-4b80-892e-c99ac8fffe7f
+langcode: en
+status: true
+dependencies: {  }
+id: business_unit_manager
+label: 'Business Unit Manager'
+weight: 7
+is_admin: null
+permissions: {  }

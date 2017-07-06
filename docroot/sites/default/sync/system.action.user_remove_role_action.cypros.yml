@@ -1,0 +1,14 @@
+uuid: 5d32db55-b399-4013-bd39-1a9710661ce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cypros
+  module:
+    - user
+id: user_remove_role_action.cypros
+label: 'Remove the CYPros role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: cypros

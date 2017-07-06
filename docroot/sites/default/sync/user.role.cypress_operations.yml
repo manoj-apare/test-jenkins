@@ -1,0 +1,9 @@
+uuid: 36cecf9d-7eda-4cd4-9a14-9096240d9643
+langcode: en
+status: true
+dependencies: {  }
+id: cypress_operations
+label: 'Cypress Operations'
+weight: 31
+is_admin: null
+permissions: {  }

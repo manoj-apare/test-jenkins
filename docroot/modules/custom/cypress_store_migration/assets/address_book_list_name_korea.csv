@@ -1,0 +1,520 @@
+ID,USERLEGACYID,ADDRESS,ADDRESSMORE,CITYNAME,REGIONNAME,COUNTRYNAME,TELEPHONEAREACODE,TELEPHONE,FIRSTNAME,LASTNAME,COMPANYNAME,POSTALCODE,TELEPHONEEXT,ENDCUSTOMER,ORACLEACCOUNTSITEID,ORACLECUSTSITEUSEID
+27172,15747391,"Engineering Building #8, 509ho","San 100, Yongdang-Dong, Nam-Gu",Busan,BUSAN,South Korea,10,3655-6905,Hana,Kim,Pukyong Univ.,,,,,
+27173,37183267,"Suite 1101, 11th Fl., B-dong,","Samhomulsan Bldg., 275-6 Yangjae-dong","Seocho-Gu, Seoul",korea,South Korea,822,5890876,Tina,Lee,"ILDO Korea Co., Ltd.",137-941,,,,
+27174,27242179,"Manage office, 2nd Jangmi, Apt,",413-9 Hagik 1-dong Nam-gu,Incheon,Inche,South Korea,82010,56855377,Jin,Yong YI,Samsung Ltd.,402774,,,,
+27175,44977677,"353, Jubuk-Ri, Yangji-Myeon, Cheoin-Gu","Yongin-si, Gyonggi-Do",Yongin-Si,CA,South Korea,31,334-0153,Hyungwon,Kang,ATEKO,449-822,,,,
+27176,45344606,558-5,"Pajangdong, Jang angu","Suwon, Kyung-ki",do,South Korea,82,1050333927,Jeon,Taejeong,ajou univ.,440290,,,,
+27177,31821899,"Inha University, 2N267B","253 Yonghyun-Dong,Namgu",Incheon,Inch,South Korea,82010,56855377,Hou,Hai Feng,HW Technology,402751,,,,
+27178,45388922,Room 106 BI Center Jeonbuk University,Deokjin-Dong Deokjin-Gu,Jeonju,JB,South Korea,63,2704805,Jangjin,Choi,"Pulse Telecom, Inc.",561-756,,,,
+27179,37183267,"Suite 1101, 11th fl., B-dong","Samhomulsan Bldg., 275-6 Yangfae-dong","Seocho-Gu, Seoul",Seoul,South Korea,822,5890876,Tina,Lee,"ILDO Korea Co., Ltd.",137-941,,,,
+27180,37183267,"Suite 1101, 11th Fl., B-dong,","Samhomulsan Bldg., 275-6 Yangjae-dong","Seocho-Gu, Seoul",korea,South Korea,822,5890876,Tina,Lee,"ILDO Korea Co., Ltd.",137-941,,,,
+27181,18810379,"Inha University, 2N267B","253 Yonghyun-Dong,Namgu",Incheon,Inch,South Korea,82010,56855377,Hou,Hai Feng,Samsung Ltd.,402751,,,,
+27182,45826401,Hagye-techno town B-504,Hagye-dong 250-3,Nowon-gu,Seoul,South Korea,82,1091190600,JEON,SUNG GUG,Jinsung Elec.,139-727,,,,
+27183,45729665,Gangnamgu Yeoksamdong 795-41bunji 903-ho,,Seoul,Seoul,South Korea,11,96361764,Sewoong,Moon,Hongik,135-080,,,,
+27184,30327221,"Manage office, 2nd of Jangmi, Apt,","413-9, Hagik 1-dong Nam-gu",Incheon,Inch,South Korea,82010,56855377,Jin,Yong Yi,Samsung Ltd.,402774,,,,
+27185,42029719,"5th fl, Kusang Bldg, 1009-5, DaechiDong",GangnamGu,Seoul,korea,South Korea,822,20099814,Jisoo,Kim,Future Electronics,135-280,,,,
+27186,16669316,"Inha University, 2N267B,","253 Yonghyun-Dong,Namgu,",Incheon,Inch,South Korea,82010,56855377,Hou,Hai Feng,Samsung Ltd.,402751,,,,
+27187,47614493,"5th FL, Kusang Bldg, 1009-5","Daechi-Dong, Gangnam-Gu",Seoul,Seoul,South Korea,822,2009-9812,Henry,Kang,Future Korea,135-280,,,,
+27188,47813219,Yeongtong-Gu Metan-1Dong,Hyndai HomeTown Apt. 102dong-1802ho,Suwon-si Gyunggi,0,South Korea,82,1041949409,Kwisung,Yoo,0,443-710,,,,
+27189,26772439,"1101-ho, B-dong,","Samho-mulsan Bldg, 275-6, Yangjae-dong,",Seoul,Seoul,South Korea,822,5890876,Philip,Park,Ildo Korea,137-941,,,,
+27190,23893336,"Suite1101, 11th Fl., B-dong","275-6 Yangjae-dong, Secho-gu",Seoul,Seoul,South Korea,10,47759564,Edward,Lee,Ildo Korea,137-941,,,,
+27191,44979420,Electric Material Complex Na-dong 315,,Daegu,korea,South Korea,82,533834031,Jinyoung,Choi,iCDS,702-717,,,,
+27192,590560,"10/F,CBS BUILDING,917-1 MOK-DONG",YANGCHON-GU,Seoul,korea,South Korea,8210,55780039,chase,kim,arrow korea,158-701,,,,
+27193,992585,505ho DongIl techno5th. 202-6 bungi,Anyang7dong ManAn-gu,Anyang Kyunggi,do,South Korea,8231,4414094,JaeSuk,Ko,SinAEng,430-729,,,,
+27194,47614493,"5th FL, Kusang Bldg,1009-5","Daechi-Dong, Gangnam-Gu",Seoul,,South Korea,822,2009-9812,Henry,Kang,Future Electronics,135-280,,,,
+27195,42029719,"5th fl, Kusang Bldg, 1009-5","Daechi-Dong, Gangnam-Gu",Seoul,korea,South Korea,822,20099814,Jisoo,Kim,Future Electronics,135-280,,,,
+27196,42029719,"5th fl, Kusang Bldg, 1009-5, Daechi-Dong",Gangnam-Gu,Seoul,korea,South Korea,822,20099814,Jisoo,Kim,Future Electronics,135-280,,,,
+27197,38275022,4F 323-2277 HANA BUILDING 474 20,MANGWON DONG,Seoul,mapo,South Korea,82,19-3734062,YONG-SEOK,JEON,AIONBANK,121-230,,,,
+27198,52556342,"No 702,106 JoongAng HeightBill APT",Imoon-Dong 84,Dongdaemoon-Gu,Seoul,South Korea,2,9690283,Soonbok,chang,CS SOFT,130-080,,,,
+27199,58291578,"104-13 Moonji-Dong, Yuseong-Gu",,Daejeon,korea,South Korea,8210,64029149,jungmin,choi,Siliconworks,305-380,,,,
+27200,59651569,"3F, Uniquest Bldg. 271-2 Seohyeon-dong",Bundang-gu,Seongnam-Si,,South Korea,82,317020477,Kyungju,Mun,dreamtech,463-824,,,,
+27201,48546891,"92, Chogokri","Nammyun,Kimchon city",Kyungbuk,korea,South Korea,82-54,4512,Kenny,Hong,Remote Solution,740-871,,,,
+27202,6136127,"8th, LOGIT Bldg, 22-2,","Soonae-dong, Bundang-Gu,",kyunggi-do,korea,South Korea,8210,52464083,Ted (Tae-San),Park,Cypress Semiconductor,,,,,
+27203,48546891,"92, Chogokri,","Nammyun, Kimchon City",Kyungbuk,korea,South Korea,801,3816060,Kenny,Hong,Remote Solution,740-871,,,,
+27204,55657813,KongDandong 267-91,,Kumi Kyeongbook,kyeon,South Korea,10,67728894,Park,JongCheol,World Information System co.,730-030,,,,
+27205,45452503,503B Engineering Building,Sunmoon Univ. Tangjeong-myeon,"Asan-si,Chungnam",korea,South Korea,82,1072781268,Yusang,Lee,Sunmoon Univ.,336708,,,,
+27206,933675,687 Gwanpyung-dong,Yusung-gu,Daejeon,korea,South Korea,82-42,839-9415,Dong-hyun,Jang,ELK Corporation,305509,,,,
+27207,45452503,503B Engineering Building Sunmoon Univ.,"Tangjeong-myeon, Chungcheongnam-do",Asan-si,korea,South Korea,41,530-2356,Yusang,Lee,Sunmoon Univ.,336-708,,,,
+27208,1590334,#318-1 Info-Tech B/D Dongeu-University,Gaya3-Domg Busanjin-Gu,Busan,BUSAN,South Korea,82,518902308,Seungho,Han,"N.SET co. LTD.,",614-714,,,,
+27209,1590334,318-1 Info-tech B/D Dongeu university,Gaya3-dong Busanjin-gu,Busan,BUSAN,South Korea,82,518902308,Seungho,Han,"N.SET co. LTD.,",614-714,,,,
+27210,23893336,"Suite 1101, 11th Floor, B-Dong","275-6, Yangjae-Dong, Seocho-Gu",Seoul,,South Korea,2,589-0876,Edward,Lee,Ildo Korea,137-941,,,,
+27211,30725075,University of Incheon,Room329Colleage Of InformationTechnology,Incheon,Inche,South Korea,10,87106756,Jeong,Jun-Hee,Embedded System Engineering,406-772,,,,
+27212,45452503,5F SH Technology Songnae-Plaza,Songnae-dong Sosa-gu,Bucheon-Si,Gyeon,South Korea,10,72781268,SH Technology,SH Technology,SH Technology,422-040,,,,
+27213,37183267,"Suite 1101, 11th Fl., B-dong, Samhomulsa","Seocho-Gu, Seoul korea 137-941",Korea,,South Korea,822,5890876,Ko,JM,ildokorea,137-941,,,,
+27214,38785679,"Suite 1101, 11th Fl., B-dong,Samhomulsan",275-6 Yangjae-dong,Seoul,korea,South Korea,822,5890876,Ko,JM,ildokorea,137-941,,,,
+27215,30725075,"329, Colleage of Information Technology","12-1 Songdo-dong, Yeonsu-gu",Incheon,korea,South Korea,10,8710-6756,Jeong,Jun-Hee,Univ of Incheon,406-772,,,,
+27216,22516592,"1019,HongIn Tower, Bongmyung-dong",Yusung-gu,Daejon,korea,South Korea,8242,8286114,Eunjung,Na,ZIN Electronics,305710,,,,
+27217,6100109,"5FL., ANSAN BLDG.,","773-4 YEOKSAM-DONG, KANGNAM-GU",Seoul,Seoul,South Korea,822,5639800,I. H.,Yoon,arkian,135-080,,,,
+27218,78016586,"601, 6fl, MiRaeCity Bldg., 1195-3","BoJung-dong, KiHeung-gu,",Yongin-Si,asia,South Korea,10,54896797,SoonHyung,Lee,Mangotech,446-858,,,,
+27219,34774246,"1101-ho, Samhomulsan Bulding,","Yangjae-dong, Seocho-gu,","Seoul,",Seoul,South Korea,822,5890876,Young,Choi,Ildo Korea,137-941,,,,
+27220,64038110,"726-ho, Chungpung Dormitory., Semyung Un",Sinwol-dong,Jecheon-si,Chung,South Korea,82,1094056485,In Jae,Yoon,KDE,390-702,,,,
+27221,38616274,"Suite1101, 11 floor, B-dong, Samhomulsan","Yangjae-dong, Seocho-gu",Seoul,Seoul,South Korea,589,876,JS,Lee,Ildo Korea,137-941,,,,
+27222,81613747,"Suite 1101, 11th fl., B-dong","Samhomulsan Bldg., 275-6 Yangjae-dong","Seocho-Gu, Seoul",Seoul,South Korea,822,5890876,Ginnie,Kim,"ILDO Korea Co., Ltd.",137-941,,,109948,112914
+27223,88089351,1604 104-DONG 1TH PUREGIO 337,SINDORIM-DONG GURO-GU,Seoul,korea,South Korea,822,26777873,YONG,YOUNG JIN,"BLUE SEMI CO., LTD.",152-887,,,,
+27224,398040,"#302 Jamae Bldg., 1010-28 Sadang-dong",Dongjak-gu,Seoul,,South Korea,82,2-733-3677,Jongheon,Park,Edeltech Inc.,159-090,,,,
+27225,92850325,"101, 1207, Kwan peong Dong, Yusung-Gu",,dae jeon,DJ,South Korea,42,936-4986,Peter,LEE,"JL Tech Co.,Ltd",305-509,,,,
+27226,81760482,910 hwanghwa bldg. 832-7,Yeoksamdong Gangnamgu,Seoul,Seoul,South Korea,+82-2,562-5599,saejin,park,wasol,135-936,,,,
+27227,81760482,910 hwanghwa bldg. 832-7,Yeoksamdong Gangnamgu,Seoul,Seoul,South Korea,+82-2,562-5599,saejin,park,wasol,135-936,,,,
+27228,88185825,22-2 Sunaedong,Bundanggu,seongnamsi,Gyeng,South Korea,82,1092658952,kim,kyoung soo,8th FL Hunus Bldg,463825,,,111793,114751
+27229,113947149,"#262, TraPalace 10-1, Sunae-dong","Bundang-Gu,",Sungnam-Si,kyunggi-do,South Korea,82,317194230,Kisang,Cho,TECH LINE,463-873,,,,
+27230,113947149,"262, Trapalace 10 Sunaedong",Bundang Gu,Sungnam Si,kyunggido,South Korea,82,317194230,Kisang,Cho,TECH LINE,463873,,,104898,107889
+27231,57864435,"Suite1101,B-Dong,Samhomulsan Bldg","275-5, Yangjae-Dong",Seocho-gu,Seoul,South Korea,82-2,589-0876,Young,Choi,Ildo Korea,137-941,,,112231,115187
+27232,2641870,"16F, IT Castle 2nd ,",371-16 Gasan-dong,"Guemcheon- Gu ,",Seoul,South Korea,822,2627-8160,SK,Kim,Hi-Dis Seoul,153-803,,,107316,110293
+27233,2614751,8th LOGIT Bldg 22 2,Soonae dong,Bundang Gu,Kyunggi do,South Korea,8255,627005,John,Shin,Cypress Semiconductor,463825,,,111839,114797
+27234,118590185,B225 ASEA DEPT,1561 JANGSA DONG  JONGNO GU,Seoul,Seoul,South Korea,82,222734970,LEE,SE YOUNG,ALPHA ELECTRONICS,110430,,,,
+27235,81151173,22.2 Hunus bldg 8th,Suenae dong Bundanggu,SeongNam City,kyunggido,South Korea,8270,86758041,Young Mi,Ahn,Cypress Semiconductor Corp,463-825,,,106182,109165
+27236,83167475,Suite 1101  11th FL.  B dong,Samhomulsan Bldg.275 6  Yangjae dong,Seoul,,South Korea,82-2,589-0876,Harold,Son,Ildo Korea,137 941,,,,
+27237,83167475,Suite 1101 11th FL. B dong,Samhomulsan Bldg.275 6 Yangjae dong,Seoul,Seoul,South Korea,82 2,589 0876,Harold,Son,Ildo Korea,137 941,,,106446,109428
+27238,115609871,Suite1101  11th F1. B dong,Samhomulsan Bldg.  275 6 Yangjae dong,Seoul,Seoul,South Korea,82 2,589 0875,Simon,Ryu,Ildo Korea,137 941,,,,
+27239,424337,557 Joup ri Baiksa myeon,,Icheon si,Gyeonggi Do,South Korea,82,316455660,kwangho,Park,Whanam Electronics Co. LTD.,467 832,,,,
+27240,99694824,803 Byuksan Digital Valley2,Gasan Dong Geumcheon Gu,Seoul,South Korea,South Korea,822,21132100,Ken,Lee,Centron Technology Inc,153803,,,113573,116520
+27241,132109676,526 Banwol Dong,,Hwaseong Si,Gyeonggi Do,South Korea,82,174024628,DongSoo,Lim,FemtoScience,445 330,,,,
+27242,133341166,526 Banwol dong,,HWASUNG SI,Kyunggi do,South Korea,31,203 7066,Myungho,Park,Femto Science,445 330,,,,
+27243,130614852,Ace HighEnd Building  301,,Gurodong,Gurogu,South Korea,10,27472611,jawoon,koo,alpinion medical system,152 848,,,,
+27244,137147355,F 316 A DONG,636 62 GUROGU GURODONG,Seoul,SEOUL GURO,South Korea,822,26358437,YOUNG OH,KO,TNS,152 050,,,111133,114094
+27245,95469589,RM805 UIT BLDG DONGSEO UNIVERSITY,JURYE 2 DONG SASANG GU,Busan,BUSAN,South Korea,82,1022037417,Seong Beom,Cho,Dongseo University,617 716,,,,
+27246,2686839,687 Gwampyung dong,,Daejon,daejon,South Korea,8242,939-9405,Clair,ELK,ELK Corporation,305 509,,,106410,109392
+27247,145676986,702 Gayang techno town 1487,Gayang3dong Gangseo gu,Seoul,Gangseo gu,South Korea,822,36620528,Ohsik,PARK,LANBIRD TECHNOLOGY,157 793,,,104397,107389
+27248,79352093,8th floor HUNUS Bldg 22 2 Sunae dong,Bundang Gu Seongnam si,Gyeonggi do,korea,South Korea,82,25627005,Manu,Verma,Cypress Semiconductor,463825,,,,
+27249,155883281,Suite 203 TAESUNG BLDG,199 JANGSADONG JONGNOGU,Seoul,korea,South Korea,82,2272-9461,TAEYOON,DO,TAEYANG ELECTRIC CO.,110-430,,,109338,112307
+27250,145676986,702 Gayang techno town 1487,Gayang3dong Gangseo gu,Seoul,Gangseo gu,South Korea,82236,620528,Ohsik,PARK,LANBIRD TECHNOLOGY,157793,,,,
+27251,137092193,808 L Tower,Bundang,Seungnam,Seoul,South Korea,82,2037157,eric,seo,Unotel,81,,,,
+27252,127785610,271  2 Uniquest Bldg  6th floor,Seohyeon Dong Bundang Gu,Seongnam,Kyunggi do,South Korea,82,1022212899,Patrick,Lim,Axios,463-824,,,114319,117262
+27253,128059941,6FL UNIQUEST Bldg. 271 2 Seohyeondong,BUNDANGGU,Seong Nam,kyunggido,South Korea,31,766-9858,hyun jin,jang,Axios,463-824,,smac,104501,107493
+27254,85357124,8th FL HUNUS Bldg,SunaeDong BundangGu 22 2,sungnam city,Abroad,South Korea,82708,6758000,Peter,Kim,Cypress Semiconductor,463 825,,Samsung mobile,108434,111407
+27255,1460409,4F Korea Association of Machinery Indust,13   6  Yeouido dong  Yeongdeungpo Gu,Seoul,Seoul,South Korea,82,1094181935,Roh,Myeonghwan,HIGEN Motor,150-729,,HIGEN Motor,,
+27256,172134763,1106 STX W Tower 615 3,Guro2 Dong Guro Gu,Seoul,Seoul,South Korea,822,6124-3600,Yuno,Kim,Mooho Semicon,152-865,,Mooho Semicon,106520,109501
+27257,13284207,1304 Ace Techno Tower 10 cha,470 5 Gasan dong Geumcheon gu,Seoul,na,South Korea,822,62558800,Edward,Shin,SDC Micro Inc.,153-789,,SDC Micro Inc.,110643,113607
+27258,124417431,808 Leaders Building 342 1 Yatapdong,Bundanggu,seongnamsi,korea,South Korea,82,7078632472,Wookjin,Na,Unotel,463-828,,Unotel,,
+27259,39602555,1011  707 1,Yeoksamdong Kangnamgu,Seoul,Seoul,South Korea,822,5691305,Changu,Kang,SILICON DEVICE,135080,,"SILICON DEVICE, Inc.",104471,107463
+27260,784043,19,Hwangsung Dong,Kyongju,Kyongbuk,South Korea,54,770 6503,Dongmin,CHO,Valeo,780-130,6503,student,104291,107283
+27261,46425386,8th Fl Hunus Bldg 22 2 Sunae dong,Bundang gu,Seongnam Si,Gyeonggi Do,South Korea,82,7086758060,Tony,Park,Cypress Semiconductor,463 825,,PSoC Workshop Attendees,109218,112188
+27262,2614751,8th LOGIT Bldg 22 2,,Soonae dong,Kyunggi do,South Korea,8270,86758063,Allen,Kim,Cypress Semiconductor,463825,,Samsung,104728,107719
+27263,128059941,6FL UNIQUEST Bldg. 271 2 Seohyeondong,BUNDANGGU,BUNDANGGU,BUNDANGGU,South Korea,31,766-9858,hyun jin,jang,Uniquest,BUNDANGGU,,YD Electronics,,
+27264,182138864,Uniquest Bldg 271 2 Seohyun Dong,Bundang Gu,sungnam city,Gyeonggi Do,South Korea,8231,7769907,Andrew,Park,Uniquest,463-824,,Uniquest,113726,116672
+27265,200734274,203 116 2 Sinsung Dong YusungGu,,dae jeon,Dae Jeon,South Korea,10,73170828,Peter,LEE,KMT CO Ltd,305 345,,"KMT Co.,Ltd",104653,107644
+27266,201429261,B113 Saerom Hall BI Center,Gacheon University Bokjeong Sujeonggu,Seongnam,Gyeonggi,South Korea,8231,7526200,Bongkyu,Choi,SMARTCORE Inc.,461701,,SMARTCORE Inc.,,
+27267,202808526,10F Mtek IT Tower,688 1 SampyeongDong,Seongnam,SeongnamSi Gyeonggido,South Korea,2,1063207929,Donghyung,Ko,Mtekvision,463-400,,mtekvision/validation,,
+27268,188017887,8th HUNUS Bldg.,Sunaedong,Bundang,kyunggido,South Korea,2,562-7005,Minjung,Moon,Cypress Korea,463-825,,Cypress Internal Usual,113675,116621
+27269,197947021,4F. 898..6.  Bangbae Dong.  Seocho.Gu,Seoul,Korea,asia,South Korea,82,29117845,Yong Seok,Cho,Ceinside,137-060,,Ceinside,,
+27270,135499822,3F  641 7,Junggok dong   Gwangjun gu,Seoul,Gyeonggi Do,South Korea,10,8785 4964,Jeong hun,Song,MJ Tech,143-221,,MJ-tech,,
+27271,135499822,3F  641 7,Junggok dong   Gwangjun gu,Seoul,Gyeonggi Do,South Korea,10,8785 4964,Jeong hun,Song,MJ Tech,143-221,,MJ-tech,,
+27272,172134763,1106  STX W Tower 615 3,Guro2Dong GuroGu,Seoul,Seoul,South Korea,822,6124-3600,Llinsay,Shin,Mooho Semicon Inc,152-865,,Mooho Semicon,,
+27273,180758987,YANG CHON GU,,Seoul,korea,South Korea,822,26509754,HYUNG KWANG,KIM,arrow electronics korea,158 701,,10F 917  MOK DONG,105233,108222
+27274,109917590,8th. HUNUS Bldg 22.2 Soonae dong,Bundang Gu. Kyunggi do,Seoul,South Korea,South Korea,82,7086758041,Young Mi,Ahn,Cypress Semiconductor Korea,NA,,Cypress Semiconductor Korea,,
+27275,6134242,22 hunus building 8th floor,suenaedong,Bundangcity,kyeon,South Korea,10,8942-9744,youngmi,Ahn,Cypress Semiconductor,463-020,,axios,,
+27276,55657813,267   91,,Kumi Kyeongbook,kyeongbook,South Korea,10,67728894,Park,JongCheol,World Information System co.,730-030,,Kumoh University,,
+27277,6134242,22 2 hunus bldg 8th,suenae dong,bundang city,korea,South Korea,10,89429744,youngmi,ahn,Cypress Semiconductor,463-825,,Avnet Xfest customers,,
+27278,6134726,8th FL HUNUS Bldg,22 2 Sunae dong Bundang gu Seongnam si,Gyeonggi do,Gyeonggi Do,South Korea,82,1044547551,Tony,Park,Cypress Semiconductor,463-825,,Samsung,,
+27279,59722924,8th FL. HUNUS Bldg. 22 ui 2  Sunae dong,Bundang  gu,Seongnam  si,Gyeonggi Do,South Korea,82,70867580,Kwangmin,Lee,Cypress Semiconductor,463-825,,SDIC,105259,108248
+27280,224059790,Jeil Apt. 3Dong 803Ho,Sadang 5dong  DongjakGu,Seoul,Seoul,South Korea,82,1997303840,JooYoung,Lee,SNU,156-770,,LG Corp.,,
+27281,59722924,8th FL. HUNUS Bldg. 22 ui 2. Sunae dong,Bundang  gu,Seongnam  si,Gyeonggi  do,South Korea,82,105045401,Kwangmin,Lee,Cypress Semiconductor,463-825,,Samsung,109567,112535
+27282,226680097,Ba 4112 Jungang circulation Complex 1258,Gurobon Dong Guro Gu,Seoul,Seoul,South Korea,822,66799800,JongPhil,Kim,G O Tech,152721,,G-O Tech,,
+27283,176199237,8th HUNUS Bldg,22 2 Soonae dong Bundang Gu,Kyunggi do,korea,South Korea,81,353711921,Richard,Jun,Cypress Korea,463825,,Richard Jun,106527,109508
+27284,14517,5th Yemiji Bldg.,SunaeDong BundangGu,Sungnam,korea,South Korea,+82 31,786 8871,Richard,Lee,Future Elec.,463-020,,Daesung Electric,,
+27285,107981620,8th Fl. Hunus Bldg.,22 2 Sunae  Bundang,Seongnam,Gyeonggi,South Korea,822,5627005,Sio,Park,Cypress Semiconductor,463-825,,Cypress Semiconductor,106394,109376
+27286,128059941,6FL UNIQUEST Bldg. 271 2,Seohyeon dong  Bundang gu,Seongnam,kyunggido,South Korea,82,317769858,Sunny,Jang,Uniquest,463-824,,Uniquest,106078,109062
+27287,86562177,8th FL HUNUS Bldg 22 2,Sunae dong Bundang gu,Seongnam Si,korea,South Korea,8270,86758032,Teddy,Kim,Cypress Korea,463-825,,Samsung,105118,108107
+27288,86562177,8th FL HUNUS Bldg 22 2,Sunae dong Bundang gu,Seongnam Si,0,South Korea,82,7086758032,Teddy,Kim,Cypress Korea,463-825,,Samsung Mobile,,
+27289,2531837,387   4 JANGAN1 DONG,DONGDAEMOON KU,Seoul,Seoul,South Korea,822,22477705,Kwangho,Park,WHA NAM ELECTONICS,130 101,,WHA NAM ELECTONICS,105086,108075
+27290,259895190,Seoul National University   1  Gwanak ro,ISRC room 218,Seoul,GwanAk gu,South Korea,82,1050419731,Chang Soo,Yoon,ISLD,151-742,,ISLD,107849,110824
+27291,257509612,Suite501  103 BLDG Unam Neomia Apt,Deongmyeong dong  Yuseong gu,Daejeon,Daejeon,South Korea,-8210,53586510,Minjung,Kim,freelancer,305-734,,"Dynalith Systems Co., Ltd",,
+27292,261270883,soonaedong kyunggi do korea,owners tower 701,Korea,Kyunggi do,South Korea,82,316087889,jason,kang,k1electronics,437-082,,k1electronics,,
+27293,261270883,rm701 owner tower 16 5 soonae dong,bundang gu seongnam si kyunggi do,Seongnam Si,Kyunggi do,South Korea,82,316087889,jason,kang,k1electronics,463-854,,k1electronics,113785,116731
+27294,261270883,rm701 owners tower 16 5 soonae dong,bundang gu seongnam si,kyunggi go,Bundang,South Korea,82,31608789,jason,kang,k1electronics,463-854,,k1electronics,,
+27295,271693088,RM 306 dash 2       ISRC BLDG 104 dash 1,Seoul National Univiersity KwanAk 1 ro,Seoul,Seoul,South Korea,11,98927507,Junsoo,Cho,Seoul National University,151-742,,Seoul National University,,
+27296,271693088,RM 306 dash 2   ISRC BLDG 104 dash 1,Seoul National University KwanAkRo 1,Seoul,Seoul,South Korea,+82-11,98927507,Seung In,Na,Seoul National University,151-742,,Seoul National University,,
+27297,271693088,RM 306 dash 2 ISRC BLDG 104 dash 1,KwanAkRo1 Seoul National University,Seoul,Seoul,South Korea,+82-10,6476-5585,Susie,Kim,Seoul National University,151-742,,Seoul National University,,
+27298,52733176,2nd Fl. Wooduk Bldg. 301 3 Yangjae2 dong,,Seocho Ku,Seoul,South Korea,82 2,574 7856,SeungYuhp,Cha,Chasy Robotics Inc.,137-896,,Chasy Robotics Inc.,,
+27299,79352093,45 29  Saeum ro,Icheon Si,Gyeonggi do,Republic of Korea,South Korea,82,316454689,Mihnsung,Kim,Continental Automotive Systems,467 080,,Continental Automotive Systems,110575,113539
+27300,149445383,302 102 DONG BUCHEON TECHNO PARK,SSANGYONG 3RD SEOKCHEONRO 397 BEONGI,Bucheon,Gyunggido,South Korea,82,326240060,HOON,LEE,sewhacnm,421-742,,sewhacnm,,
+27301,149445383,302 102 DONG BUCHEON TECHNO PARK,SSANGYONG 3RD SEOKCHEONRO 397 BEONGI,Bucheon,Gyunggido,South Korea,82,326240062,HOON,LEE,sewhacnm,421-742,,sewhacnm,,
+27302,149445383,302 102 DONG BUCHEON TECHNO PARK,SSANGYONG 3RD SEOKCHEONRO 397 BEONGI,Bucheon,Gyunggido,South Korea,82,326240060,HOON,LEE,sewhacnm,421-742,,sewhacnm,,
+27303,88185825,22 Sunaedong Bundanggu,Seongnamsi,seongnamsi,gyeonggido,South Korea,82,1092658952,kim,kyoung soo,8th FL Hunus Bldg,463825,,Cypress,,
+27304,279114018,1014 HYUNDAI VENTUREVILLE,713 SUSEODONG GANGNAMGU,Seoul,Seoul,South Korea,822,20406291,JUNGSOO,LEE,PARS  CO  LTD,135539,,"PARS CO., LTD.",,
+27305,275672330,Kyungki Venture Center Bldg  ROOM 609,Anyang 8 dong   Manan gu,anyang si,Kyungkee do,South Korea,82,31-4422217,Jong Jin,Kim,Cottonwood Co. Ltd.,430-731,,"Cottonwood Co. Ltd,",,
+27306,87148154,Yemizi BD 5F 6 5 Sunae dong,Bundang gu,Seongnam,Gyeonggi,South Korea,82,317868899,SB,Yoon,Future Electronics,463-020,,Bluesemi,109179,112149
+27307,205152764,8th HUNUS Bldg,22 2 Soonae dong  Bundang Gu,Kyunggi do,Kyunggi do,South Korea,82-2,562-7005,Youngsu YOUNG,Choi,Cypress Semiconductors,11111111,,Ucomm,109344,112313
+27308,205152764,8th HUNUS Bldg,22 2 Soonae dong  Bundang Gu,Kyunggi do,Kyunggi do,South Korea,82-2,562-7005,Youngsu YOUNG,Choi,Cypress Semiconductors,11111111,,Humax,108694,111666
+27309,222836065,Gwangam dong 181 3,Hanam si,Gyeonggi do,Gyeonggi Do,South Korea,82,70822445,Bongju,Lee,ZeeAnn,465-230,83,Bongju Lee,108991,111962
+27310,49876844,10F CBS Building 917 1 MokDong,YangChongGu,Seoul,Seoul,South Korea,2,26509782,JUNE,HEO,arrow korea,158-701,,arrow korea,105655,108642
+27311,42120292,SEOBUK GU,CHEONAN SI,CheonAn,CHEONAN,South Korea,8210,109289,Kalinin,Alexey,SEMES Co,331814,9687,SEMES Co,,
+27312,86562177,8th FL HUNUS Bldg 22 2,Sunae dong Bundang gu,Seongnam Si,korea,South Korea,8270,86758032,Teddy,Kim,Cypress Korea,463-825,,Samsung,,
+27313,188017887,493 Jwadong ri Jangan up Gijang gun,Pusan,Pusan,Gijang gun,South Korea,8210,25415986,Kwang Yong,Lee,TongMyong University,619953,,TongMyong University,,
+27314,301897266,Yatap dong 355 2 kumho plaza Room404,bundang,Seongnam Si,Gyuonggi do,South Korea,82,7075347312,jindeok,Kim,softecadvance,340-361,,softecadvance,,
+27315,222582407,356 6,Jeonpo 3dong,Busanjin Gu,BUSAN,South Korea,82,10941423,SangWoo,Seo,SIGMAELTEC,614-863,,SIGMAELTEC,105513,108501
+27316,311009969,36 2 2th floor,jaundong yusunggu,Daejeon,NC,South Korea,10,49427608,changwon,son,Hara systems,305-155,,Hara systems,104221,107216
+27317,209460987,6th floor Uniquest Bldg 271 2,Seohyeon dong Bundang gu,sungnam city,GyeongGi province,South Korea,8231,7769833,Ivan,Jin,Uniquest Co Ltd,463824,,Inkel,108738,111710
+27318,96918968,Cypress Semiconductor 8th LOGIT Bldg,22 2 Soonae dong BundangGu Kyunggi do,Korea,korea,South Korea,8270,8675,JIN HYUNG,KIM,Cypress Semiconductors,172,8061,Cypress,110310,113276
+27319,251736343,8th FL  HUNUS  Bldg  No 22 2,Sunae dong Bundang  gu,Seongnam Si,Gyeonggi Do,South Korea,82708675,8072,JUN,HWAN,Cypress Semiconductors,463825,,Cypress FAE,113384,116331
+27320,251736343,8th FL HUNUS Bldg No 22 2,Sunae dong Bundang gu,Seongnam Si,Gyeonggi Do,South Korea,82708675,8072,John,SHIN,Cypress Semiconductors,463825,,Cypress FAE,,
+27321,251736343,8th FL  HUNUS  Bldg  No 22 2,Sunae dong Bundang  gu,Seongnam Si,Gyeonggi Do,South Korea,82,1086758066,JOHN,SHIN,Cypress Semiconductors,463825,,Cypress FAE,111487,114446
+27322,344137282,1802 Ace Highend Tower7 345 33,Gasan Dong,Geucheon Gu,Seoul,South Korea,2,69256968,Edward,Park,DAGS Inc.,153794,,DAGS Inc.,,
+27323,338295749,Chosun Univ. 309 Pilmun daero,The College of Electronics and Informati,Gwangju,Donggu,South Korea,82,107735639,Lee,Jihwan,IT Fusion Tech. Research Cente,501-759,,University of Chosun,,
+27324,2614751,8th FL HUNUS bld 22 2 Sunae dong,Bundanggu  Seongnam si,Seoul,Gyeonggi Do,South Korea,82,1089429744,YM,Ahn,Cypress Semiconductor,463 825,,Cypress semiconductor,112591,115544
+27325,354079734,Room302 160 Techno 2ro Yuseong gu,,Daejeon,Daejeon,South Korea,8242,8618173,Peter,LEE,Fivetech Co Ltd,305500,,"Fivetech Co.,Ltd",113712,116658
+27326,354079734,Room302 160 Techno 2ro Yuseong gu,,Daejeon,Daejeon,South Korea,8242,8618173,Peter,LEE,Fivetech Co Ltd,305500,,"Fivetech Co.,Ltd",,
+27327,354079734,Room302 160 Techno 2ro Yuseong gu,,Daejeon,Daejeon,South Korea,8242,8618173,Peter,LEE,Fivetech Co Ltd,305500,,"Fivetech Co.,Ltd",,
+27328,354079734,Room302 160 Techno 2ro Yuseong gu,,Daejeon,Daejeon,South Korea,8242,8618173,Peter,LEE,Fivetech Co Ltd,305500,,"Fivetech Co.,Ltd",106086,109070
+27329,351025223,104 202 Kolon Apt Bangi Songpa,,Seoul,Seoul,South Korea,82,1092728148,Youngjae,Cho,Space System Research Lab.,138-772,,Space System Research Lab,,
+27330,305428235,Add L1,Add L2,bangalore,Karntaka,South Korea,91,7777777777,Sateesh,Math,cypress,222112,,AVNET,,
+27331,22581517,8th HUNUS Bldg 22bungi 2ho Sunae dong,Bundang gu,Seongnam,Kyunggi do,South Korea,82,1033100964,Jason,Kang,Cypress Semiconductor,463-825,,Samsung,110135,113101
+27332,316413603,2nd floor 774 10  Dang dong,,Gunpo si,Gyeonggi Do,South Korea,82,1040801024,SEONG JAE,KIM,BlueFish,435 010,,FNZ.com,,
+27333,365096151,"Dansan Segyung Bldg, 270-45, Nonhyun-Don",,Kangnam-Ku,Seoul,South Korea,82,32181622,Se-kyung,Kim,Techrein,135-010,,Techrein,,
+27334,209460987,"8th HUNUS Bldg 22-2, Soonae dong",Bundang gu Kyunggi do Korea,sungnam city,Kyunggi do,South Korea,822562,7005,Young-Mi,An,Cypress Semiconductor,463-021,,DongBu Robot,113052,116002
+27335,220954578,"Uniquest Bldg. 314, Hwangsaeul-ro,","Bundang-Gu, Seongnam-Si, Gyeonggi-Do",Seongnam-Si,gyeonggi-do,South Korea,8,231776,Jennifer,Jeong,Uniquest,463824,9832,UNIQUEST,105488,108477
+27336,54808266,2091,"Gyeongchung-daero, Bubal-eub",Icheon-si,gyeonggi-do,South Korea,82,31639471,Hyeong Soo,Kim,SK Hynix,467-701,,SK hynix,109706,112673
+27337,139265239,"6th Floor, Uniquest Building,","271-2, Seohyun-dong, Bundang-gu,",sungnam city,kyunggi-do,South Korea,8219,2995651,Jong-Mim,Ko,Uniquest,463-824,,"Ms. Jin, Kyung-Jin",129813,134201
+27338,246597801,6F Uniquest Bldg. 271-2 Seohyeon-Dong,Bundang-Gu,Seongnam-Si,gyeonggi-do,South Korea,82,317769921,Sue,Kim,Uniquest,463824,,UNIQUEST,114877,117852
+27339,370104806,"#1001 Daewootopia, Dunsan-dong, Seo-gu",,Daejeon,Daejeon,South Korea,82,1022773370,Silver,Ryu,SILCON,302829,,SILCON,110435,113400
+27340,235850209,Migun Techno world 1st Rm 101,Yuseong Gu Yongsan-Dong,Daejeon,Daejeon,South Korea,8242,935-1609,Dohyoung,Yoo,Juyoung ICT,305-500,,Logsys Inc.,113327,116275
+27341,127681049,6rd floor Uniquest Bldg 271bunji 2ho,SeohyeonDONG BundangGU,SeongNam City,South Korea,South Korea,82,1051501222,Billy Kang,KangDaegyu,Uniquest,463824,,Uniquest,,
+27342,28359473,"Gwangdam-dong, 181-3",,Hanam-si,gyeonggi-do,South Korea,82,7082244583,BongJu,Lee,"ZeeAnn Co.,Ltd.",465-230,,"ZeeAnn Co.,Ltd.",,
+27343,371587556,Gwangju Namgu Bongsun-2-dong,Posco 110 dong 901 ho,Gwangju Namgu,Namgu Bongsun-2-dong,South Korea,8210,4499-7669,Sung Han,Shin,N/A,503-775,,N/A,108868,111840
+27344,77582544,"18F, Parkview Tower, 248, Jeongjail-ro,",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,317102442,Hyeonggak,Lim,Suprema,463-863,,Suprema,,
+27345,44426064,"35,Hyeongje-ro, Namsa-myeon, Cheonin-gu",,Yongin-Si,gyeonggi-do,South Korea,82,7049230563,HeeDong,Sohn,chemtronics,449-884,,chemtronics,,
+27346,127681049,8rd Floor UNIQUEST Bldg 271 bunji 2 ho,Seohyeon-dong Bundang-gu,Seongnam,Kyeonggi do,South Korea,31,7769993,Billy Kang,Kang Daegyu,Uniquest-TM,463-824,993,Uniquest,113358,116305
+27347,375963158,"156,Yeoksam-ro, Gangnam-gu",6F,Seoul,korea,South Korea,82,1035056194,shin,sungdeok,stratio korea,135-929,,stratio,,
+27348,365758461,"HUNUS Bldg.8F,93 Baekhyeon-ro,Bundang-gu","Seonam-si, Gyeonggi-do, Korea",Seonam-si,gyeonggi-do,South Korea,82108861,2576,Ivan,Jin,Cypress Semiconductor,463-825,,Internal training,111633,114592
+27349,6138266,"8th Floor, HUNUS Bld #22-2 Sunae-dong","Bundang gu, Seongnamsi",gyeonggi-do,gyeonggi-do,South Korea,82708675,8082,Kyo-Seong,Shin,Cypress Semiconductor(Korea),463-825,,SEMCO,,
+27350,373140388,addr1,,Seoul,Seoul,South Korea,2,7456221,JS,SNG,icomm,100-110,,icomm,,
+27351,175045439,asdfasdf,asdfasdf,Incheon,adfsadsf,South Korea,2134,12341234,Keunyong,Jung,adfasdf,2341234,,incheon Univ.,,
+27352,142029330,"3rd Floor, Yullim B/D, 269-4",Topyeong-dong,Guri-si,gyeonggi-do,South Korea,8231,5566153,Danny,Kim,SELPASEMICOM,471060,,SELPASEMICOM,,
+27353,259045696,6th Floor UNIQUEST Bldg 271-2,Seohyeon-dong Bundang-gu,sungnam city,GyeongGi province,South Korea,82,317769833,Jawon,Yu,Uniquest Co Ltd,463824,,Uniquest Co Ltd,,
+27354,31425262,"Marine Craft, Room 401, Centum SH Valley","1474, Woo-Dong",Haeundae-gu,"Busan, South Korea",South Korea,8210,99928307,LEE,WON BOO,Marine Craft,612020,,Marine Craft,,
+27355,302676144,"Gwangam-dong 181-3,","ZeeAnn Co., Ltd",Hanam-si,gyeonggi-do,South Korea,82,70822445,BongJu,Lee,ZEEANN CO LTD,465230,83,BongJu Lee,112518,115471
+27356,368925011,6th Floor Hwangsaeul Ro 258beon Gil 41,,Sungnam,Gyeonggi,South Korea,8231,7181177,Jinhyuk,Lim,STC Corporation,463-825,305,BIT Value,,
+27357,111293608,8th FL. HUNUS Bldg.  22.2,Sunae dong Bundang gu,Sungnam Si,Gyeonggi Do,South Korea,10,73085408,Andrew,Seo,Cypress Semiconductor,463825,,CDS-Korea,110349,113314
+27358,49047759,"74-7, Geumhoseonmal-gil,","Bugang-myeon,",Sejong-si,Sejong-si,South Korea,82,442706821,DongHee,Kim,Continental Automotive,339-942,,Continental,,
+27359,367218823,"387,Simin-daero,Dongan-gu","#1303, A-dong, Digital Empire Bldg",ANYANG-SI,gyeonggi-do,South Korea,8270,78742325,BON JEONG,KOO,Cityis,431-804,,Meerecompany,,
+27360,413984337,"905,SicoxTower, 513-14, Sandaewon-Dong","Jungwon-Gu, Seongnam-City",SeongNam-City,"Jungwon-Gu, Sandaewon-Dong",South Korea,82,317779220,Jang,Chul,plusi,462-806,,plusi,,
+27361,413984337,"905,SicoxTower, 513-14, Sandaewon-Dong,",Jungwon-Gu,SeongNam-City,gyeonggi-do,South Korea,82,317779220,Jang,Eun Ju,plusi,462-808,,plusi,,
+27362,111293608,8th FL. HUNUS Bldg.  22.2,Sunae dong Bundang gu,Sungnam Si,Gyeonggi Do,South Korea,82,1073085408,Myeonghwan,Seo,Cypress Semiconductor,463825,,Samsung mobile,115055,118026
+27363,111293608,8th FL. HUNUS Bldg.  22.2,Sunae dong Bundang gu,Sungnam Si,Gyeonggi Do,South Korea,82,1073085408,Myeonghwan,Seo,Cypress Semiconductor,463825,,Samsung mobile,115024,118029
+27364,77582544,18F Parkview Tower 6 Jeongia,Bundang,Seongnam,Gyeonggi,South Korea,82,7102442,Hyeonggak,Lim,Suprema,463-863,,Suprema,,
+27365,219923899,Rm#205 Yeoheung,"430-2 Sindang-dong, Jung-gu",Seoul,none,South Korea,822,2231 7255,Sehoon,Oh,E.M Tech,100-836,,E.M Tech,,
+27366,76924365,"63,Seongseogongdan-ro 11-gill",,Dalseo-gu,Daegu,South Korea,82,537172026,LEE,KWANG-HO,HSE,704-948,,KYOCERA,115476,118471
+27367,188017887,"1809, Seocho World Officetel, 1355-3","Seocho-Dong, Seocho-Gu,",Seoul,Seoul,South Korea,822,34723450,Kim,Angela,HB Corp.,137070,,NES Technology,115597,118602
+27368,158873446,8F HUNUS BLDG,22 SUNAE-DONG BUNDANGGU,Seongnam,kyunggido,South Korea,82,1028708805,Young,Choi,Cypress Semiconductor,463825,,Osung electronics,115663,118663
+27369,82273584,"1501-ho, 14-dong Gaepo2cha woosung apt","120, Seolleung-ro, Gangnam-gu, Seoul",Seoul,Seoul,South Korea,82,1049499504,Soobong,Choi,Sooil Development Company,135-280,0,sooil cevelopment co.,,
+27370,82273584,"1501-ho, 14-dong Gaepo2cha woosung apt","120, Seolleung-ro, Gangnam-gu, Seoul",Seoul,Seoul,South Korea,82,1049499504,Soobong,Choi,Sooil Development Company,135-280,0,sooil cevelopment co.,,
+27371,82273584,"1501-ho, 14-dong Gaepo2cha woosung apt","120, Seolleung-ro, Gangnam-gu, Seoul",Seoul,Seoul,South Korea,82,1049499504,Soobong,Choi,Sooil Development Company,135-280,0,sooil cevelopment co.,,
+27372,82273584,"1501-ho, 14-dong Gaepo2cha woosung apt","120, Seolleung-ro, Gangnam-gu",Seoul,Seoul,South Korea,82,1049499504,Soobong,Choi,Sooil Development Company,135-280,0,sooil cevelopment co.,,
+27373,443748502,"Suite1030, 415, Heungan-daero, Dongan-gu",,ANYANG-SI,gyeonggi-do,South Korea,10,41863565,Taeil,Seo,infomagix,431-755,,home,,
+27374,415297724,Gyeongnam Anusvill apt,"111dong-1101ho, Songjung-dong",Seoul,Gangbuk-gu,South Korea,10,28600226,seung uk,kim,private group,142-751,,private group,,
+27375,188017887,"Medison Building, 1003 Daechi-dong",Gangnam-gu,Seoul,korea,South Korea,822,21941203,Hyeran,Yoon,Samsung Medison,135280,,Samsung Medison,,
+27376,446528444,137-980 5F Wookyung B/D,Yangje 1-dong,Seoul,Seoul,South Korea,70,8240-7600,Jusang,Lee,edufeelMedia,137-980,,bsi,,
+27377,444390850,"403, Daejeon Intelligent Robot","Engineering Center, 706, Tamnip-Dong","Yuseong-gu, Daej",korea,South Korea,42,934-5923,dongchoon,gim,Smartec,305-510,100,SMT,116361,119415
+27378,77582544,11F Parkview Tower  6 Jeongia,Bundang,Seongnam,Gyeonggi,South Korea,82,317102442,Hyeonggak,Lim,Suprema,463-863,,Suprema,,
+27379,461219416,"# 1203, Dong-a Venture Tower,","538-8, Bongmyung-dong, Yusung-gu",Daejeon,Daejeon,South Korea,82,428259912,anna,lee,GREENCOM,305-709,9912,GREENCOM,116568,119637
+27380,76924365,"111, Anyang-Ro, Manan-Gu",GyeonggiVentureYeonsungUniversityCente7F,anyang-city,gyeonggi-do,South Korea,+82-10,3488-0727,Youngmi,Ahn,Tovis,430-731,,KYOCERA,116579,119648
+27381,463679185,"10-3, Baramdeuri 16-gil","B-dong, 201, Sunsu Villa",Songpa-Gu,Seoul,South Korea,82,1031032925,Yonghun,Oh,none,138-872,,none,,
+27382,462936648,#205 Joong-Ang Royal Bldg 1355-8,,"Seocho-dong, Seo",Seoul,South Korea,82,2057-4981,LEE,JONG MOON,ZERON Alliance,137-862,,ZERON,,
+27383,460469547,"#1302, Ace Techno VIII","11, Digital-ro 33-gil",Seoul,guro-gu,South Korea,+82-10,2230 2165,Lucas,SONG,"MSWAY., Co. Ltd.",152-780,,TJ Media,116764,119835
+27384,158606833,8th FL HUNUS Bldg 22 Sunaedong,Bundanggu,Seongnam Si,Kyunggi do,South Korea,82,1091237997,Dae-Ryeon,Park,Cypress Semiconductor,463 825,,SAMSUNG VD,,
+27385,188017887,"42, Teheran-ro 108-gil, Gangnam-gu",,Seoul,Seoul,South Korea,8210,52763456,ByeongSun,Yoo,Samsung Medison,135851,,Samsung Medison,,
+27386,76924365,"55, Hanyangdaehak-ro, Sangrok-gu",,Ansan-si,gyeonggi-do,South Korea,82,1062360003,Narae,Yang,LG  Innotek,426-791,,KYOCERA,117019,120083
+27387,368925011,6th Floor Hwangsaeul Ro 258beon Gil 41,,Sungnam,Gyeonggi,South Korea,8231,7181177,Jinhyuk,Lim,STC Corporation,463-825,305,F1 Media,117141,120231
+27388,368925011,6th Floor Hwangsaeul Ro 258beon Gil 41,,Sungnam,Gyeonggi,South Korea,8231,7181177,Jinhyuk,Lim,STC Corporation,463-825,305,STC,117198,120288
+27389,368925011,6th Floor Hwangsaeul Ro 258beon Gil 41,,Sungnam,Gyeonggi,South Korea,8231,7181177,Jinhyuk,Lim,STC Corporation,463-825,305,V-Conwave,,
+27390,492674991,"979-10, Seryu-2dong, Gwonseon-gu,",,Suwon-si,Gyunggi-do,South Korea,82,1023281091,JaeHong,Jeon,hobbyist,441-876,,hobbyist,,
+27391,494190335,Kyunggido suwon jangangu suburo 2066,SKKU Research complex2 83450ho,Seoul,Seoul,South Korea,82,1075042945,jinhwang,Kim,Sungkyunkwan University,440-746,,skku,,
+27392,55294358,Samsung mauel APT 204-405,"71, Beonyeong-ro 200beon-gil",Gunpo-Si,gyeonggi-do,South Korea,82,1028477662,Sungyong,Lee,sme,435-020,,hynix,,
+27393,478739707,"4th, 11 Sungnamdaero 916, Bundang-gu",,Sungnam-Si,kyunggi-do,South Korea,82,1098439000,TaeHyun,Lee,"MARKATE CO., LTD",463-827,,MARKATE,117808,120956
+27394,487560872,"Mozart Blds 3F,","1515-3 Secho-dong, Secho-gu",Seoul,Seoul,South Korea,34704710,3470,Junyoung,Park,MULTIWAVE,137-871,4710,MULTIWAVE,,
+27395,487560872,3F Mozart BLDS,Seocho-3dong Seo-cho-gu,Seoul,korea,South Korea,3470471,3470,Junyoung,Park,MULTIWAVE,137-871,4710,MULTIWAVE,,
+27396,502929091,"RM507, Samhwan Hipex B, Sam Pyeong-dong",Pangyoyeok-ro 230,Seongnam-Si,gyeonggi-do,South Korea,82,7046488906,Sang Hun,Baek,Sim Communication,463-400,,Sim Communication,,
+27397,510056054,GURO-GU GURO-2-DONG 615-3 STX-WTOWER1201,,Seoul,Seoul,South Korea,82,61243380,HO SIK,LEE,DIGITALDREAM,152-865,,DIGITAL DREAM,,
+27398,478739707,"#808, 8F leaders Building, 42, Jangmi-ro",Bundang-gu Seongnam-si,Seongnam-Si,Kyungki-do,South Korea,82,1095180855,Jason,Kang,Unotel,463-828,,Cospin,118193,121334
+27399,458617391,"5th fl. Yemizi Bldg. 31, Hwangsaeul-ro","258beon-gil, Bundang-Gu",Seongnam-Si,gyeonggi-do,South Korea,82,1022570549,Brandon,Kwak,FUTURE ELECTRONICS KOREA,463-825,,HAN SUNG,,
+27400,368925011,6th Floor Hwangsaeul Ro 258beon Gil 41,,Sungnam,Gyeonggi,South Korea,8231,7181177,Jinhyuk,Lim,STC Corporation,463-825,305,Solid,,
+27401,512119625,"Suite 312, 160 Hyanggyo-ro, Paldal-ku",,suwon,gyeonggi-do,South Korea,8210,35617352,SoonJong,Yoo,JQUADTECH Inc.,442-120,,jquadtech inc,118468,121637
+27402,368925011,6th Floor Hwangsaeul Ro 258beon Gil 41,,Sungnam,Gyeonggi,South Korea,8231,7181177,Jinhyuk,Lim,STC Corporation,463-825,305,Chemtronics,118447,121636
+27403,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367506,steve,bae,Unotel,463-828,,ICTEK,118609,121818
+27404,517996507,"Unotel Co.,Ltd #808, 8F Leaders Building","42, Jangmi-ro Bundang-gu",Seongnam-Si,Seongnam-si,South Korea,82,7078367513,Hyungil,Lee,"Unotel Co.,Ltd",463-828,,Conspins,,
+27405,513661403,"3F, Mozart Bldg, 1515-3 Seocho-3dong","Seocho-gu ,",Seoul,korea,South Korea,82,234704706,Jake,Yang,MULTIWAVE,137-871,,ISS,118694,121903
+27406,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367506,steve,bae,Unotel,463-828,,Conspin,118793,122010
+27407,339234747,"810, Gold tower BLDG.,","Mannyun-Dong, Seo-Gu",Daejeon,N.A.,South Korea,82,1034016580,dueui,hong,HLelectronics,302-150,,HLelectronics,119641,122969
+27408,519503780,"Suite #502, FL 5, GSBC Building","107, Gwanggyo-ro, Yeongtong-gu",Suwon-si,gyeonggi-do,South Korea,105141,3155,BYUNG-CHUL,KIM,Rancomm Technologies Inc.,443-766,,,,
+27409,111293220,"HUNUS Bldg. 8f,93, Baekhyeonro",Bundanggu,seongnamsi,gyeonggido,South Korea,8231,6974300,Jun Hwan,Ko,Cypress Semiconductor,463 825,,SAMSUNG,118985,122232
+27410,307557387,"UniTEST Inc. 27, Gigok-ro, Giheung-gu",,YoungIn-Si,gyeonggi-do,South Korea,82,105031741,Kiseop,Lee,Uni-test,446-930,,unitest,,
+27411,307557387,"27, Gi-gok-ro",Giheung-gu,Yongin-Si,gyeonggi-do,South Korea,82,1050317415,Kiseop,Lee,UniTEST Inc,446-930,,unitest,,
+27412,307557387,"27, Gi-gok-ro",Giheung-gu,Yongin-Si,gyeonggi-do,South Korea,82,105031741,"Kiseop,",Lee,UniTEST Inc,446-930,,unitest,,
+27413,307557387,"27, Gi-gok-ro",Giheung-gu,Yongin-Si,gyeonggi-do,South Korea,82,105031741,"Kiseop,",Lee,UniTEST Inc,446-930,,unitest,,
+27414,519825155,"6F, Shinwon building","10 Banpo-Daero (Seocho-Dong),","Seocho-Gu,",Seoul,South Korea,82,1092895621,Jae eun,Lee,ht,137-927,,,,
+27415,519900267,"603-9, Umyeon-dong",,Seoul,Seocho-gu,South Korea,81,102712698,samsick,kim,FUNC,6766,,,,
+27416,519916360,73,Oesammi-ro 15beon-gil,Osan-Si,gyeonggi-do,South Korea,82,7046334222,LEE,Joong-Gi,SENKO,447-230,,,,
+27417,443748270,"502,verdi tower,72,digital-ro(st)26",,Seoul,Guro3-dong/Guro-gu,South Korea,82,1093469641,jina,kim,Seongsanlab,152-740,,Seongsanlab,,
+27418,520032432,"9th Fl., 330, Yeongdong-daero",Abov,Seoul,Gangnam-Gu,South Korea,+82-2,2194-2103,kyungjun,hyun,abov,135-851,,,,
+27419,520032432,"9th Fl., 330, Yeongdong-daero",Abov,Seoul,Gangnam-Gu,South Korea,+82-2,2194-2103,kyungjun,hyun,abov,135-851,,,,
+27420,520161035,"1101-ho,11F,Ace Techno Tower 8","191-7,Guro-3dong",Seoul,guro-gu,South Korea,82,1042372501,Bongjun,Kim,ntn technology,8380,,,,
+27421,369372130,Room 412 Samwhan HIPEX A 240 Pangyoyeokr,Bundanggu Seongnamsi Gyeonggido Korea,Seongnam Si,Gyeonggi Do,South Korea,822,34723450,Angela,Kim,HB Corporation,463400,,HB Corporation,119294,122565
+27422,368925011,"9-21, Dongtansandan 9-gil, Dongtan-myeon",,Hwaseong,Gyeonggi,South Korea,8231,7181177,Katherine,Nam,STC Corporation,445811,305,CHEMTRONICS,119431,122753
+27423,520481560,"102-1903, 213, Gwiin-ro(hyundae 5th APT)","Dongan-gu, Anyang-si",gyeonggi-do,-,South Korea,8210,2084-8148,Hyeok Sang,Ko,-,14071,,,,
+27424,520455831,"#406, 97, Jungbu-daero 448beon-gil,","Yeongtong-Gu, Suwon-si, Gyeonggi-Do",Suwon-si,gyeonggi-do,South Korea,+82-070,7525-2378,Young-Si,Hwang,Mobicon,443-824,,,,
+27425,520455831,"#406, 97, Jungbu-daero 448beon-gil,","Yeongtong-Gu, Suwon-si, Gyeonggi-Do",Suwon-si,gyeonggi-do,South Korea,+82-070,7525-2378,Young-Si,Hwang,Mobicon,443-824,0,,,
+27426,460899159,"#1302, ACE TECHNO VIII, 11, Digital-ro","33-gil, Guro-gu",Seoul,xx,South Korea,82,7050526204,Kevin,Jeong,MSWAY,152-050,,MOBICON,119555,122887
+27427,214277892,"5412 BI Center, Dong Seoul University,","76, Bokjeong-ro, Sujeong-gu,","Seongnam-Si,",gyeonggi-do,South Korea,10,33689100,Namsu,Mun,J-NAD Inc.,13117,,"J-NAD Co., Inc.",,
+27428,520244839,"Ziha 110-ho, 3-Gonghakkwan","55 Hanyangdaehak-ro, Sangnok-gu",Ansan City,Kyeonggi-do,South Korea,82,1049402028,Baeseok,Lee,Hanyang University,426-791,,,,
+27429,480903614,"9-21, Dongtansandan 9-gil",Dongtan-myeon,Hwaseong-Si,gyeonggi-do,South Korea,82,312901612,Joann,Lee,STC Corporation,18487,,LG Display,,
+27430,520884646,"RM 508, 187-10 Guro-Dong, Guro-Gu",R&D PA&LE Team,Seoul,Seoul,South Korea,82,269090365,Jihye,Seo,Honeywell,8378,,,,
+27431,520884646,"RM 508, 187-10 Guro-Dong, Guro-Gu",R&D PA&LE Team,Seoul,Seoul,South Korea,82,269090365,Jihye,Seo,Honeywell,8378,,,,
+27432,520863733,"505, Kolon science valley 1","43 Digital-ro, Guro-gu",Seoul,Seoul,South Korea,82,1063209250,Edward,Heo,Honeywell Analytics,152729,,,,
+27433,38203935,DA-4307 JUNGANG YUTONG DANJI,GURO,Seoul,Seoul,South Korea,82,266791843,sung ho,kim,core semiconductor,152721,,core semiconductor,,
+27434,516092798,"35, Hyeongje-ro,","Namsa-myeon, Cheoin-gu",Yongin-Si,gyeonggi-do,South Korea,8210,8895,KwanHee,Lee,chemtronics,17118,9238,Chemtronics,119956,123280
+27435,418657543,"#104-804, Lotte Castle Rosee APT.",BangBae-Ro 26 Gil 41,Seocho-gu,Seoul,South Korea,10,3741-3664,Seong-su,Kim,Seong-su Kim,6586,,SK Wire,,
+27436,520291679,31 Songhakjeong-ro Bukbang-myeon,Hongcheon-gun Gangwon-do Korea,Hongcheon,Hongcheon,South Korea,82,1055702527,Woon Taek,Shim,Skymedia,25115,,,,
+27437,521074935,Byoksan Apt. 124-dong 304-ho,"2, Yeonwon-ro 42beon-gil Giheung-gu",Yongin-Si,gyeonggi-do,South Korea,82,1047434857,Kyungmin,Song,MSSELTEK,446938,,,,
+27438,521081222,DreamTree 6th floor,"63, Dongsomun-ro,","Seoul, 02","Seongbuk-gu,",South Korea,8210,92737367,suna,yang,Victony,2832,,,,
+27439,521081222,DreamTree 6th floor,"63, Dongsomun-ro,","Seoul, 02","Seongbuk-gu,",South Korea,8210,92737367,suna,yang,Victony,2832,,,,
+27440,513674872,"401-Ho,Incubate Business Center,YeonSung","Univ.,Yanghwa-ro 37beon-gil, Manan-gu,",ANYANG-SI,Geonggi-do,South Korea,82,1027640579,Dong Sun,Gil,ESONE,14011,,ES ONE,,
+27441,521176833,"7-6, 4-gil,  Samsung1-ro, Hwasung-si",Gyeonggi-do,gyeonggi-do,Hwasung-Si,South Korea,82,313795071,KIM,DONGMYOUNG,seetech,18449,,,,
+27442,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367506,steve,bae,Unotel,463-828,,NEOFECT,,
+27443,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367506,steve,bae,Unotel,463-828,,NEOFECT,,
+27444,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367506,steve,bae,Unotel,463-828,,ICTEK,120135,123481
+27445,521315985,"Sang-ri, Hyeonpung-myeon, Dalseong-gun",E5-502,Daegu,Kyungsangdo,South Korea,82,1050220447,Joontaek,Jung,dgist,711-873,,,,
+27446,521315985,"333, Techno jungang-daero, Hyeonpung-my,",E5-502,Daegu,Kyungsangdo,South Korea,82,1050220447,Joontaek,Jung,dgist,711-873,,,,
+27447,303487800,"8F, Hunus Building,","93, Baekhyeon-ro, Bundang-gu",Seongnam-Si,gyeonggi-do,South Korea,8210,46009865,BK,Nam,Cypress Semiconductor,463825,,Hyundai,120223,123575
+27448,521374719,#1004 Gunpo IT Valley B-dong,"17, 148 Beon-gil, Gosan-ro",Gunpo-Si,gyeonggi-do,South Korea,82,1091739760,woosung,kim,"btcsecu co., ltd",435-833,,,,
+27449,521343002,"3rd FL, NC Soft Building","509, Teheran-ro,Gangnam-gu",Seoul,"KOREA, REPUBLIC OF (SOUTH K.)",South Korea,82,1073085408,Andrew,Seo,Synaptics,135-880,,,,
+27450,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367506,steve,bae,Unotel,463-828,,CALVINLAB,,
+27451,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367506,steve,bae,Unotel,463-828,,CALVINLAB,,
+27452,371915806,Samsung Leaders tower 1411,"286, Beotkkot-ro",Seoul,Geumcheon-gu,South Korea,81,1045336097,kim,jaehun,Techrein,153-790,,Techrein,,
+27453,521585543,"RM 610, 123, Gasan digital 2-ro,",,"geumcheon-gu,",Seoul,South Korea,82,2-64817802,juhyub,lee,IRiS Electric Corporation,153-759,,,,
+27454,375924495,103-604 Sosaewul KCC Switzen,Sosa-gu,Bucheon,kyunggi-do,South Korea,82,1032557086,Sungjin,Chun,home,14700,,Castlesoft,,
+27455,516180237,"06668, 3F, Mozart Bldg, 1515-3,","Seocho-3Dong, Seocho-Gu",Seoul,0,South Korea,822,3470-4711,Sung Soon,Park,"MULTIWAVE CO., LTD",6668,,C&S Link,120387,123742
+27456,517432454,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,7078367500,steve,bae,Unotel,463-828,,CALVINLAB,,
+27457,521955028,"409 West Hall, 152, Jukjeon-ro",Suji-gu,Yongin-Si,gyeonggi-do,South Korea,82,1026360720,Hyeonjae,Ju,Neofect,448-701,,,,
+27458,521540901,"#808, 8F Leaders Building, 42, Jangmi-ro","Bundang-gu, Seongnam-si, Gyeonggi-do",Seongnam,gyeonggi-do,South Korea,82,7078367506,Kiin,Kim,Unotel,13496,,Unotel,,
+27459,521540901,"#808, 8F Leaders Building, 42, Jangmi-ro",Bundang-gu,Seongnam,gyeonggi-do,South Korea,82,7078367506,Kiin,Kim,Unotel,13496,,Unotel,121212,124670
+27460,522554849,landmark-won 1113,"326,  sumogwon-ro",Osan-Si,gyeonggi-do,South Korea,82,107554,SUNKUK,KIM,SDC Micro,12447,3341,,,
+27461,523440632,"1F IDIS Tower, 344 Pangyo-ro, Bundang-gu",,Seongnam,gyeonggi-do,South Korea,82,1047180393,SEJEONG,PARK,"MEDIABRIDGE CO.,LTD.",13493,,,,
+27462,464892061,"#412, Samwhan HIPEX-A, 240,Pangyoyeok-ro","Bundang-gu, Seongnam-si",gyeonggi-do,gyeonggi-do,South Korea,822,34723450,Hugh,Lee,HB Corp,463-400,,CAS,120644,124017
+27463,523754665,"2F,5, Jeongjail-ro 213beon-gil, Bundang,","Seongnam-si, Gyeonggi-do, Korea",Seongnam-Si,gyeonggi-do,South Korea,+82-10,5400-2676,Kwangsik,Jeon,iControls,13556,,,,
+27464,521540901,"#808, 8F Leaders Building, 42, Jangmi-ro","Bundang-gu, Seongnam-si, Gyeonggi-do",Seongnam,gyeonggi-do,South Korea,82,7078367506,Kiin,Kim,Unotel,13496,,Unotel,,
+27465,524130646,gaya Computer town C-107ho gaegum1dong 1,busanjungu,busan jinGu,BUSAN,South Korea,82,1038587956,Taejung,kim,Taesung Humantech,4279,,,,
+27466,524135915,"#605, Gwangyang Doosan Venture Digm B/D.","250, Haguiro,Dongangu",anyangsi,gyeonggido,South Korea,82,1023222512,Jongmyong,Kim,EnvyLogic,431-810,103,,,
+27467,478739416,"CYPRESS, 8F, HUNUS, 93, Backhyeon-ro",Bundang,Seongnam,gyeonggi-do,South Korea,82,316974352,Scott,Heo,cypress,463-825,,ARROW ELECTRONICS KOREA,,
+27468,524323318,Boutique MONACO B-1001,397 Seocho-Daero,Seocho-gu,Seoul,South Korea,82,25256503,SUNG SAM,YOO,Time Axle Inc.,6616,,,,
+27469,523497332,"101-505, Digital Empire 2, 88 Shinwon-ro","Yeongtong-gu, Suwon-si",gyeonggi-do,n/a,South Korea,82108558,3826,Kim,SangGyu,withus,443-734,,,,
+27470,524384080,#101 504-1 GokBanJung-Dong,KwonSun-Gu,suwon,Gyunggi-do,South Korea,82,1026414831,Calvin,Kim,CalvinLab,441-400,,,,
+27471,347468773,"18/F, CENTERPOINT SEOCHO","304 HYORYEONG-RO, SEOCHO-GU",Seoul,Seoul,South Korea,82,226506416,Welch,Han,arrow electronics korea,6720,,"POWER LOGICS CO., LTD.",,
+27472,521540901,"#808, 8F Leaders Building, 42, Jangmi-ro","#808, 8F Leaders Building, 42, Jangmi-ro",Seongnam,gyeonggi-do,South Korea,82,707836506,Kiin,Kim,Unotel,13496,,Unotel,,
+27473,524637593,"#609-1, Bundang BYC Bldg., 367-1","Yatap-dong, Bundang-gu",Seongnam-Si,gyeonggi-do,South Korea,8231,7014528,Jeongpyo,Kong,ntekLogic,13506,,,,
+27474,524922771,377-7 Gajang-dong,,Osan-Si,Gyenggi-do,South Korea,82,1048142715,Jay,Lee,Semicat,447-210,,,,
+27475,513659879,"RM#2407, DAELIM ACROTEL, EONJURO30GIL 13",GANGNAM-GU,Seoul,Seoul,South Korea,82,220578101,Jenny,Woo,J-Tech,6292,,KAON,121059,124510
+27476,496909691,"#808, 8F Leaders Building","42, Jangmi-ro Bundang-gu,","Seongnam-Si,",gyeonggi-do,South Korea,+82-31,703-5191,Tony,Kim,Unotel. Co.Ltd,463-828,7519,Brilliantts,,
+27477,234526886,"227-2,Pongnap-Dong,",,Seoul,Songpa-Gu,South Korea,82,1044672880,park,ho keun,Hoken company,5526,,hoken,,
+27478,512109770,"A-203, SK Twintech Tower,","Gasan-Dong, Geumcheon-gu",Seoul,none,South Korea,82,1033088129,Yong Hun,Choi,"Clips tech Co., Ltd.",8589,,Clips Tech/Korea,,
+27479,368538133,"LC B/D, #39 Yangsan-Gil, Gwanak-Gu",,Seoul,Seoul,South Korea,82,2-876-7100,Nick,Kim,LC Electronic,8846,,LC MRO,,
+27480,517688608,"3F, Mozart BLDG, 104, Myeong dal-ro,","Seocho-gu, Seoul, Korea",Seoul,South Korea,South Korea,8223470,4709,BH,Cho,MULTIWAVE,137-871,,Solution IT,121181,124639
+27481,371915806,Samsung Leaders tower 1411,,Seoul,Geumcheon-gu,South Korea,81,1045336097,kim,jaehun,Techrein,153-790,,Techrein,,
+27482,76642987,"8FL, 93, Baekhyeon-ro, Bundang-gu",,Seongnam-Si,gyeonggi-do,South Korea,82,1034753397,Ahn,Jae Bum,cypress,463825,,N/A,121295,124750
+27483,526084375,"1-9, Myeongnyunchogyo-gil","Wonju-si, Gangwon-do, South Korea",Won Ju,Gangwon-do,South Korea,82,1025694945,Junyoung,Bang,INHA Univ,220931,,,,
+27484,200935278,"129-12, Gyeonggi-daero 632beon-gil",,Osan-Si,gyeonggi-do,South Korea,82,1037487654,DooByeong,Park,TechStar,18112,,t.o.s,,
+27485,525666678,"HUNUS Bldg. 8F, 93, Baekhyeon-ro",Bundang-gu,Seongnam-Si,Kyeonggi-do,South Korea,82,316974340,Ryan,Lee,Cypress Korea,13595,34340,Ryan,121487,124964
+27486,369378877,seoul,,Seoul,Seoul,South Korea,82,1037986525,Catherine,Ahn,arrow electronics korea,6720,,GNSD,,
+27487,369378877,"18/F, CENTERPOINT SEOCHO, 304 HYORYEONG-",,Seoul,Seoul,South Korea,82,1037986525,Catherine,Ahn,arrow electronics korea,6720,,Techrein,,
+27488,6462661,"8FL, Cypress","93, Baekhyeon-ro, Bundang-gu",Seongnam-Si,gyeonggi-do,South Korea,82,1050166079,Chang-kyoung,Kim,cypress,463825,,Chang-kyoung Kim,125142,129044
+27489,525666678,"HUNUS Bldg. 8F, 93, Baekhyeon-ro",Bundang-gu,Seongnam-Si,Kyeonggi-do,South Korea,82,316974300,Changhee(Ryan),Lee,Cypress Korea,13595,34340,Samsung PC,121651,125148
+27490,526686695,#53 Maecheonro 17Gil,Bukgu,Daegu,South Korea,South Korea,8253,3121075,Chloe,Park,SESUNG CO LTD,41485,222,,,
+27491,380346969,"HUNUS Bldg. 8F, 22-2, Baekhyeon-ro,","Bundang-gu,",Seongnam-Si,gyeonggi-do,South Korea,82,1044809233,Jenna,Jo,Cypress Semiconductor,463-825,,N/A,121708,125222
+27492,328249092,102 Suamville 895-6,Deachi4-dong Gangnam-goo,Seoul,n/a,South Korea,+82-2,7041263906,Bong Keun,Choi,dRGB,135-840,,con tech,,
+27493,14876098,12th Floor  KBS Media Center,Maebongsan-ro 45 (Sangam-dong)  Mapo-gu,Seoul,Seoul,South Korea,822,62776331,Nicky,Lim,Avnet Korea,3909,,Avnet Korea,122114,125632
+27494,158492360,Uniquest Bldg 314 hwangsaeulro,Bundanggu,SeongNam City,Gyeonggi,South Korea,82,1099007441,Jawon,Yu,Uniquest Co Ltd,463824,,Virous Korea,122004,125542
+27495,158492360,Uniquest Bldg 314 hwangsaeulro,Bundanggu,SeongNam City,Gyeonggi,South Korea,82,1099007441,Jawon,Yu,Uniquest Co Ltd,463824,,Uniquest Co Ltd,,
+27496,369378877,"18/F, CENTERPOINT SEOCHO, 304 HYORYEONG",seoul,Seoul,APAC,South Korea,82,226509712,Catherine(Irene),Ahn,arrow electronics korea,6720,9741,JISTRO,121801,125314
+27497,525291724,"Pyeongchon-dong, Dongan-gu, Anyang-si","Doosan Venture Digm BLDG, FRTEK 1013",ANYANG-SI,gyeonggi-do,South Korea,82,1099957229,LEE,YOUBIN,FRTEK,KS009,,,,
+27498,525291724,"Pyeongchon-dong, Dongan-gu, Anyang-si","Doosan Venture Digm BLDG, FRTEK 1013",ANYANG-SI,gyeonggi-do,South Korea,82,1099957229,LEE,YOUBIN,FRTEK,KS009,,,,
+27499,527441248,"1809, HYUNDAI DREAM TOWER, 923-14,","MOK-DONG,YANGCHUN-GU",Seoul,Seoul,South Korea,82,1063592021,konan,yang,TA whales,158-718,,,,
+27500,527476213,"Rm425, Hyundai Venture-Vill","80, Dolma-ro, Bundang-gu",Seongnam-Si,gyeonggi-do,South Korea,82,1033088129,June,Ra,"Techsense Co.,Ltd.",13627,,,,
+27501,527702451,(Poonglim I-won Plus) #B-2424,"170, Seohyeon-ro, Bundang-gu,Seongnam-si",gyeonggi-do,Republic of Korea,South Korea,8231,80164033,jinho,park,NFACTORI,13590,,,,
+27502,312933362,Daejeon,Daejeon,Daejeon,Daejeon,South Korea,82,1087354651,Danny,Chun,STR,81198,,hanoi,,
+27503,526707190,"103-1302 (Shin-dong,Digital Empire 2)","88, Shinwon-ro, Yeongtong-gu,",suwon,gyeonggi-do,South Korea,82,313069130,YONGTE,SUNG,UBICO,443-734,,,,
+27504,520300682,"9-21, Dongtansandan 9-gil, Dongtan-myeon",,Hwaseong,Gyeonggi,South Korea,8231,2901500,Katherine,Nam,STC Corporation,18487,602,LG IT,122376,125929
+27505,6138349,"1112, Seohae-Ro, Paltan-Myeon,",,Hwaseong-City,gyeonggi-do,South Korea,82,31350255,Seung-Kook,Han,"YUDO CO., LTD.",445-915,,"YUDO CO., LTD.",122222,125761
+27506,528038441,218 gajeong-ro yuseong-gu,wearable computing research Lab,Daejeon,chungnam,South Korea,82,428606778,baeseon,kim,ETRI,34129,,,,
+27507,528038441,218 gajeong-ro yuseong-gu,wearable computing research lab,Daejeon,chungnam,South Korea,82,428606778,baesun,kim,ETRI,34129,,,,
+27508,512151870,2F Gunwoong Bldg109 Gwanak-ro,"Gwanak-gu, Seoul, Korea",Seoul,GwanAk-gu,South Korea,82,1025329954,Jo,Yong jun,conspin solution,8833,,conspin solution,,
+27509,528201350,"B-704 Samwhan Hipex, 230, Pangyoyeok-ro,","Bundang-gu, Seongnam-si, Gyeonggi-do,",Seongnam-Si,gyeonggi-do,South Korea,+82 31,7162636,chun sup,kim,quber,13493,,,,
+27510,478739400,"8th floor, Hunus building, #22-2,","Sunae-dong, Bundang-gu",Seongnam-Si,gyeonggi-do,South Korea,82,1091600248,Hwankuk,Cho,Cypress Korea,463-825,,Hyundai-Kia Motor Company,122302,125865
+27511,528292916,"A-#808, Daesung D-POLIS, 606,","Seobusaet-gil, Geumcheon-gu",Seoul,Seoul,South Korea,82,7041011056,SangYoung,Kwak,IVIEW,153-719,,,,
+27512,299484826,IS BIZ TOWER SUIT 1408,26 YANGPYEONG-RO 21-GIL YEONGDEUNGOP-GU,Seoul,Republic of Korea,South Korea,82,1094601052,juhwan,kim,REMEDI INC.,7207,,seongsan,,
+27513,381510399,"8, Bokjeong-ro 42beon-gil","Sujeong-gu, Seongnam-si",gyeonggi-do,gyeonggi-do,South Korea,+82-10,2627-5352,Dohan,Jeon,STC,13118,,STC,,
+27514,381510399,"8, Bokjeong-ro 42beon-gil","Sujeong-gu, Seongnam-si",gyeonggi-do,"Gyeonggi-Do, KOREA",South Korea,+82-10,2627-5352,Dohan,Jeon,STC,13118,,STC,,
+27515,369378877,"18F, CenterPoint SeoCho, 304 HyoRyeong-R",,Seoul,Seoul,South Korea,82,1037986525,Catherine,Ahn,arrow electronics korea,6720,,Arrow electronics korea,124539,128389
+27516,528596254,"170, Seongsanpaechong-ro, Seongsan-gu",경남 창원시 성산구 가음정동 LG1공장(tel 010 6277 5748),changwon-si,Gyeongsangnam-do,South Korea,82,1062775748,Hyunki,Kim,LG Electronics,51533,0,,,
+27517,528596254,"170, Seongsanpaechong-ro, Seongsan-gu",경남 창원시 성산구 가음정동 LG1공장(tel 010 6277 5748),changwon-si,Gyeongsangnam-do,South Korea,82,1062775748,Hyunki,Kim,LG Electronics,51533,0,,,
+27518,518261142,"#802, 254-5, Seohyun plaza, Seohyun-dong",Bundang-gu,gyeonggi-do,korea,South Korea,82,1082667205,Mun seok,Choi,ETS,112334,,ETS,,
+27519,520361938,"12th FL, KBS Media center","45, Maebongsan ro, Mapo gu",Seoul,Seoul,South Korea,822,62776346,Aram,Kim,Avnet,3909,,Avnet Korea,122472,126038
+27520,528376541,"ENGINEERING BLDG 3, 418-1 (DCS LAB)","55 HANYANGDAEHAK-RO, SANGNOK-GU",Ansan-si,gyeonggido,South Korea,82,1034583409,SEUNG HO,NOH,Hanyang University,15588,,,,
+27521,528596426,"Rm307 201-dong, Bucheon Techno Park","388 Songnaedae-ro, Wonmi-gu",Bucheon-Si,gyeonggi-do,South Korea,8232,3288742,Kim,Peter,"Digitech Global Co., Ltd.",14502,,,122491,126059
+27522,27163840,"Chungcheongbuk-do Seowon-gu, Cheongju-si",Gaesin-dong Chungbuk National Univ. E10동,CheongJu,chungbuk,South Korea,82,1052161984,Hossam,Hassan,msis,362-763,,NTI,,
+27523,527398842,"232 chung-gu office, soonae-dong",bundang,Seongnam,kyunggi,South Korea,82,1099252707,yujin,shim,ccm co. ltd,13595,,,,
+27524,525482950,"5th Fl, Yemizi bldg. 31 258beon-gil","Hwangseul-ro, Bundangu",Sungnam,n/a,South Korea,8231,786-8800,Raymond,Chae,Future Electronics,463-825,8853,Dongil Tech,127973,132168
+27525,528975298,"406-1603, 160, Doum 3-ro,",,Sejong-si,Sejong-si,South Korea,82,1088266671,KIM,NAMWOO,VITTECH KOREA,30064,,,,
+27526,24255343,"12thFloor, KBS Media Center","Maebongsan-ro 45 (Sangam-dong, Mapo-gu",Seoul,Seoul,South Korea,822,6277-6351,David,Suh,Avnet,3909,,Avnet Korea,,
+27527,529193259,89-15 Morakro,Hanjin Rosehill APT 107-501,Uiwang,kyunggido,South Korea,82,1099239806,Jungeol,Chun,KETI,16045,,,,
+27528,460807867,"#1302, Ace Techno Tower VIII,","11, Digital-ro 33-gil, Guro-gu",Seoul,korea,South Korea,822,5428181,Bryan,Lee,MSWAY,8380,,Daesung Electric,,
+27529,171767040,No 401 1042-14 KWONSUN-DONG KWONSUN-GU,,Suwon-si,kyounggi-do,South Korea,82,105517576,JISU,CHOI,eztek,441-324,,eztek,,
+27530,529449390,"#710, Changup boyuk Center,","Kyonggi Univ., 154-42, Gwangkyosan-ro",suwon,KyongGi-Do,South Korea,822,69286878,Dong Wook,Lim,"ENLINK CO.,LTD.",443-760,,,,
+27531,529062468,"#2804, U-tower Knowledge industry Center","120, Heungdeokjungang-ro, Giheung-gu",youngin,Gyeonggi,South Korea,82,312162536,Tagyun,Jung,KMT global,446-982,,,,
+27532,368538133,"#39 Yangsan-Gil, Gwanak-Gu","LC B/D,",Gwanak-Gu,Seoul,South Korea,822,8767100,nick,kim,LC ELELCTRONIC,151865,,LC MRO,,
+27533,529784722,"601,602 Ho,A-Dong, SK Twin tech tower,",345-9,Seoul,Seoul,South Korea,82,1026427804,YoingJung,Kim,jie,153-023,,,,
+27534,529802798,"46, Samsung 1-ro 5-gil,",,Hwaseong-Si,gyeonggi-do,South Korea,82,313703145,MinAh,Park,"GIGALANE Co.,Ltd.",18449,,,,
+27535,402721417,"12 th Floor, 1214-2, obiztower, 126","Beolmal-ro, Dongan-gu",ANYANG-SI,gyeonggi-do,South Korea,82-10,511529,Jongsik,Na,ANYDATA,14057,42,ANYDATA,123841,127509
+27536,450983088,"12th floor, 1214-2, O'BIZTOWER,","126, Beolmal-ro, Dongan-gu",ANYANG-SI,gyeonggi-do,South Korea,82,1023067576,JUNG KEUN,KIM,ROOTLINK.LTD,82,,ROOTLINK.LTD,,
+27537,530168498,"168, Suchul-daero, Gumi-si","Gyeongsangbuk-do, 39368, Korea",gumi,Gyeongsangbuk-Do,South Korea,82,1041106191,Woo,Jeong Hun,LG Electronics,39368,,,,
+27538,478739274,"HUNUS BLDG. 8F, 93, Baekhyeon-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,1077687090,Joon,Kim,Cypress Korea,463-825,,LG,123943,127601
+27539,526226497,1908 guro-sungyung officetel,3 gonwon-ro guro-gu,Seoul,Seoul,South Korea,8210,37848399,INGU,BAE,GIGABOX CORP,8298,,,,
+27540,530470358,"10F, A-dong, U-Space 2","670, Daewangpangyo-ro, Bundang-gu",Seongnam,gyeonggi-do,South Korea,82,1029147153,Seongjin,Kim,"BrilliantTS Co., Ltd.",13494,,,,
+27541,530480237,"280, Gwangpyeong-ro, Gangnam-gu",#1220,Seoul,SOUTH OF KOREA,South Korea,82,234539914,sookyoung,jeoung,"truesys co., ltd.",6367,,,,
+27542,530660697,"#1-108, 42-10, Taejanggongdan-gil",,wonju,Gangwon,South Korea,82,337482704,Junghoon,Lee,"MESH Co., Ltd.",26311,,,,
+27543,525482950,"5th Fl, Yemizi bldg. 31 258beon-gil",,Sungnam,n/a,South Korea,8231,786-8800,Raymond,Chae,Future Electronics,463-825,8853,HD Pro,,
+27544,528724983,"1-603, 205, Nonhyeon-ro, Gangnam-gu",,Seoul,Seoul,South Korea,10,24237190,JueHyun,Lee,ASU,135503,,,,
+27545,530510526,"407 , Engineering Building 4","Hanyangdaehak-ro-55,Sangnok-gu, Ansan-si",gyeonggi-do,South Korea,South Korea,82,104067846,kwang je,jo,Nestfield,15588,,,,
+27546,526263888,"103-1302 (Shin-Dong, Digital Empire 2)","88, Shinwon-ro, Yeongtong-gu,",suwon,gyeonggi-do,South Korea,+82-031,306-9130,YOUNGTE,SUNG,"UBICO Co.,Ltd",16681,,,,
+27547,530801022,727-13 WonsiDong DanwonGu,,Ansan,gyeonggido,South Korea,82,315082022,KeunYoung,YOU,ilshin,425-851,,,,
+27548,520073205,8F Hunus,Suane,Seongnam,seongnam,South Korea,82,463-2222,juhe,mun,cypress,463-825,,test,,
+27549,530960167,"4F, 308,",,Incheon,"Bupyeongbuk-ro, Bupyeong-gu",South Korea,82,325059300,key,play,"Keyplay Co., ltd",21316,,,,
+27550,531089593,"305-1 NCT, SamsungTechnopark","471 Beonji, Woncheon-dong, Yeongtong-gu",Suwon-si,gyeonggi-do,South Korea,82,1047813781,Kyuwon,Kyung,NCTech,443-740,,,,
+27551,531336018,"603, 240, Pangyoyeok-ro, Bundang-gu",,Seongnam-Si,gyeonggi-do,South Korea,82,1054535067,Ryong,Hwang,LOON LAB,13493,,,,
+27552,527773788,"Fl5, Ansan-Bldg. #773-4 Yeoksam-Dong",Gangnam-Gu,Seoul,South Korea,South Korea,82,1097652233,InSung,Jung,arkian,135-918,,,,
+27553,224140228,"5F Ansan-Bldg., 773-4 Yeoksam-Dong","Gangnam-Gu, Seoul, Korea",Seoul,"Seoul, Korea",South Korea,82,1097652233,InSung,Jung,arkian,KS013,,Samji electronic,124946,128802
+27554,528293940,"B-#1904-2, Daesung D-POLIS","606, Seobusaet-gil, Geumcheon-gu",Seoul,Seoul,South Korea,82,106217046,Jeong,hyoenseok,IVIEW,KS013,,,,
+27555,531622982,"Rm #315, ITC Building(N1), KAIST",373-1 Guseong-Dong,Yuseong-gu,Daejeon,South Korea,82,1099166641,JUNHO,SON,CISS,34141,,,,
+27556,531655813,"72, Nocheom-gil, Ilsandong-gu",,Goyang-si,gyeonggi-do,South Korea,86,1040478196,YUNYOUNG,CHO,ANDAMIRO,10432,,,,
+27557,531665720,Sujigu Shinbong2ro 112-602,,yonginsi,gyeonggido,South Korea,82,1029772027,YeongHeon,Kim,KOREA,16817,,,,
+27558,525482950,"5th Fl, Yemizi bldg. 31 258beon-gil","Hwangseul-ro, Bundangu",Sungnam,n/a,South Korea,8231,786-8800,Raymond,Chae,Future Electronics,463-825,8853,Maxon CIC,125107,128989
+27559,531133393,#504-2,"38-9, Digital-ro 31-gil, Guro-gu",Seoul,Seoul,South Korea,82,162463345,Hyunkyu,Sim,IoTex,8376,,,,
+27560,530514702,"6F, Uniquest Bldg.","314, Hawangsaeul-Ro, Bundang-Gu",Seongnam,gyeonggi-do,South Korea,82,1087498091,Kang,Lee,Uniquest,13591,,Uniquest,125342,129222
+27561,532186432,"South Korea, Gyeonggi-do, Hwaseong city,","Dongtan-myeon,Dongtansandan 7gil, 98-17",Hwaseong city,gyeonggi-do,South Korea,+82-10,82514687,Tonesystem,Tonesystem,Tonesystem,18487,,,,
+27562,532186432,"98-17, Dongtansandan7-gil, Dongtan-myeon",,Hwaseong-City,gyeonggi-do,South Korea,8210,82514687,Tonesystem,tonesystem,Tonesystem,18487,,,,
+27563,517688723,"3F, Mozart Bldg., 104, Myeong dal-ro,",Seocho-Gu,Seoul,korea,South Korea,82,234704720,JB,KWON,MULTIWAVE,6668,,SEYEONTECH,127716,131914
+27564,532634427,Yeongdong-daero,330 8F,Seoul,Gangnam-Gu,South Korea,10,90494092,Song,Jonghwa,abov,6177,,,,
+27565,529449390,"#710, Changup boyuk Center, Kyonggi Univ","154-42, Gwangkyosan-ro",suwon,kyunggi,South Korea,8210,43190086,Dong-woo,Lim,"ENLINK CO.,LTD.",443-760,,,,
+27566,532957874,dfg,dg,fgd,dgf,South Korea,82 01,4752,hong ju,kang,Dongyang,dfg,5502,,,
+27567,519827298,"#205-1, GUMIBIC, 144, 1gongdan-ro",,Gumi-si,Gyeongsangbuk-Do,South Korea,82,109271364,Shon,ByungChan,D-Triple,39374,5,,,
+27568,533017190,"Expotel#1106, 44, Dunsandaero 117beo-gil",Seo-gu,Daejeon,Daejeon,South Korea,82,424825030,Kevin,Kwon,"TRADECORE CO., LTD.",35203,,,,
+27569,127783457,7th Fl. Uniquest bldg. 314,"Hwangsaeul-ro, Bundang-Gu",Seongnam,Gyeonggi,South Korea,82,317769877,Joseph,Kim,Uniquest co. ltd.,13591,,Uniquest,125858,129848
+27570,533347540,",Anam-ro Seongbuk-gu Seoul, South Korea","313, Robot Convergence building",Seoul,Seoul,South Korea,82,1085936378,MEE LAN,HAN,Korea University,136-713,,,,
+27571,521673930,"416,Maetan-3Dong",Yeongtong-gu,SUWON-City,gyeonggi-do,South Korea,82,1090696177,Jung Hoon,Kwon,Samsung ELectronics,443-742,,,,
+27572,533720733,"35, Pangyo-ro 255beon-gil, Bundang-gu",B-7F,Seongnam-Si,gyeonggi-do,South Korea,82,1088562885,Aiden,Kim,a,13486,,,,
+27573,533720240,"Songpa-Gu, Seoul",1st 90-12 Ogeum-dong,Seoul,korea,South Korea,82,1089503051,Dong yoon,lee,goldengateinc,KS013,,,,
+27574,533852982,"222, Eunhaeng-ro, Siheung-si Gyeonggi-do",Woosung Apts 102-1801,SIHEUNG-SI,gyeonggi-do,South Korea,82,1052571173,KIM,Mu-Sung,MU,14908,,,,
+27575,534123908,"207, NEW HONGIK BUILDING","2323, SUINRO",SIHEUNG CITY,KyungGi Province,South Korea,82108770,7357,GRACE,KO,"SEMILINK CO., LTD",14984,,,,
+27576,534123908,"207, NEW HONGIK BUILDING","2323, SUINRO",SIHEUNG CITY,KyungGi Province,South Korea,82108770,7357,GRACE,KO,"SEMILINK CO., LTD",14984,,,126312,130313
+27577,519025297,"#808, 8F Leaders Building, 42, Jangmi-ro","Bundang-gu, Seongnam-si, Gyeonggi-do",Seongnam,gyeonggi-do,South Korea,82,7078367506,Kiin,Kim,Unotel,463-828,,TIDE,127036,131213
+27578,337002385,1601 CHARMANT SWEET 280 SIMINDAERO,DONGAN-GU,ANYANG-SI,Gyunggi-do,South Korea,8231,3862588,kwang kyung,lim,"DOEUN CO.,LTD",14066,,"DOEUN CO.,LTD.",,
+27579,337002385,1601 CHARMANT SWEET 280 SIMINDAERO,DONGAN-GU,ANYANG-SI,Gyunggi-do,South Korea,82,313862581,kwangkyung,lim,"DOEUN CO.,LTD.",14066,,"DOEUN CO.,LTD.",,
+27580,337002385,1601 CHARMANT SWEET 280 SIMINDAERO,DONGAN-GU,ANYANG-SI,Gyunggi-do,South Korea,8231,3862581,kwangkyung,lim,"DOEUN CO.,LTD.",14066,,"DOEUN CO.,LTD.",126336,130382
+27581,510721221,"#2038, 280, Gwangpyeong-ro",,gangnam-gu,Seoul,South Korea,82,1062357014,Jun-Beom,Yoo,"ACX. CO., Ltd",6367,,ACX,,
+27582,534219855,Hyundae Hillstate APT. 117-dong 103-ho,"Youngtong-gu, Meatan-1-dong",suwon,Gyunggi-do,South Korea,82,1037456987,YoungJung,Yun,sec,16532,,,,
+27583,363893810,"HUNUS Bldg.3F,93,Baekhyeon-ro","Bundang-gu,Seongnam-si",kyunggi-do,korea,South Korea,82,7086758031,Jisoo,Kim,cypress,463-825,,Samsung,126540,130585
+27584,534261056,"312, 5, Yanghyun-ro 405beon-gil",Jungwon-gu,Seongnam-Si,gyeonggi-do,South Korea,+82 10,9358-9960,Seongho,Choo,"Wareport, Inc.",13439,,,,
+27585,534261056,"312, 5, Yanghyeon-ro 405beon-gil",Jungwon-gu,Seongnam-Si,gyeonggi-do,South Korea,+82 10,9358-9960,Seongho,Choo,"Wareport, Inc.",13439,,,,
+27586,534821758,Dept. Mech. Sys. Design Eng. Frontier904,"232 Gongneung-ro,",Nowon-gu,Seoul,South Korea,8210,92260136,Chibum,Lee,Seoul Natl. Univ. of Sci&Tech,1811,,,,
+27587,305510417,CHUNUI TECHNO PARK 102-1202,WONMI-GU CHUNUI-DONG,BUCHE-SI,gyeonggi-do,South Korea,3282,7140222,JINHA,PARK,Daihyun engineering,420-857,,Daihyun engineering,,
+27588,530011432,"8FL, 93, Baekhyeon-ro, Bundang-gu",,Seongnam-Si,gyeonggi-do,South Korea,81,1031377182,Eunchong,Park,cypress,463825,,N/A,126638,130697
+27589,534922894,"22F A-03, R3 Building,","Samsung Electronics416, Maetan3 dong,",Suwon-si,asia,South Korea,82,1063626610,Kim,Minjun,Samsung ELectronics,16677,,,,
+27590,42120292,3F HUNUS BLDG 22 2 SUNAEDONG,Bundanggu,Seongnam Si,kyunggi,South Korea,8270,86758053,Susan,Lee,Cypress Semiconductor,13595,,Cypress Semiconductor,126692,130762
+27591,531089757,"Rm#507, Samhwan Hipex B dong","Sam Pyeong-dong, 230,  Bundang-gu",Seongnam-Si,gyeonggi-do,South Korea,82,1064159644,Sang Hun,Baek,simcom,13493,,,,
+27592,534123908,"207, NEW HONGIK BUILDING","2323, SUINRO",SIHEUNG CITY,KyungGi Province,South Korea,82108770,7357,GRACE,ko,"SEMILINK CO., LTD",14984,,,126741,130843
+27593,534123908,"207, NEW HONGIK BUILDING","2323, SUINRO",SIHEUNG CITY,KyungGi Province,South Korea,82108770,7357,GRACE,ko,"SEMILINK CO., LTD",14984,,,126742,130844
+27594,534123908,"207, NEW HONGIK BUILDING","2323, SUINRO",SIHEUNG CITY,KyungGi Province,South Korea,82108770,7357,GRACE,ko,"SEMILINK CO., LTD",14984,,,126775,130878
+27595,531133393,#503-2,"38, Digital-ro 29-gil, Guro-gu",Seoul,Seoul,South Korea,82,1062463345,Hyunkyu,Sim,IoTex,8376,,,,
+27596,535648871,"469, Ogeum-ro, Songpa-gu",,Seoul,Seoul,South Korea,822,22700760,SJ,LEE,"TAE KYUNG SEMICOM CO.,LTD.",5744,,,,
+27597,525482950,"5th Fl, Yemizi bldg. 31 258beon-gil","Hwangseul-ro, Bundangu",Sungnam,n/a,South Korea,8231,786-8800,Raymond,Chae,Future Electronics,463-825,8853,HD Pro,,
+27598,415297724,Gyeongnam Anusvill apt 111dong-1101 ho,"30,Opaesan-ro 30-gil",Seoul,Gangbuk-gu,South Korea,10,28600226,seung uk,kim,private,1234,,private group,,
+27599,216711107,"102-716, Hyundai The Loft, 536-2,","Bupyeong-1Dong, Bupyeong-Gu",Inchoen,Incheon,South Korea,82,325064367,Julia,Choi,LIVAR,21404,,LIVAR,,
+27600,361485673,"Samsung Leaders Tower 1411,","286, beotkkot-ro, Geumcheon-gu",Seoul,Seoul,South Korea,82,1031388737,Sunghun,Noh,Techrein,KS013,,Techrein,,
+27601,532002397,"UNIQUEST BUILDING 7F, 314, Hwangsaeul-ro","Bundang-gu, Seongnam-si",gyeonggi-do,gyeonggi-do,South Korea,+82-10,10/1/2627,Glenn,Jeon,Uniquest,13591,5352,HuBDIC,,
+27602,461411084,"Uniquest building, 314, Hwangsaeul-ro",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,317089988,Jace,Oh,Uniquest / AXIOS,463-824,,GNSD,127107,131287
+27603,536118992,"Room 7-409, University of Ulsan","Daehak-ro 93, Namgu",Ulsan,Ulsan,South Korea,82,1048354872,Dam,Hung,University of Ulsan,44610,,,,
+27604,536157462,"5F, 82 Naruteo-Ro",Seocho-Gu,Seoul,Seoul,South Korea,82,1087851802,TONY,BAIK,nthing,137-903,,,,
+27605,536049399,"62, Kyungheedae-ro 3-gil, Dongdaemun-gu,",,Seoul,Seoul,South Korea,82,1087029207,You Jeong,Jeong,Kyung Hee University,KS013,,,,
+27606,533005924,AAA,AAA,Seoul,Seoul,South Korea,8210,77451115,PILHOEN,CHOI,GEMMATECH,1110-111,,,,
+27607,265923081,"#4210, Na-dong, 15, Gyeongin-ro 53-gil,",Guro-gu,Seoul,SE,South Korea,822,26136020,kwangcheol,Min,"CO & TECH INT. CO., LTD.",8217,,"CO & TECH INT.CO., LTD.",,
+27608,536494265,"204 BI Center(11B/D), Munseong College,","91, Chunghon-ro, Uichang-gu",changwon-si,Gyeongnam,South Korea,8255,2652456,SeongHo,Kang,"SM Digital Co.,Ltd",641-771,,,,
+27609,536607439,"6F, C's Tower, 58, Pangyo-ro 255beon-gil",,Seongnam-Si,gyeonggi-do,South Korea,82,1048109031,SeungBum,Lee,"NAOPLUS Co.,Ltd",13486,,,,
+27610,65323066,"Hunus Bldg, 3F, 93, Baekhyeon-ro,","Bundang-gu,","Seongnam-Si,",gyeonggi-do,South Korea,82,1048604283,Jake (Seung il),Moon,Cypress Korea,463-825,,Samsung PC/HA,127470,131669
+27611,536162545,"HUNUS bldg 3f, Baekhyun-ro 93,","Bundang-gu, Seongnam-Si",Seongnam,Gyunggi-do,South Korea,82,316974300,Blade,Cho,Cypress Korea,13595,,Samsung,127542,131771
+27612,537423539,"7F, ARION Bldg, 24, Simin-daero 327","Dongan-gu, Anyang-si, Gyeonggi-do, Korea",Anyang,gyeonggi-do,South Korea,8210,48504817,CHOI,EUNJUNG,arion,14055,,,,
+27613,532634427,Yeongdong-daero,330 8F,Seoul,Yeongdong-daero 330 8F,South Korea,82,221932229,Song,Jonghwa,abov,6177,,,,
+27614,259045696,"6F, Uniquest Bldg.","314, Hawangsaeul-Ro, Bundang-Gu",Seongnam,gyeonggi-do,South Korea,82,1087498091,Kang,Lee,Uniquest,13591,,Uniquest,,
+27615,537423539,"7F, ARION Bldg, 24, Simin-daero 327","Dongan-gu, Anyang-si, Gyeonggi-do, Korea",Anyang,gyeonggi-do,South Korea,82,1048504817,Choi,Eunjung,arion,14055,,,,
+27616,538450227,"#A-107,29,gonghang daero 61-gil,",,Seoul,Gangseo-gu,South Korea,82,1098520113,jiyeon,kang,8cups Inc.,7563,,,,
+27617,520224208,"#502, Ace Pyeongchon Tower,","Gwanyang-dong,361Simin-daero, Anyang-si",gyeonggi-do,korea,South Korea,82,313458887,sungmin,park,Jistro Inc,14057,,,,
+27618,538798067,"12-26, Simindaero327beongil, Dongan-gu",,ANYANG-SI,gyeonggi-do,South Korea,82,1036162173,Rssell,Kook,Neoseom ltd,14055,,,,
+27619,253116692,"Bundang-gu, Hwangsaeul-ro 234",Bundang Trapalace 644,Seongnam-Si,gyeonggi-do,South Korea,82,1026790661,Ki Jong,Lee,UMG Ltd.,13595,,UMG/R&D Center,,
+27620,374759768,5Fl. Ansan-Bdlg.,"331, Eonju-Ro, Gangnam-Gu",Seoul,Seoul,South Korea,82,25639800,HyunJeong,Choi,arkian,6226,,arkian,128150,132388
+27621,539114353,ROOM 1015,BANPODAERO14GIL 71,SEOUL SEOCHO-GU,Seoul,South Korea,82,1071281342,Young Gyun,Ban,Neurocontrols,6651,,,,
+27622,538964437,"RM2407, DAELIM ACROTEL, EONJURO 30GIL 13","GANGNAM-GU, SEOUL KOREA",Seoul,Seoul,South Korea,82,1030362504,Lia,Kim,J-technology,6292,,KAON,128276,132502
+27623,539509103,Sin-Banpo Hanshin A.P.T  320-701,Sucho-Gu Naruteo-Ro 4Gil,Seoul,Korea Seocho-Gu,South Korea,82,10998047,Jagoun,Koo,GoodPDiT,6523,,,,
+27624,539509103,Sin-Banpo Hanshin APT  320-701,Sucho-Gu Naruteo-Ro 4Gil,Seoul,Korea Seocho-Gu,South Korea,82,1099806147,Jagoun,Koo,GoodPDiT,6523,,,,
+27625,539542428,128-5,"NambukRo, Junggu.",Incheon,Incheon,South Korea,82,1033692738,Changi,Bnag,Greentime Inc.,22384,,,,
+27626,539549346,"#4-106, SHIHEUNG DAERO 97,",GEUMCHEONGU,Seoul,Seoul,South Korea,82,2-805-0530,MyungWook,Moh,SHINSUNG MACHINE TOOLS,8639,,,128348,132552
+27627,478739167,"HUNUS bldg. 3F, 93 Baekhyeon-ro",,Seongnam-Si,gyeonggi-do,South Korea,82,1029738146,Hong Chul,Shin,cypress,463 825,,LG,128361,132589
+27628,39802659,5F ANSAN BLDG,"331, EONJU-RO, KANGNAM-GU",Seoul,Seoul,South Korea,82,25639800,ARKIAN,SALES,arkian,6226,,ARKIAN,128410,132618
+27629,539891332,"#1510, Geumkang Penterium IT Tower,","A-Tower, 282, Hagui-ro, Dongan-gu,","Anyang-si,",gyeonggi-do,South Korea,822,26710061,jinhyun,PARK,TACIC CO LTD,14056,,,,
+27630,540111159,211 Naeanae Palace,"68 Heungan-daero 94Beon-gil, Dongan-gu",Anyang,gyeonggi-do,South Korea,82,313815758,Eun-kyoung,Yu,KOREA,14120,,,,
+27631,540136999,"3F 1801, Hoguk-ro, Deogyang-gu",,Goyang-si,gyeonggi-do,South Korea,82,1050919252,jiwoo,bong,"TTM Industries Co., LTD.",10270,,,,
+27632,540311596,"#811, Sicox Tower, 484, Dunchon-daero",jungwon-gu,Sengnam-SI,Gyeongi-do,South Korea,82,1092047573,woon,jung,ValuePlus,13229,,,,
+27633,540314632,B-3011 Intellige2 177,Jeongjailro Bungdanggu,seongnamsi,gyeonggido,South Korea,8231,7199426,HY,KIM,JESTEK Co LTD,13557,0,,128683,132952
+27634,540435249,"132 Donghwagongdan-ro, Munmak-eup",,Wonju-si,Gangwon-do,South Korea,82,1026944060,Sang hun,HAN,MEDIGATE Inc.,26365,,,,
+27635,525293221,"20F, CenterPoint SeoCho, 304 Hyoryeong-r","o Seocho-gu, Seoul, Korea",Seoul,Seoul,South Korea,82,22357853,Jay,Hur,EXCEL TECH INC,6720,,F1media,128669,132917
+27636,507979451,"26, Venture-ro24beon-gil",Yeonsu-go,Incheon,Republic of Korea,South Korea,+82 32,860 3062,Michael,Lee,Kortek,406-840,,Smart Tech,128659,132938
+27637,500691575,"3F, Mozart BLDG., 1515-3, Seocho-dong",Seocho-Gu,Seoul,Korea/Korea,South Korea,82,234704707,SK,Cho,MULTIWAVE,137-871,,Multiwave,,
+27638,460502229,"#1302, Ace Techno VIII, 11,","Digital-ro 33-gil, Guro-gu,",Seoul,Seoul,South Korea,82,7050526202,Sam,Kang,MSWAY,8380,202,ROOTLINK,129026,133294
+27639,161513267,"HUNUS BLDG. 8F, 93, Baekhyeon-ro,",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,1092658952,Kevin,Kim,Cypress Semiconductor,13595,,Jagoun Koo,129036,133304
+27640,541742061,"C-312 hanwha obelisk officetel,","(munjung-dong 622Songpa-gu, Seoul, Korea",Seoul,Seoul,South Korea,82,1033786245,Myungjae,Choi,PointImage,5841,,,,
+27641,542003970,4TH FLOOR,55 DONGGWANG-RO 19-GIL,"JEJUDO, JEJU-SI",jeju-do,South Korea,82,10909949,STUART,BORDEN,Ample,63250,,,,
+27642,537215784,"20F, CenterPoint SeoCho,","304, HyoRyeong-Ro, SeoCho-Gu",Seoul,Seoul,South Korea,82,1056037210,Sung-Mok,Lee,"Excel Tech, Inc.",6720,,,,
+27643,528244431,"18/F, CENTERPOINT SEOCHO, 304 HYORYEONG-",Seocho-Gu,Seoul,Seoul,South Korea,82,26509700,Catherine,Ahn,Arrow Electronica Korea,6720,741,Arrow Electronica Korea,129389,133732
+27644,111952572,"224, Harmony-ro,",Yeonsu-gu,Incheon,korea,South Korea,8232850,7106,Seong-Yeon,Kim,Mando-Hella Electronics Corp,406-840,,MHE,129194,133575
+27645,542506113,"#502, Ace Pyeongchon Tower,","361, Simin-daero, Dongan-gu",ANYANG-SI,gyeonggi-do,South Korea,82,313458888,YOON BOK,KIM,"JISTRO, Inc.",431-804,,,,
+27646,542506113,"#502, Ace Pyeongchon Tower,","361, Simin-daero, Dongan-gu",ANYANG-SI,gyeonggi-do,South Korea,82,313458888,YOON BOK,KIM,"JISTRO, Inc.",431-804,,,,
+27647,542562927,150-749 8FI(817) Manhattan Bldg.33,Gukjegrumyung-ro 6gil,Seoul,Yeongdeungpo-gu,South Korea,10,77069199,WOO YONG,KIM,ANDKOREA,KS013,,,,
+27648,460502229,"#705, 12, Haeundaehaebyeon-ro","209 beonna-gil, Haeundae-gu,",Busan,BUSAN,South Korea,82,1032002553,JH,LEE,MSWAY,48093,,Starion,,
+27649,543337757,5F SM Vill 265-20,Galma1-dong Seo-gu,Daejeon,Daejeon,South Korea,86,428264850,Victoria,yun,SMelectronics co ltd,35231,,,,
+27650,543341457,"76, LS-ro, Dongan-gu",#320 The O Valley Bldg.,ANYANG-SI,gyeonggi-do,South Korea,82,1032881433,Song,Dae-June,"SUNGWOO eLsys Co., Ltd.",14117,,,,
+27651,543341457,#320 The O Valley Bldg.,"76, LS-ro, Dongan-gu",ANYANG-SI,gyeonggi-do,South Korea,82,1032881433,Song,Dae-June,"SUNGWOO eLsys Co., Ltd.",14117,,,,
+27652,543614790,"1201-ho, 1904-dong, Sam-mi 19Dangi-APT,","OsanDaeyeok-Ro 232, Osan-Si",Osan City,Kyung-ki-Do,South Korea,82,1022866156,Oh,Young-Jin,EXND,18114,,,,
+27653,543615084,"133 Puroonsol Moonwhaguan, Kyunghee Univ","3-10, Kyungheedae-Ro 6gil, Hoegi-dong",Dongdaemoon-Gu,Seoul,South Korea,82,1022866156,Oh,Young,EXND,2453,,,,
+27654,539499454,"Bundang-Gu, Seongnam-Si","6F, Uniquest Bldg. 314, Hwangsaeul-Ro",gyeonggi-do,Gyeonggi-Do/korea,South Korea,82,7769859,Carl,Ko,Uniquest,13591,,UNIQUEST,129735,134134
+27655,478739416,"CYPRESS, 8F, HUNUS, 93, Backhyeon-ro",Bundang,Seongnam,gyeonggi-do,South Korea,82,316974352,Scott,Heo,cypress,463-825,,CYPRESS KOREA,,
+27656,525293221,"20F, CenterPoint SeoCho, 304 Hyoryeong-r","o Seocho-gu, Seoul, Korea",Seoul,Seoul,South Korea,82,23357823,MS,Choli,EXCEL TECH INC,6720,,KAON,129665,134035
+27657,478739402,"Hunus Bldg,3F,93, Baekhyeon-ro","Bundang-gu, Seongnam-si",Seongnam,gyeonggi-do,South Korea,8231,697-4300,Chang Wook,Seok,Cypress Semiconductor Korea,463-825,4318,LG,129666,134036
+27658,544227406,"145 Anam-ro, Seongbuk-gu","Room 503, Robot Convergence BLDG",Seoul,Seoul,South Korea,82,1045610954,Yoojin,Oh,Korea University,2841,,,,
+27659,6136173,"3th FL., HUNUS Bldg., #22-2, Sunae-dong,","Bundang-gu,","Seongnam-Si,","Gyeonggi-do,",South Korea,82,7086758061,Jin-Hyung,Kim,Cypress Korea,463-825,,TBD,129726,134104
+27660,460789731,"#1302, 11(Ace Techno VIII),","Digital-ro 33-gil, Guro-gu,",Seoul,xx,South Korea,82,7050526205,David,Lee,MSWAY,152-050,205,Willtronics,129824,134211
+27661,532594637,"HUNUS Bldg, 3F, 93, Baekhyeon-ro,",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,1027134026,Sung-Sup,Kim,Cypress Semiconductor,13595,,Samsung,129836,134248
+27662,415297724,"12, Dangsan-ro 4-gil",Mullae Xi Apt. 117 dong 1201 ho,Seoul,Yeongdeungpo-gu,South Korea,10,28600226,seung uk,kim,private,7298,,private group,129856,134286
+27663,542818072,"HUNUS Bd. 3F, 93, Baekhyeon-ro, Bundang",,Seongnam-Si,Gyeonggi-do (Province),South Korea,82,189799627,Yosup,Youn,Cypress Korea,13596,,TBD,129884,134273
+27664,38014825,"3th FL., HUNUS Bldg., #22-2, Sunae-dong,",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,105055,Jin Yong,Lee,cypress,KS009,5773,Samsung,129890,134280
+27665,461411084,"UNIQUEST building, 314, Hwangsaeul-ro",Bundang-gu,SeongNam City,KyongGi-Do,South Korea,82,1051501222,Billy,Kang,UNIQUEST/AXIOS,463-824,,ELVES(GNSD),,
+27666,543225379,"5th Floor, Samsung mediplus Bldg, 14","Cheyukgwan-ro, Bupyeong-gu",Incheon,asia,South Korea,82,1032133166,YOUN OH,SONG,HANHWA,21344,,,,
+27667,542818072,"HUNUS Bd. 3F, 93, Baekhyeon-ro, Bundang",,Seongnam-Si,Gyeonggi-do (Province),South Korea,82,1089799627,Yosup,Youn,Cypress Korea,13596,,LG Electronics,130021,134417
+27668,541737924,"Rm.507, Samhwan Hipex B dong,","Sam Pyeong-dong 230, Pangyoyeok-ro,",Seongnam-Si,gyeonggi-do,South Korea,82,1099953756,lily,lee,OSCOKOREA,13493,,LG,130240,134707
+27669,532593521,"HUNUS Bldg. 8F, 93, Backhyeoun-ro,","Bundang-gu,","Seongnam-Si,","Gyeonggi-do,",South Korea,82,1095303985,JoonHo,Bae,Cypress Semiconductor,13595,,CY Internal,130276,134747
+27670,532598412,"HUNUS Bldg. 3F, 93, Backhyeon-ro,","Bundang-gu,",Seongnam-Si,gyeonggi-do,South Korea,82,316974323,Sam,Lee,Cypress Korea,13595,,LG Chemical,130354,134868
+27671,460502229,"#1302, Ace Techno VIII, 11,","Digital-ro 33-gil, Guro-gu,",Seoul,Seoul,South Korea,8270,50526205,David,Lee,MSWAY,8380,,LS Automotive,130366,134849
+27672,546718311,DD,S,ddd,dae,South Korea,10,94074812,i,haN,KA,DDD,,,,
+27673,547714367,Dae,,Anyang,keunggi,South Korea,82,1035117560,HyunSik,Kim,BE,14057,,,,
+27674,548027472,"2F, 852, Pyeongcheon-ro",Wonmi-gu,Bucheon-Si,gyeonggi-do,South Korea,8232,7157492,JaeYoung,Lee,"RNA Tech. Co., Ltd.",14487,,,,
+27675,548027472,"2F, 852, Pyeongcheon-ro",Wonmi-gu,Bucheon-Si,gyeonggi-do,South Korea,8232,7157492,JaeYoung,Lee,"RNA Tech. Co., Ltd.",14487,,,,
+27676,517687511,"3F, Mozart Bldg., 104, Myeong dal-ro","Seocho-Gu, Seoul, Korea",Seoul,korea,South Korea,2,3470-4721,Bon Kyeong,Ku,MULTIWAVE,6668,,MULTIWAVE,,
+27677,531911186,"7F, Uniquest Bldg. 271-2, Seohyeon-Dong,",,Sungnam-Si,Kyungki-do,South Korea,82,1062596693,Robert,Lee,UBCOM,13591,,Chemtronic,,
+27678,548548463,"1207, 19, ojeongongeop-gil",Uiwang-si,Gyeonggido,Select ...,South Korea,82,1038474399,Lee,CS,ComLaser,16072,,,,
+27679,532591583,HUNUS Bldg. 8F,"93, Baekhyeon-ro, Bundang-gu",Seongnam-Si,gyeonggi-do,South Korea,82,1094354341,Song-In,Kim,cypress,13595,,Samsung,130999,135582
+27680,548627957,"3rd Fl., Eunsung Bldg.","116, Bongeunsa-ro, Gangnam-gu",Seoul,Republic of,South Korea,82,1037700346,Bongjoo,Song,NSI Inc,6123,,,,
+27681,548627957,"3rd Fl., Eunsung Bldg.","116, Bongeunsa-ro,",gangnam-gu,Seoul,South Korea,82,1037700346,Bongjoo,Song,NSI Inc.,6123,,,,
+27682,548744648,"Samsung Electronics, Maetan dong 129,","Samsung-ro Yeongtong-gu, Suwon-si,",Gyeonggi-do 1667,suwon-si,South Korea,82,1030179299,Lee,Seung A,Samsung ELectronics,KS002,,,,
+27683,548874335,"B1, 1934 Nambusunhwan-ro Gwanak-gu",,Seoul,Seoul,South Korea,82,1023817953,Chulwoo,Park,UVify,8793,,,,
+27684,549215243,"Maetandong 129, Samsuing-ro Yeongtong-gu","Suwon-si Gyeonggi-do, Korea",Suwon-si,Suwon-si Gueonggi-do,South Korea,+82 10,2826-9833,Sin,Jaejun,Samsung Electronics Co.,KS002,,,,
+27685,532593616,"HUNUS Bldg. 8F, 93, Baekhyeon-ro,",Bundang-gu,Seongnam-Si,gyeonggi-do,South Korea,82,1030087479,Kyonglok,Yoon,Cypress Semiconductor,13595,,CY Internal,131355,135964
+27686,532593616,"HUNUS Bldg. 8F, 93, Baekhyeon-ro",Bundang-gu,Seongnam-Si,Gyenggi-do,South Korea,82,1030087479,Kyonglok,Yoon,Cypress Semiconductor,13595,,CY Internal,131356,135965
+27687,530130276,"7th floor, Uniquest Building, 271-2","Seohyun-dong, Bundang-gu",SeongNam City,KyongGi-Do,South Korea,8231,7769993,Billy,Kang,Uniquest,13591,0,Hyundai Mobis,,
+27688,533675621,"#507,Samhwan Hipex B, 230pangyoyeok-ro",Bundang-gu,Sengnam-SI,gyeonggi-do,South Korea,82,1099953756,LILY,LEE,OSCO,13493,,LG,131535,136199
+27689,533675621,"#507,Samhwan Hipex B, 230pangyoyeok-ro",Bundang-gu,Sengnam-SI,gyeonggi-do,South Korea,82,1099953756,LILY,LEE,OSCO,13493,,LG,131485,136161
+27690,157292242,"Seokyoung Bldg, 6F, Jungdae-ro 8-gil",Songpa-gu,Seoul,"Seokyoung Bldg, 6F, Jungdae-ro 8-gil, Songpa-gu, Seoul, South Korea",South Korea,82,1072960921,Seungwan,Koh,Dreamsecurity,5833,,YD Electronics,,

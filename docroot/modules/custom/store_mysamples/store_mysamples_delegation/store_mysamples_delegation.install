@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Contains install functions for delegation records.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function store_mysamples_delegation_schema() {
+  $schema['delegation_info'] = array(
+  'description' => 'The table for delegation assignment.',
+    'fields' => array(
+      'did' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+       ),
+      'legacy_id' => array(
+        'description' => 'Approver legacy id',
+        'type' => 'int',
+        'NOT NULL' => TRUE,
+        'default' => 0,
+      ),
+      'entity_id' => array(
+        'description' => 'Temporary approver user id',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'delegate_legacy_id' => array(
+        'description' => 'Temporary approver legacy id',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'temp_approver_mail' => array(
+        'description' => 'Temporary approver user email',
+        'type' => 'varchar',
+        'length' => DRUPAL_EXTENSION_NAME_MAX_LENGTH,
+        'NOT NULL' => TRUE,
+        'default' => '',
+      ),
+      'start_date' => array(
+        'description' => 'Leave start date',
+        'type' => 'int',
+        'NOT NULL' => TRUE,
+        'default' => 0,
+      ),
+      'end_date' => array(
+        'description' => 'Leave end date',
+        'type' => 'int',
+        'NOT NULL' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('did'),
+  );
+  return $schema;
+}

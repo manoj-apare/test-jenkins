@@ -1,0 +1,9 @@
+uuid: c061b572-0744-4d8a-b263-139c6d0ba1dd
+langcode: en
+status: true
+dependencies: {  }
+id: direct_representative
+label: 'Direct Representative'
+weight: 10
+is_admin: null
+permissions: {  }

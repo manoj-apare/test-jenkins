@@ -1,0 +1,22 @@
+uuid: 913efa9a-8526-48d8-a7b2-69409d70ec5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+_core:
+  default_config_hash: 6epVkt5ybQQ1LZmY1PgEbiGxy_mlEoY26C2LiVZ2Uvs
+id: commerce_product.field_pqr_specnum_ref
+field_name: field_pqr_specnum_ref
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

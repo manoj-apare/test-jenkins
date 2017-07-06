@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains cypress_order_cancellation.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cypress_order_cancellation_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cypress_order_cancellation module.
+    case 'help.page.cypress_order_cancellation':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Cypress Order Cancellation Feature Line Item Wise') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cypress_order_cancellation_theme() {
+  return [
+    'cypress_order_cancellation' => [
+      'render element' => 'children',
+    ],
+  ];
+}

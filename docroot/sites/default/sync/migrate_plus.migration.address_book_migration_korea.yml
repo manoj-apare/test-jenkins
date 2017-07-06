@@ -1,0 +1,33 @@
+uuid: 7f09b7b1-e54a-4d2d-8193-d22f3de17cf7
+langcode: en
+status: true
+dependencies: {  }
+id: address_book_migration_korea
+migration_tags: null
+migration_group: null
+label: 'Address Book Migration Korea'
+source:
+  plugin: csv
+  path: modules/custom/cypress_store_migration/assets/address_book_list_name_korea.csv
+  header_row_count: 1
+  keys:
+    - ID
+process:
+  uid:
+    plugin: cypressaddressmigration
+    source: LEGACYID
+  type:
+    plugin: default_value
+    default_value: customer
+  field_om_customer_site_use_id: ORACLECUSTSITEUSEID
+  field_oracle_customer_site_id: ORACLEACCOUNTSITEID
+  field_user_legacy_id: USERLEGACYID
+  field_contact_address:
+    plugin: cypressstoremigration
+    source: USERID
+  status:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:profile'
+migration_dependencies: {  }

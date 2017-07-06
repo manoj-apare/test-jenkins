@@ -1,0 +1,14 @@
+uuid: 5e6de617-c526-4774-876a-9da2de52b873
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.page_administrator
+  module:
+    - user
+id: user_add_role_action.page_administrator
+label: 'Add the Page Administrator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: page_administrator

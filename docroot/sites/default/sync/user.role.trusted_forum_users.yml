@@ -1,0 +1,9 @@
+uuid: 34c6972b-c1cc-4f87-bc8d-131784065d06
+langcode: en
+status: true
+dependencies: {  }
+id: trusted_forum_users
+label: 'Trusted Forum Users'
+weight: 20
+is_admin: null
+permissions: {  }

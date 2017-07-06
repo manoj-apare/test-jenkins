@@ -1,0 +1,23 @@
+uuid: 1e0b906d-571f-4bd5-926b-7ca69675e719
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: OTi5QRV4eKzZ76imK6oi5hzZP6Cr7quiNdVBxUVmATI
+id: commerce_product.field_order_increment
+field_name: field_order_increment
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,34 @@
+uuid: dc540964-2917-410a-9b27-c946cfff922d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.awaiting_approvals
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - cypress_store
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__awaiting_approvals_block_1_2
+theme: cypress_store
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:awaiting_approvals-block_1'
+settings:
+  id: 'views_block:awaiting_approvals-block_1'
+  label: 'Pending Approvals'
+  provider: views
+  label_display: '0'
+  views_label: 'Pending Approvals'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: mysamples
+    negate: false
+    context_mapping: {  }

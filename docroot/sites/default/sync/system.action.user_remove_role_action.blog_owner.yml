@@ -1,0 +1,14 @@
+uuid: c1f958af-4795-42ea-bdc2-4b6e73fc72de
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blog_owner
+  module:
+    - user
+id: user_remove_role_action.blog_owner
+label: 'Remove the Blog owner role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: blog_owner

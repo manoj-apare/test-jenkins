@@ -1,0 +1,14 @@
+uuid: 0e9bc90f-2ca1-4fb9-9d15-29182d61a1c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cypress_operations
+  module:
+    - user
+id: user_add_role_action.cypress_operations
+label: 'Add the Cypress Operations role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: cypress_operations

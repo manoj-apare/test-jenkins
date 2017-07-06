@@ -1,0 +1,35 @@
+uuid: ed110333-52d1-488c-affc-5ee59ea6bc9b
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.shiping_status
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - cypress_store
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__shiping_status_shipping_order_details_block
+theme: cypress_store
+region: navigation
+weight: 4
+provider: null
+plugin: 'views_block:shiping_status-shipping_order_details_block'
+settings:
+  id: 'views_block:shiping_status-shipping_order_details_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/order/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,14 @@
+uuid: 29ebaa8e-5053-40de-82d4-6028719b9455
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.subsite_administrator
+  module:
+    - user
+id: user_add_role_action.subsite_administrator
+label: 'Add the SubSite Administrator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: subsite_administrator

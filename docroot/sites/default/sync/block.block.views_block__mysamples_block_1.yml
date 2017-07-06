@@ -1,0 +1,34 @@
+uuid: 341a9157-bf52-4ecc-b7ba-3ef50b78c722
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mysamples
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - cypress_store
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__mysamples_block_1
+theme: cypress_store
+region: content
+weight: -17
+provider: null
+plugin: 'views_block:mysamples-block_1'
+settings:
+  id: 'views_block:mysamples-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/mysamples*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: 050cb434-cfb8-406a-8d1d-dc0079526dc4
+langcode: en
+status: true
+dependencies: {  }
+id: it_accounts
+label: 'IT Accounts'
+weight: 14
+is_admin: null
+permissions: {  }

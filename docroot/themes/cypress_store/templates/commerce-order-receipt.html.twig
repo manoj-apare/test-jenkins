@@ -1,0 +1,98 @@
+{#
+/**
+ * @file
+ * Template for the order receipt.
+ *
+ * Available variables:
+ * - host: The host url
+ * - username: The user who has placed the order
+ * - order_entity: The order entity.
+ * - billing_information: The rendered billing information.
+ * - shipping_information: The rendered shipping information.
+ * - payment_method: The rendered payment method.
+ * - totals: An array of order totals values with the following keys:
+ *   - subtotal: The order subtotal price.
+ *   - adjustments: An array of adjustment totals:
+ *     - type: The adjustment type.
+ *     - label: The adjustment label.
+ *     - total: The adjustment total price.
+ *     - weight: The adjustment weight, taken from the adjustment type.
+ *   - total: The order total price.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="order-confirm-mail">
+    <a href="{{ url('<front>') }}" style="margin-top: 15px;"><img style="display: block;margin: 0 auto;" src="{{ logo_image }}"></a>
+  <h2 style="padding: 0 15px;font-size: 22px;">{{ 'Order Confirmation'|t }}</h2>
+  <div class="user-tq-msg">
+    <p class="user-name"  style="text-transform: capitalize; margin-top: 0;  margin-bottom: 5px; padding: 0 15px;">{{ 'Hi @username,'|t({'@username': username})}}</p>
+    <p class="tq" style="margin-top: 0; padding: 0 15px;">{{ 'Thank you for shopping at Cypress' }}</p>
+  </div>
+  <div style="padding: 0 15px 15px;">
+      <b>{{ 'Your Order Number is @number, Placed on @date'|t({'@number': order_entity.getOrderNumber, '@date': order_entity.getPlacedTime |date}) }}
+      </b><br>
+  </div>
+  <div style="margin: 10px 0;">
+    <div style="width: 45%; display: inline-block; padding: 0 15px;">
+      <b>{{ 'Number of items: @items'|t ({'@items': order_entity.getItems|length}) }}</b>
+    </div>
+    <div style="width: 45%; display: inline-block; padding: 0 15px;">
+      <b>{{ 'Total Price: @items'|t ({'@items': totals.subtotal|commerce_price_format }) }}</b>
+    </div>
+  </div>
+  <div style="background: #f8f8f8;padding: 15px;margin-bottom: 15px;">
+      {% block order_items %}
+          {% for key,order_item in order_entity.getItems %}
+            <div style="margin-bottom: 15px;">
+              <div class="image-placeholder" style="width: 20%;display: inline-block;">
+                  <img  style="height: 100px;width: 100px;vertical-align: middle;" src="{{ product_image[key] }}">
+              </div>
+              <div style="width: 50%;display: inline-block;">{{ order_item.label }}</div>
+              <div style="width: 13%;display: inline-block;font-weight: bold;">{{ order_item.getQuantity|number_format }} x</div>
+              <div style="width: 15%;display: inline-block;font-weight: bold;">{{ order_item.getTotalPrice|commerce_price_format }}</div>
+            </div>
+          {% endfor %}
+      {% endblock %}
+  </div>
+  <div class="delivery-address-mail" style="padding: 0 15px;">
+      {% if (billing_information or shipping_information) %}
+          {% if shipping_information %}
+            <h3 style="margin: 10px 0;">{{ 'Delivery Address'|t }}</h3>
+              {% block shipping_information %}
+                  {{ shipping_information }}
+              {% endblock %}
+          {% endif %}
+          {% if payment_method %}
+            <h3 style="margin-top: 10px;margin-bottom: 5px;">{{ 'Payment Method'|t }}</h3>
+              {% block payment_method %}
+                  {{ payment_method }}
+              {% endblock %}
+          {% endif %}
+      {% endif %}
+    <h3 style="margin-top: 10px;margin-bottom: 5px;">Amount Details</h3>
+    <div style="margin-bottom: 5px;font-size: 13px;">
+        <div style="display: inline-block;width: 20%;">{{ 'Items: '}}</div>
+        <div style="display: inline-block;"> {{ '@subtotal'|t({'@subtotal': totals.subtotal|commerce_price_format}) }}</div>
+    </div>
+    {% for adjustment in totals.adjustments %}
+      <div style="margin-bottom: 5px;font-size: 13px;">
+        <div style="display: inline-block;width: 20%;">{{ adjustment.label }}: </div> 
+        <div style="display: inline-block;">{{ adjustment.total|commerce_price_format }} </div>
+      </div>
+    {% endfor %}
+    <div style="font-weight: bold;margin-bottom: 5px;font-size: 13px;">
+        <div style="display: inline-block;width: 20%;">{{ 'Subtotal: '}} </div> 
+        <div style="display: inline-block;"> {{'@total'|t({'@total': order_entity.getTotalPrice|commerce_price_format}) }} </div>
+    </div>
+  </div>
+    <div>
+        <div style="margin: 3em 0;width: 50%;display: inline-block;">
+            <a style="background: #337ab7;padding: 1em 7em;color: #fff;text-decoration: none;font-weight: bold;font-size: 14px;" href="{{ host }}/myorders" class="track-shipment-link btn-primary">ORDER STATUS</a>
+        </div>
+        <div style="width: 49%;display: inline-block;margin: 3em 0;">
+            <a style="background: #5bc0de;padding: 1em 8em;color: #fff;text-decoration: none;font-weight: bold;font-size: 14px;" href="http://www.cypress.com/webform/website-support" class="contact-us">CONTACT US</a>
+        </div>
+
+    </div>
+</div>

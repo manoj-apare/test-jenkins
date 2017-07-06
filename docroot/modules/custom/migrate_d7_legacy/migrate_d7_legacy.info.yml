@@ -1,0 +1,5 @@
+name: Migrate D7 Legacy ID's
+type: module
+description: Creating Custom table for Legacy id's in d7.
+core: 8.x
+package: Custom

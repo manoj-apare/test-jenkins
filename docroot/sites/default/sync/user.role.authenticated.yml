@@ -1,0 +1,31 @@
+uuid: 3b064572-60f0-4c21-9fc8-90a5e0d45da9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access cart'
+  - 'access checkout'
+  - 'access comments'
+  - 'access commerce_order overview'
+  - 'access content'
+  - 'access kint'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'add any customer profile'
+  - 'add own customer profile'
+  - 'create customer profile'
+  - 'delete own customer profile'
+  - 'edit own customer profile'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update own customer profile'
+  - 'use text format basic_html'
+  - 'view own commerce_order'
+  - 'view own customer profile'

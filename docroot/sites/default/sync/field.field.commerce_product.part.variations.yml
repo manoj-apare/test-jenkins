@@ -1,0 +1,26 @@
+uuid: 72e97a46-6536-41fa-9e2f-588163bfb2d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - commerce_product.commerce_product_variation_type.part_store
+    - field.storage.commerce_product.variations
+_core:
+  default_config_hash: l34_en2Lc3SO1NINOOOGwM2AOkGaUThT3YU2sn9j7ZQ
+id: commerce_product.part.variations
+field_name: variations
+entity_type: commerce_product
+bundle: part
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - part_store
+field_type: entity_reference

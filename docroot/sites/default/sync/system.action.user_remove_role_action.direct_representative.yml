@@ -1,0 +1,14 @@
+uuid: 175cb0da-3ae0-4e99-87a3-b431b0ef4462
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.direct_representative
+  module:
+    - user
+id: user_remove_role_action.direct_representative
+label: 'Remove the Direct Representative role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: direct_representative

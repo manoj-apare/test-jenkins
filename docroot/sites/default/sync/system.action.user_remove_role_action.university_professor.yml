@@ -1,0 +1,14 @@
+uuid: fb490ba3-dbe8-417e-80ff-6ef5234e8b67
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.university_professor
+  module:
+    - user
+id: user_remove_role_action.university_professor
+label: 'Remove the University Professor role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: university_professor

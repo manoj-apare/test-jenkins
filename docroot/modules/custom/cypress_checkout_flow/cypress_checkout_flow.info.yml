@@ -1,0 +1,5 @@
+name: Cypress Custom Checkout Flow.
+type: module
+description: Extending the functionality of CheckoutFlow.
+core: 8.x
+package: Custom

@@ -1,0 +1,14 @@
+uuid: 1109ff84-4821-4486-8d7e-879c46bcf2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.corporate_marketing_vp
+  module:
+    - user
+id: user_remove_role_action.corporate_marketing_vp
+label: 'Remove the Corporate Marketing VP role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: corporate_marketing_vp

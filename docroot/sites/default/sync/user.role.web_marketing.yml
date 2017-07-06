@@ -1,0 +1,9 @@
+uuid: abde76b6-9346-4be3-91ce-207f78fe0916
+langcode: en
+status: true
+dependencies: {  }
+id: web_marketing
+label: 'Web Marketing'
+weight: 23
+is_admin: null
+permissions: {  }

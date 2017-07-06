@@ -1,0 +1,25 @@
+uuid: 21d8e052-7861-4f4e-8281-e737629d9fc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_price_three
+_core:
+  default_config_hash: kfThq03SgjKoJxIcpmlt3XzxyHS1tPd-aDd5wCq9O3k
+id: commerce_product.part.field_price_three
+field_name: field_price_three
+entity_type: commerce_product
+bundle: part
+label: 'Price three'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

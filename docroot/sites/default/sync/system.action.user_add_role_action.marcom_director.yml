@@ -1,0 +1,14 @@
+uuid: 17a75e9b-14d1-447d-a919-d0d95522aa46
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.marcom_director
+  module:
+    - user
+id: user_add_role_action.marcom_director
+label: 'Add the Marcom Director role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: marcom_director

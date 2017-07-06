@@ -1,0 +1,11 @@
+uuid: ce814a88-c810-4510-8c7d-56c79aed744d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4nXlP15Z3LxVrFEFXzwGiJuEDrLA6ndcZX1F9ZGbsNg
+id: all_distributors
+label: 'All Distributors'
+weight: 4
+is_admin: null
+permissions: {  }

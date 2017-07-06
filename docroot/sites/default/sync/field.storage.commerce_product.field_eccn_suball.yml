@@ -1,0 +1,23 @@
+uuid: 8112e4bd-4348-4b14-a567-b6950e9d2e53
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: '-Sq5WK4ZJSC1cs5xa8upkQkeJQ8bgvjsF4UUXDpYaBo'
+id: commerce_product.field_eccn_suball
+field_name: field_eccn_suball
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

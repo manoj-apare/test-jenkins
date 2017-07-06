@@ -1,0 +1,23 @@
+uuid: a778ca23-7bc6-4192-ac8c-3a272c4a90c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: tGHhxlT7mqYLPAyfRDVKDBzAQpScBQOxhARs5tYLaQs
+id: commerce_product.field_moisture_sensitivity_level
+field_name: field_moisture_sensitivity_level
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

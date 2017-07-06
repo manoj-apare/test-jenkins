@@ -1,0 +1,277 @@
+<?php
+
+/**
+ * @file
+ * Contains cypress_custom_address.module.
+ */
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\commerce_order\Entity\OrderItem;
+use Drupal\commerce_product\Entity\Product;
+
+/**
+ * Implements form_alter().
+ */
+function cypress_custom_address_form_alter(&$form, $form_state, $form_id) {
+
+  // Disable add to cart button throughout the site.
+  if ($form_id == 'commerce_order_item_default_add_to_cart_1_form') {
+    // $form['actions']['submit'] = ['#access' => FALSE];.
+  }
+  // Changes in the order detail form.
+  elseif ($form_id == 'commerce_order_default_edit_form') {
+    $form[meta][state]['#value'] = '';
+    $mail_markup = strip_tags($form['customer']['mail']['#markup']);
+    $mail_id = explode(' ', $mail_markup);
+    $user = user_load_by_mail($mail_id[2]);
+    $uid = $user->uid->value;
+    $username = $user->field_first_name->value . ' ' . $user->field_last_name->value;
+    if (isset($username) && !empty($username)) {
+      $user_uid = "/user/" . $uid;
+      $form['customer']['uid']['#markup'] = '<h4 class="label inline">Customer</h4> <a href= ' . $user_uid . ' hreflang="en">' . $username . '</a>';
+    }
+  }
+  elseif (preg_match('/^views_form_commerce_cart_form_default_\d+$/', $form_id)) {
+    array_unshift($form['actions']['checkout']['#submit'], 'anonymous_checkout_flow');
+  }
+}
+
+/**
+ * Anonymous cart submit function.
+ */
+function anonymous_checkout_flow() {
+  if (\Drupal::currentUser()->isAnonymous()) {
+    $response = new RedirectResponse('/saml_login');
+    return $response->send();
+  }
+}
+
+/**
+ * Shipping Rules For Cypress Store.
+ *
+ * Implements hook_commerce_shipping_methods_alter().
+ */
+function cypress_custom_address_commerce_shipping_methods_alter(&$shipping_methods, $shipment) {
+
+  // Get Shipping Profile to get fetch the Address domestic and international.
+  $shipment_profile = $shipment->getShippingProfile();
+  $shipping_address = $shipment->getShippingProfile()
+    ->get('field_contact_address')
+    ->getValue();
+  $shipping_country_code = $shipping_address[0]['country_code'];
+  // Get the product type from order item.
+  $shipment_order_item = $shipment->getItems();
+  $order_item_id = $shipment_order_item[0]->getOrderItemId();
+  $order_item = OrderItem::load($order_item_id);
+  $product_variation = $order_item->getPurchasedEntity();
+  if (!empty($product_variation)) {
+    $product_id = $product_variation->get('product_id')->getValue()[0]['target_id'];
+    if (!empty($product_id)) {
+      $product = Product::load($product_id);
+      $product_type = $product->get('type')->getValue()[0]['target_id'];
+    }
+    if ($product_type == 'default') {
+      if ($shipping_country_code == "US") {
+        foreach ($shipping_methods as $key => $shipping_method) {
+          $shipping_method_name = $shipping_method->getName();
+          $shipping_method_id = $shipping_method->id();
+          if (!($shipping_method_name == 'USA - FedEx Express Saver For Kit Domestic') && !($shipping_method_name == 'USA - FedEx Overnight For Kits Domestic')) {
+            unset($shipping_methods[$key]);
+          }
+        }
+      }
+      else {
+        foreach ($shipping_methods as $key => $shipping_method) {
+          $shipping_method_name = $shipping_method->getName();
+          $shipping_method_id = $shipping_method->id();
+          if (!($shipping_method_name == 'FedEx International Economy For Kits') && !($shipping_method_name == 'FedEx International Priority For Kits')) {
+            unset($shipping_methods[$key]);
+          }
+        }
+      }
+    }
+    elseif ($product_type == 'part') {
+      $can_sample = $product->get('field_can_sample')->getValue()[0]['value'];
+      // CAT_A products.
+      if ($can_sample == 1) {
+        if ($shipping_country_code == 'US') {
+          foreach ($shipping_methods as $key => $shipping_method) {
+            $shipping_method_name = $shipping_method->getName();
+            $shipping_method_id = $shipping_method->id();
+            if (!($shipping_method_name == 'USA FedEx 2Day For Sample CAT_A') && !($shipping_method_name == 'USA FedEx Standard Overnight For Sample CAT_A')) {
+              unset($shipping_methods[$key]);
+            }
+          }
+        }
+        else {
+          foreach ($shipping_methods as $key => $shipping_method) {
+            $shipping_method_name = $shipping_method->getName();
+            $shipping_method_id = $shipping_method->id();
+            if (!($shipping_method_name == 'FedEx International Economy For Sample CAT_A') && !($shipping_method_name == 'FedEx International Priority For Sample CAT_A')) {
+              unset($shipping_methods[$key]);
+            }
+          }
+        }
+      }
+      elseif ($can_sample == 2) {
+        if ($shipping_country_code == 'US') {
+          foreach ($shipping_methods as $key => $shipping_method) {
+            $shipping_method_name = $shipping_method->getName();
+            $shipping_method_id = $shipping_method->id();
+            if (!($shipping_method_name == 'USA FedEx 2Day For Sample CAT_B') && !($shipping_method_name == 'USA FedEx Standard Overnight For Sample CAT_B')) {
+              unset($shipping_methods[$key]);
+            }
+          }
+        }
+        else {
+          foreach ($shipping_methods as $key => $shipping_method) {
+            $shipping_method_name = $shipping_method->getName();
+            $shipping_method_id = $shipping_method->id();
+            if (!($shipping_method_name == 'FedEx International Economy For Sample CAT_B') && !($shipping_method_name == 'FedEx International Priority For Sample CAT_B')) {
+              unset($shipping_methods[$key]);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function cypress_custom_address_theme_registry_alter(&$theme_registry) {
+  $theme_registry['commerce_order__default'] = [
+    'variables' => [
+      'order' => NULL,
+      'order_entity' => NULL,
+    ],
+    'preprocess functions' => $theme_registry['commerce_order']['preprocess functions'],
+    'template' => 'commerce-order--default',
+    'theme_path' => drupal_get_path('module', 'cypress_custom_address'),
+    'path' => drupal_get_path('module', 'cypress_custom_address') . '/templates/',
+  ];
+  // Added the custom view mode and register it's template file.
+  $theme_registry['commerce_order__default__custom'] = [
+    'variables' => [
+      'order' => NULL,
+      'order_entity' => NULL,
+    ],
+    'preprocess functions' => $theme_registry['commerce_order']['preprocess functions'],
+    'template' => 'commerce-order--default--custom',
+    'theme_path' => drupal_get_path('module', 'cypress_custom_address'),
+    'path' => drupal_get_path('module', 'cypress_custom_address') . '/templates/',
+  ];
+}
+
+/**
+ * Implements hook mail alter().
+ */
+function cypress_custom_address_mail_alter(&$message) {
+  if (!empty($message['id']) && $message['id'] == 'commerce_order_receipt') {
+    $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
+    $order = $message['params']['order'];
+    $order_id = $order->getOrderNumber();
+    $message['subject'] = t('@title', array('@title' => 'Your Cypress.com Order Confirmation (Order# ' . $order_id . ')'));
+  }
+}
+
+/**
+ * Get the Promotion id based on product title.
+ */
+function get_promotion_id($title) {
+  $query = \Drupal::database()->select('commerce_promotion_field_data', 'cp');
+  $query->fields('cp', ['promotion_id']);
+  $query->condition('cp.name', $title);
+  $results = $query->execute()->fetchAll();
+  foreach ($results as $result) {
+    $promotion_id = $result->promotion_id;
+  }
+
+  return $promotion_id;
+}
+
+/**
+ * Preprocess for commerce order.
+ *
+ * @param array $variables
+ *   Variables data.
+ */
+function cypress_custom_address_preprocess_commerce_order(array &$variables) {
+  $order_number = $variables['order_entity']->getOrderNumber();
+  if (!empty($order_number)) {
+    $query = \Drupal::database()->select('commerce_payment', 'cp');
+    $query->fields('cp', ['payment_id']);
+    $query->condition('cp.order_id', $order_number);
+    $results = $query->execute()->fetchField();
+    if (!empty($results)) {
+      $query = \Drupal::database()->select('commerce_payment', 'cp');
+      $query->fields('cp', ['refunded_amount__number']);
+      $query->condition('cp.order_id', $order_number);
+      $refund_amount = $query->execute()->fetchField();
+      if ($refund_amount == '0.000000') {
+        $current_user_id = \Drupal::currentUser()->id();
+        $user_roles = \Drupal::currentUser()->getRoles();
+        $current_user_id = \Drupal::currentUser()->id();
+        $user_roles = \Drupal::currentUser()->getRoles();
+        if (in_array("administrator", $user_roles)) {
+          $variables['role'] = 'administrator';
+          $variables['cancel_url'] = '/admin/commerce/orders/' . $order_number . '/payments/' . $results . '/operation/refund';
+        }
+        elseif (in_array("authenticated", $user_roles)) {
+          $variables['role'] = '';
+          $variables['cancel_url'] = 'https://secure.cypress.com/myaccount/?id=25&&createCase=webServiceRequest';
+
+        }
+      }
+      else {
+        $variables['cancel_description'] = 'Order is cancelled';
+      }
+    }
+    // For for zero (free) orders.
+    else {
+      $user_roles = \Drupal::currentUser()->getRoles();
+      if (in_array("administrator", $user_roles)) {
+        $variables['role'] = 'administrator';
+        $variables['cancel_url'] = '/admin/commerce/orders/' . $order_number . '/payments/' . $results . '/operation/refund';
+      }
+      elseif (in_array("authenticated", $user_roles)) {
+        $variables['role'] = '';
+        $variables['cancel_url'] = 'https://secure.cypress.com/myaccount/?id=25&&createCase=webServiceRequest';
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cypress_custom_address_theme($existing, $type, $theme, $path) {
+  $theme = [];
+  $theme['invoice'] = [
+    'variables' => [
+      'order_date' => NULL,
+      'order_id' => NULL,
+      'total_price' => NULL,
+      'quantity' => array(),
+      'order_titles' => array(),
+      'subtotal' => NULL,
+      'adjustments' => array(),
+      'billing_info' => array(),
+      'shipping_address' => array(),
+      'unit_price' => array(),
+      'line_item_total' => array(),
+    ],
+  ];
+  return $theme;
+
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function cypress_custom_address_user_login($account) {
+  // We want to redirect user on login.
+  $response = new RedirectResponse('/cart');
+  return $response->send();
+}

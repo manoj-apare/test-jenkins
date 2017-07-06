@@ -1,0 +1,51 @@
+uuid: 08a8a153-7dc3-4f30-a4d5-574c6d23bc04
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_shipping.commerce_shipment_type.default
+    - field.field.commerce_shipment.default.field_oracle_rs_date
+    - field.field.commerce_shipment.default.field_schedule_number
+    - field.field.commerce_shipment.default.field_secondary_tracking_number
+    - field.field.commerce_shipment.default.field_ship_date
+    - field.field.commerce_shipment.default.field_shipment_carrier
+    - field.field.commerce_shipment.default.field_so_no
+    - field.field.commerce_shipment.default.field_vendor
+  module:
+    - commerce_shipping
+id: commerce_shipment.default.default
+targetEntityType: commerce_shipment
+bundle: default
+mode: default
+content:
+  shipping_method:
+    type: commerce_shipping_rate
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  shipping_profile:
+    type: commerce_shipping_profile
+    weight: 0
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_oracle_rs_date: true
+  field_schedule_number: true
+  field_secondary_tracking_number: true
+  field_ship_date: true
+  field_shipment_carrier: true
+  field_so_no: true
+  field_vendor: true
+  state: true
+  tracking_code: true
+  weight: true

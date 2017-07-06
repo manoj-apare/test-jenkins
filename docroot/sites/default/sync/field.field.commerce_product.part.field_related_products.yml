@@ -1,0 +1,30 @@
+uuid: 1d52467c-b73f-42a6-94ca-7a8c688c430f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_related_products
+    - taxonomy.vocabulary.products
+_core:
+  default_config_hash: AKVFGkv03u7cziWKTFJE8rsJqvC5a1u2zK9a74pf1BM
+id: commerce_product.part.field_related_products
+field_name: field_related_products
+entity_type: commerce_product
+bundle: part
+label: 'Related Categories'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      products: products
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

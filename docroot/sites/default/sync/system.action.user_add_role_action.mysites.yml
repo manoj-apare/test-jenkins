@@ -1,0 +1,14 @@
+uuid: 79e661fe-d0fc-4916-a206-86993310a2ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mysites
+  module:
+    - user
+id: user_add_role_action.mysites
+label: 'Add the MySites role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mysites

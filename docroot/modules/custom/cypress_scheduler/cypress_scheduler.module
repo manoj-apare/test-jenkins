@@ -1,0 +1,412 @@
+<?php
+
+/**
+ * @file
+ * Scheduling the cron jobs.
+ */
+
+/**
+ * Created by PhpStorm.
+ *
+ * User: vb
+ * Date: 25/5/17 & Time: 3:40 PM.
+ */
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Database\Database;
+use Drupal\commerce_order\Entity\Order;
+use Drupal\commerce_shipping\Entity\Shipment;
+use Drupal\yamlform\Entity\YamlFormSubmission;
+
+/**
+ * Hook_cron for Shipment.
+ */
+function cypress_scheduler_cron() {
+  $shipmentStates = ['Shipped', 'In progress', 'New'];
+  $orderStates = ['Shipped', 'In progress', 'validation'];
+
+  $result = array();
+  $data = array();
+  foreach ($shipmentStates as $shipmentState) {
+    $conn = Database::getConnection();
+    $query = $conn->select('commerce_shipment', 'cs');
+    $query->fields('cs', array('shipment_id', 'order_id', 'state', 'data'));
+    $query->condition('cs.state', $shipmentState . '%', 'LIKE');
+    $result = $query->execute()->fetchAll();
+    // @todo commented as this is triggering mail on dev. Need to enable while going to production
+    $dataProcessor = scheduler_shipment_data_processing($shipmentState, $result);
+  }
+  foreach ($orderStates as $orderState) {
+    $conn = Database::getConnection();
+    $query = $conn->select('commerce_order', 'co');
+    $query->fields('co', array('order_id', 'state'));
+    $query->condition('co.state', $orderState . '%', 'LIKE');
+    $datas = $query->execute()->fetchAll();
+    // @todo commented as this is triggering mail on dev. Need to enable while going to production
+    $orderProcessor = scheduler_order_data_processing($orderState, $datas);
+  }
+
+  // Get all promocode sid's whose request made a day before and not approved yet.
+  $conn = Database::getConnection();
+  $query = $conn->select('yamlform_submission', 'pc');
+  $query->fields('pc', array('sid', 'completed'));
+  $query->join('yamlform_submission_data', 'pcdata', 'pcdata.sid = pc.sid');
+  $query->condition('pc.yamlform_id', 'promocode', '=');
+  $query->condition('pc.completed', strtotime('-1 day'), '>');
+  $query->condition('pc.in_draft', '', '=');
+  $query->condition('pcdata.name', 'promocode_status', '=');
+  $query->condition('pcdata.value', array('', 'Modify'), 'in');
+
+  $results = $query->execute()->fetchAll();
+
+  foreach ($results as $key => $result) {
+    reminder_email_status($result);
+  }
+}
+
+/**
+ * Helper Function to process the data in cron Task for Shipment and Change shipment state.
+ *
+ * @param string $shipmentState
+ *   Shipmentstates.
+ * @param string $data
+ *   Shipment data processing.
+ */
+function scheduler_shipment_data_processing($shipmentState, $data) {
+  foreach ($data as $shipment) {
+    $orderObj = Order::load($shipment->order_id);
+    if (is_object($orderObj)) {
+      $shipmentObj = Shipment::load($shipment->shipment_id);
+      $vendor = $shipmentObj->get('field_vendor')->getValue()[0]['value'];
+
+      // @todo remove this when database is cleaned up Checking if shipping address is not there then don't process that order.
+      /*
+       * Logic to eradicate all old orders
+       * Starts here.
+       */
+      $vendor_shipping = new \Drupal\cypress_store_vendor\Vendor\VendorBase();
+      $shipping_address = $vendor_shipping->getShippingAddress($orderObj);
+      if ($vendor != 'CML' && !empty($shipping_address) && !empty($shipmentObj->getShippingMethod())) {
+        /* Ends here */
+        switch ($shipmentState) {
+          case 'Shipped':
+            $trackingCode = $shipmentObj->getTrackingCode();
+            $carrierVendor = $shipmentObj->get('field_shipment_carrier')
+              ->getValue()[0]['value'];
+            $carrierShipmentResponse = \Drupal::service('cypress_store_vendor.vendor')
+              ->trackShipment($carrierVendor, $trackingCode);
+            if (!empty($carrierShipmentResponse)) {
+              $shipmentObj->setData('FEDEX', $carrierShipmentResponse);
+              if ($carrierShipmentResponse['StatusDetail']['Code'] == 'DL') {
+                $shipmentObj->set('state', 'Delivered');
+              }
+              $shipmentObj->save();
+            }
+            break;
+
+          case 'In progress':
+            $vendorShipmentResponse = \Drupal::service('cypress_store_vendor.vendor')
+              ->getShipment($vendor, $shipment);
+            // $shipment->data.
+            if (!empty($vendorShipmentResponse)) {
+
+              $shipmentObj->setTrackingCode($vendorShipmentResponse['trackingId']);
+              $shipmentObj->set('field_shipment_carrier', $vendorShipmentResponse['carrier']);
+              $shipmentObj->set('field_ship_date', strtotime($vendorShipmentResponse['shippedDate']));
+              $shipmentObj->set('field_secondary_tracking_number', $vendorShipmentResponse['secondaryTrackingNumber']);
+              $shipmentObj->set('state', 'Shipped');
+              $shipmentObj->save();
+              // Order Shipped Confirmation Email.
+              \Drupal::service('cypress_store_vendor.shipping_confirmation_email')
+                ->shippingEmail($shipmentObj);
+            }
+            break;
+
+          case 'New':
+            \Drupal::service('cypress_store_vendor.vendor')
+              ->submitOrder($vendor, $orderObj, $shipmentObj);
+            break;
+
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Helper Function to change Order State based on it's shipment state.
+ *
+ * @param string $datas
+ *   Data processing.
+ */
+function scheduler_order_data_processing($datas) {
+  foreach ($datas as $data) {
+    $orderObj = Order::load($data->order_id);
+    $shipments = $orderObj->get('shipments')->referencedEntities();
+    $shipmentArray = [
+      '0' => 'New',
+      '1' => 'In progress',
+      '2' => 'Shipped',
+      '3' => 'Delivered',
+    ];
+    $shipmentKey = [];
+
+    foreach ($shipments as $shipment) {
+      $shipmentKey[] = array_search($shipment->getState()->value, $shipmentArray);
+    }
+    $orderStateKey = min($shipmentKey);
+    $orderObj->set('state', $shipmentArray[$orderStateKey]);
+    $orderObj->save();
+  }
+}
+
+/**
+ * Helper Function to change status of a promo code status until rejection.
+ *
+ * @param bool $result
+ *   Status of remaimder mail.
+ */
+function reminder_email_status($result) {
+
+  // Reject promocode once reached 1 day (24 * 60 * 60 * 60) dateline.
+  if ((strtotime('now') - $result->completed) > 5184000) {
+    // Update yamlform submission changed timetamp.
+    $yamlformupdate = YamlFormSubmission::load($result->sid);
+    $reminder_status = $yamlformupdate->getData('reminder_status');
+    $update = array(
+      'promo_status' => 'Rejected',
+      'remind_status' => 24
+    );
+    $yamlform_data = insert_data($yamlformupdate, $update);
+    $yamlformupdate->changed = strtotime('now');
+    $yamlformupdate->setData($yamlform_data);
+    $yamlformupdate->save();
+
+    // Send mail.
+    if (isset($yamlformupdate) || !empty($yamlformupdate)
+      && $reminder_status == 12
+    ) {
+      reminder_status_mail($yamlformupdate, 24);
+    }
+    $message = $yamlformupdate->getData('promo_code') . ' promocode request is rejected by cron at ' . date('d-m-Y H:i:s', strtotime('now') . ' . ');
+    \Drupal::logger('Scheduler on promocode reminders')->notice($message);
+    // Send mail reminder in between 24hr and 12 hr.
+  }
+  elseif ((strtotime('now') - $result->completed) > 2592000 &&
+    (strtotime('now') - $result->completed) < 5184000
+  ) {
+    $yamlformupdate = YamlFormSubmission::load($result->sid);
+    $reminder_status = $yamlformupdate->getData('reminder_status');
+    $update = array(
+      'promo_status' => $yamlformupdate->getData('promocode_status'),
+      'remind_status' => 12
+    );
+    $yamlform_data = insert_data($yamlformupdate, $update);
+    $yamlformupdate->changed = strtotime('now');
+    $yamlformupdate->setData($yamlform_data);
+    $yamlformupdate->save();
+
+    // Send mail.
+    if (isset($yamlformupdate) || !empty($yamlformupdate)
+      && $reminder_status == 6
+    ) {
+      reminder_status_mail($yamlformupdate, 12);
+    }
+    $message = $yamlformupdate->getData('promo_code') . ' promocode request crossed 12 hr ' . date('d-m-Y H:i:s', strtotime('now') . ' . ');
+    \Drupal::logger('Scheduler on promocode reminders')->notice($message);
+    // Send mail reminder in between 1hr and 12 hr.
+  }
+  elseif ((strtotime('now') - $result->completed) > 2160 &&
+    (strtotime('now') - $result->completed) < 2592000
+  ) {
+    $yamlformupdate = YamlFormSubmission::load($result->sid);
+    $reminder_status = $yamlformupdate->getData('reminder_status');
+    $update = array(
+      'promo_status' => $yamlformupdate->getData('promocode_status'),
+      'remind_status' => 6
+    );
+    $yamlform_data = insert_data($yamlformupdate, $update);
+    $yamlformupdate->changed = strtotime('now');
+    $yamlformupdate->setData($yamlform_data);
+    $yamlformupdate->save();
+
+    // Send mail.
+    if (isset($yamlformupdate) || !empty($yamlformupdate)
+      && $reminder_status == 0
+    ) {
+      reminder_status_mail($yamlformupdate, 6);
+    }
+    $message = $yamlformupdate->getData('promo_code') . ' promocode request crossed 1 hr ' . date('d-m-Y H:i:s', strtotime('now') . ' . ');
+    \Drupal::logger('Scheduler on promocode reminders')->notice($message);
+  }
+  else {
+    // Do nothing.
+  }
+  unset($yamlformupdate);
+}
+
+/**
+ * To insert the data.
+ */
+function insert_data($data, $status) {
+  $promocode = [
+    'part_number' => $data->getData('part_number'),
+    'msrp' => $data->getData('msrp'),
+    'quantity' => $data->getData('quantity'),
+    'organization' => $data->getData('organization'),
+    'region' => $data->getData('region'),
+    'customer' => $data->getData('customer'),
+    'end_user' => $data->getData('end_user'),
+    'production_date' => $data->getData('production_date'),
+    'opportunity_registration' => $data->getData('opportunity_registration'),
+    'project_name' => $data->getData('project_name'),
+    'application' => $data->getData('application'),
+    'annual_volume' => $data->getData('annual_volume'),
+    'cypress_fae_fse' => $data->getData('cypress_fae_fse'),
+    'additional_details' => $data->getData('additional_details'),
+    'customer_part_number' => $data->getData('customer_part_number'),
+    'purchase_order_number' => $data->getData('purchase_order_number'),
+    'promocode_status' => $status['promo_status'],
+    'custom_emails' => $data->getData('custom_emails'),
+    'type' => $data->getData('type'),
+    'approver' => $data->getData('approver'),
+    'discount_amount' => $data->getData('discount_amount'),
+    'promo_code' => $data->getData('promo_code'),
+    'approver_mail' => $data->getData('approver_mail'),
+    'requester' => $data->getData('requester'),
+    'requester_mail' => $data->getData('requester_mail'),
+    'action_links' => $data->getData('action_links'),
+    'approver_subject' => $data->getData('approver_subject'),
+    'requester_subject' => $data->getData('requester_subject'),
+    'approver_mail_statement' => $data->getData('approver_mail_statement'),
+    'requester_mail_statement' => $data->getData('requester_mail_statement'),
+    'add_to_cart_link' => $data->getData('add_to_cart_link'),
+    'mpn_id' => $data->getData('mpn_id'),
+    'created_date' => $data->getData('created_date'),
+    'expire_date' => $data->getData('expire_date'),
+    'approver_name' => $data->getData('approver_name'),
+    'reminder_status' => $status['remind_status'],
+  ];
+  return $promocode;
+}
+
+/**
+ * Mail_info helper function.
+ */
+function mail_info($yamlformupdate, $reminder_status) {
+  global $base_url;
+  $url = $base_url . '/admin/structure/yamlform/manage/promocode/submission/' . $yamlformupdate->getData('promo_code') . '/edit';
+
+  switch ($reminder_status) {
+    case 24:
+      $subj = 'Request For Promo Code:- <b>' . $yamlformupdate->getData('promo_code') . '</b> has been Rejected';
+      $bodyHeader = '<p>Your request for promo code <b>' . $yamlformupdate->getData('promo_code') . '</b> has been rejected. The reason for the rejection is included below.</p><p>AUTO REJECT DUE TO NO DISPOSITION BY THE APPROVER</p>';
+      break;
+
+    case 12:
+      $subj = 'Request to Approve Promo Code';
+      $bodyHeader = 'You have a request to approve promo code </b>' . $yamlformupdate->getData('promo_code') . '</b> within the next 12 hours. The details of the request are indicated below on this email. If you do not ';
+      $bodyHeader .= 'respond within the next 12 hours, your manager will get a notice to approve this promo code. If you or your manager do not respond within 24 hours, the promo code will be ';
+      $bodyHeader .= 'automatically rejected. Please click on the links below to approve or reject the request. You may also change some of the details of the request by clicking on the modify link.';
+      break;
+
+    default:
+      $subj = 'REMINDER TO MANAGER: Request to Approve Promo Code';
+      $bodyHeader = $yamlformupdate->getData('requester_mail') . ' has a promotional code <b>' . $yamlformupdate->getData('promo_code') . '</b> submitted by  ' . $yamlformupdate->getData('approver_mail');
+      $bodyHeader .= ' that has been pending approval/rejection for more than 12 hours. The details of the request have been presented below. We would appreciate if you could take the following actions to move the request forward:';
+      $bodyHeader .= '<p>A.) Click on the approve, reject or modify links below to give a disposition to this request. Or <br/>';
+      $bodyHeader .= 'B.) Ask the original approver to please give a disposition to the request ASAP.<br/></p>';
+      $bodyHeader .= '<p><b>If you or the original approver do not give a disposition within 24 hours, this promo code will be automatically rejected.</b></p>';
+      $bodyHeader .= '<p>This will help in getting the field their sample as fast as possible. For more information on this and the MySamples program, ';
+      $bodyHeader .= 'please <a href="' . $base_url . '/mysamples">click here.</a></p>';
+      break;
+  }
+
+  $body = '<div class="container" style="width: 55%; margin: 0 auto; border-top: 15px solid #ccc; border-left: 10px solid #ccc;' . 'border-right: 10px solid #ccc; border-bottom: 4px solid #ccc; padding: 1.6em;">';
+
+  $body .= '<div class="cypress-logo-img" style="text-align:center;"><a href="' . $base_url . '"><img alt="cypress-logo" src="' . $base_url . '/themes/cypress_store/images/cypress.svg" style="width: 258px;padding: 32px 0;"/></a></div>';
+
+  $body .= '<div><p> ' . $bodyHeader . ' </p></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Requestor:';
+
+  $body .= '<div style="float: right">' . $yamlformupdate->getData('requester') . '</div></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">MPN: <span style="float:right">' . $yamlformupdate->getData('part_number') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">MSRP: <span style="float:right">$' . $yamlformupdate->getData('msrp') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Quantity: <span style="float:right">' . $yamlformupdate->getData('quantity') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Discount Amount: <span style="float:right">$' . $yamlformupdate->getData('discount_amount') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Customer: <span style="float:right">' . $yamlformupdate->getData('customer') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">End User: <span style="float:right">' . $yamlformupdate->getData('end_user') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Production Date: <span style="float:right">' . $yamlformupdate->getData('production_date') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Opportunity Number: <span style="float:right">' . $yamlformupdate->getData('opportunity_registration') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Project Name <span style="float:right">' . $yamlformupdate->getData('project_name') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Application <span style="float:right">' . $yamlformupdate->getData('application') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Annual Volume <span style="float:right">' . $yamlformupdate->getData('annual_volume') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Cypress FAE/FSE <span style="float:right">' . $yamlformupdate->getData('cypress_fae_fse') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Additional Details <span style="float:right">' . $yamlformupdate->getData('additional_details') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Customer Part Number <span style="float:right">' . $yamlformupdate->getData('customer_part_number') . '</span></div>';
+
+  $body .= '<div style="padding-bottom: 2%;">Purchase Order Number <span style="float:right">' . $yamlformupdate->getData('purchase_order_number') . '</span></div>';
+
+  $body .= '<div style="display: inline-block;' . $yamlformupdate->getData('action_links') . '"><a href="' . $url . '?op=approve" style="background-color: #0071b8;border: none;color: white;padding: 8px 16px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;" target="_blank">Approve</a></div>';
+
+  $body .= '<div style="display: inline-block;' . $yamlformupdate->getData('action_links') . '"><a href="' . $url . '?op=reject" style="background-color: #0071b8;border: none;color: white;padding: 8px 16px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;" target="_blank">Reject</a></div>';
+
+  $body .= '<div style="display: inline-block;' . $yamlformupdate->getData('action_links') . '"><a href="' . $url . '?op=modify" style="background-color: #0071b8;border: none;color: white;padding: 8px 16px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;" target="_blank">Modify</a></div>';
+
+  $body .= '<div style="' . $yamlformupdate->getData('add_to_cart_link') . '"><a href="' . $base_url . '/addtocart/' . $yamlformupdate->getData('part_number') . '/' . $yamlformupdate->getData('promo_code') . '" style="background-color: #0071b8;border: none;color: white;padding: 8px 16px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;">Add to Cart</a></div></div>';
+
+  $params['subject'] = $subj;
+  $params['message'] = $body;
+
+  return $params;
+
+}
+
+/**
+ * Method to send reminder status email.
+ *
+ * @param object $yamlformupdate
+ *   And $reminder_status.
+ *   Yamlform submission data and status for requested promocode.
+ */
+function reminder_status_mail($yamlformupdate, $reminder_status) {
+
+  $maildata = mail_info($yamlformupdate, $reminder_status);
+  $mailManager = \Drupal::service('plugin.manager.mail');
+  $module = 'store_mysamples';
+  $key = 'reminder_status';
+  // $yamlformupdate->getData('approver_mail');.
+  $to = 'frnd@cypress.com,fkhumlo@gmail.com';
+  $params['message'] = Markup::create($maildata['message']);
+  $params['headers']['Bcc'] = 'disha.bhadra@valuebound.com, manoj.k@valuebound.com';
+  $params['subject'] = $maildata['subject'];
+  $params['title'] = $maildata['subject'];
+  $langcode = \Drupal::currentUser()->getPreferredLangcode();
+  $send = TRUE;
+
+  $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
+  if ($result['result'] != TRUE) {
+    $message = t('There was a problem sending your email notification to @email.', array('@email' => $to));
+    drupal_set_message($message, 'error');
+    \Drupal::logger('store mysamples mail log')->error($message);
+    return;
+  }
+
+  $message = t('An email notification has been sent to @email', array('@email' => $to));
+  drupal_set_message($message);
+  \Drupal::logger('store mysamples mail log')->notice($message);
+}

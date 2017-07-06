@@ -1,0 +1,14 @@
+uuid: cfce711d-d59a-4be9-a554-02a1a72831fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.direct_sales
+  module:
+    - user
+id: user_add_role_action.direct_sales
+label: 'Add the Direct Sales role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: direct_sales

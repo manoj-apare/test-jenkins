@@ -1,0 +1,14 @@
+uuid: 4adcc7f5-9575-4d7e-8999-8d6263104506
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.limited_web_editor
+  module:
+    - user
+id: user_add_role_action.limited_web_editor
+label: 'Add the Limited Web Editor role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: limited_web_editor

@@ -1,0 +1,14 @@
+uuid: 9f8aeba9-7603-468c-ae6d-ecb6fc8a47c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.subsite_administrator
+  module:
+    - user
+id: user_remove_role_action.subsite_administrator
+label: 'Remove the SubSite Administrator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: subsite_administrator

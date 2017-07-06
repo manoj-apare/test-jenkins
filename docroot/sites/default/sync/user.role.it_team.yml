@@ -1,0 +1,9 @@
+uuid: c68b576e-42f0-445a-a124-c0601c4567f2
+langcode: en
+status: true
+dependencies: {  }
+id: it_team
+label: 'IT team'
+weight: 15
+is_admin: null
+permissions: {  }

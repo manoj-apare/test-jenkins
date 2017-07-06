@@ -1,0 +1,5 @@
+name: Delegation for promocode approval
+type: module
+description: Creating custom table to store delegate information when original approver is on leave.
+core: 8.x
+package: Custom

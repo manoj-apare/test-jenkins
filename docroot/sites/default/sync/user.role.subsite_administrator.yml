@@ -1,0 +1,9 @@
+uuid: 724a9ae5-ca7c-4cf9-9941-2a780666cb52
+langcode: en
+status: true
+dependencies: {  }
+id: subsite_administrator
+label: 'SubSite Administrator'
+weight: 28
+is_admin: null
+permissions: {  }

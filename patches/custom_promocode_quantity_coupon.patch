@@ -1,0 +1,636 @@
+diff --git a/docroot/modules/contrib/commerce/modules/order/src/Entity/Order.php b/docroot/modules/contrib/commerce/modules/order/src/Entity/Order.php
+index f1017c9..e85b18d 100644
+--- a/docroot/modules/contrib/commerce/modules/order/src/Entity/Order.php
++++ b/docroot/modules/contrib/commerce/modules/order/src/Entity/Order.php
+@@ -11,6 +11,13 @@
+ use Drupal\Core\Field\BaseFieldDefinition;
+ use Drupal\user\UserInterface;
+ use Drupal\profile\Entity\ProfileInterface;
++use Drupal\commerce_promotion\Entity\Coupon;
++use Drupal\commerce_promotion\Plugin\Commerce\PromotionOffer\PromotionOfferBase;
++use Drupal\commerce_price\Price;
++use Drupal\commerce_product\Entity\ProductVariation;
++use Drupal\commerce_product\Plugin\Commerce\PromotionOffer\ProductFixedOff;
++use Drupal\commerce_product\Plugin\Commerce\PromotionOffer\ProductPercentageOff;
++use Drupal\commerce_promotion\Entity\Promotion;
+ 
+ /**
+  * Defines the order entity class.
+@@ -319,16 +326,64 @@ public function collectAdjustments() {
+     $adjustments = [];
+     foreach ($this->getItems() as $order_item) {
+       foreach ($order_item->getAdjustments() as $adjustment) {
+-        // Order item adjustments apply to the unit price, they
+-        // must be multiplied by quantity before they are used.
+-        $multiplied_adjustment = new Adjustment([
+-          'type' => $adjustment->getType(),
+-          'label' => $adjustment->getLabel(),
+-          'source_id' => $adjustment->getSourceId(),
+-          'amount' => $adjustment->getAmount()->multiply($order_item->getQuantity()),
+-          'included' => $adjustment->isIncluded(),
+-        ]);
+-        $adjustments[] = $multiplied_adjustment;
++
++        // Code written for Custom Quantity field in Coupons.
++        if (!empty($this->get('coupons')->target_id)) {
++          $coupon_id = $this->get('coupons')->target_id;
++          $coupon = Coupon::load($coupon_id);
++          // Order item adjustments apply to the unit price, they
++          // must be multiplied by quantity before they are used.
++
++          $purchased_entity = $order_item->getPurchasedEntityId();
++          $pro_var_id = ProductVariation::load($purchased_entity);
++          $product_id = $pro_var_id->getProductId();
++
++          //get the product id from respective promotion
++          $promotion_id = $coupon->getPromotionId();
++          $promotion = Promotion::load($promotion_id);
++          $offer = $promotion->offer->first()->getTargetInstance();
++          if ($offer instanceof ProductFixedOff || $offer instanceof ProductPercentageOff) {
++            $config = $offer->getConfiguration();
++            $offer_product_id = $config['product_id'];
++          }
++
++          $cart_quantity = $order_item->getQuantity();
++          $coupon_quantity = $coupon->getPromocodeQuantity();
++          if ($product_id == $offer_product_id) {
++            if ($cart_quantity > $coupon_quantity) {
++              $multiplied_adjustment = new Adjustment([
++                'type' => $adjustment->getType(),
++                'label' => $adjustment->getLabel(),
++                'source_id' => $adjustment->getSourceId(),
++                'amount' => $adjustment->getAmount()
++                  ->multiply($coupon_quantity),
++                'included' => $adjustment->isIncluded(),
++              ]);
++              $adjustments[] = $multiplied_adjustment;
++            }
++            elseif ($cart_quantity < $coupon_quantity) {
++              $multiplied_adjustment = new Adjustment([
++                'type' => $adjustment->getType(),
++                'label' => $adjustment->getLabel(),
++                'source_id' => $adjustment->getSourceId(),
++                'amount' => $adjustment->getAmount()->multiply($cart_quantity),
++                'included' => $adjustment->isIncluded(),
++              ]);
++              $adjustments[] = $multiplied_adjustment;
++            }
++          }
++        }
++        elseif (empty($coupon_quantity)) {
++          $multiplied_adjustment = new Adjustment([
++            'type' => $adjustment->getType(),
++            'label' => $adjustment->getLabel(),
++            'source_id' => $adjustment->getSourceId(),
++            'amount' => $adjustment->getAmount()
++              ->multiply($order_item->getQuantity()),
++            'included' => $adjustment->isIncluded(),
++          ]);
++          $adjustments[] = $multiplied_adjustment;
++        }
+       }
+     }
+     foreach ($this->getAdjustments() as $adjustment) {
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/commerce_promotion.services.yml b/docroot/modules/contrib/commerce/modules/promotion/commerce_promotion.services.yml
+index bb31130..2d3959a 100644
+--- a/docroot/modules/contrib/commerce/modules/promotion/commerce_promotion.services.yml
++++ b/docroot/modules/contrib/commerce/modules/promotion/commerce_promotion.services.yml
+@@ -23,3 +23,9 @@ services:
+     arguments: ['@entity_type.manager', '@commerce_promotion.usage']
+     tags:
+       - { name: event_subscriber }
++
++  commerce_promotion.promocode_quantity:
++    class: Drupal\commerce_promotion\PromocodeQuantity
++    arguments: ['@database']
++    tags:
++      - { name: backend_overridable }
+\ No newline at end of file
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/src/Element/CouponRedemptionForm.php b/docroot/modules/contrib/commerce/modules/promotion/src/Element/CouponRedemptionForm.php
+index 28f7687..58a4789 100644
+--- a/docroot/modules/contrib/commerce/modules/promotion/src/Element/CouponRedemptionForm.php
++++ b/docroot/modules/contrib/commerce/modules/promotion/src/Element/CouponRedemptionForm.php
+@@ -200,10 +200,49 @@ public static function applyCoupon(array $form, FormStateInterface $form_state)
+     $order = $order_storage->load($element['#order_id']);
+ 
+     $coupon = $form_state->getValue($parents);
++//    foreach($order->getItems() as $order_item) {
++//      // get the product id from order_item
++//      $purchased_entity = $order_item->getPurchasedEntityId();
++//      $pro_var_id = ProductVariation::load($purchased_entity);
++//      $product_id = $pro_var_id->getProductId();
++//
++//      //get the product id from respective promotion
++//      $promotion_id = $coupon->getPromotionId();
++//      $promotion = Promotion::load($promotion_id);
++//      $offer = $promotion->offer->first()->getTargetInstance();
++//      if ($offer instanceof ProductFixedOff || $offer instanceof ProductPercentageOff) {
++//        $config = $offer->getConfiguration();
++//        $offer_product_id = $config['product_id'];
++//      }
++//
++//      if ($product_id == $offer_product_id) {
++//       // $order_item->setAdjustments([]);
++//        $cart_quantity = $order_item->getQuantity();
++//        $coupon_quantity = $coupon->getPromocodeQuantity();
++//        if ($cart_quantity > $coupon_quantity) {
++//         // $order_item->setQuantity($coupon_quantity);
++//          $or_total = $order->getTotalPrice()->getNumber();
++//          $amount = $order_item->getUnitPrice()->multiply($coupon_quantity);
++//          $dis_amt = $amount->getNumber();
++//          $final_amt = $order_item->getUnitPrice()->getNumber();
++//          $currency_code = $amount->getCurrencyCode();
++//          //$promocode_adjustment = $order_item->getAdjustments();
++//          //$price = (int) $final_amt;
++//          $promocode_adjustment[] = new Adjustment([
++//            'type' => 'promotion',
++//            'label' => t('Discount'),
++//            'amount' => new Price('-' . $final_amt, $currency_code),
++//          ]);
++//          $order_item->setAdjustments($promocode_adjustment);
++//          $order_item->save();
++//        }
++//      }
++//    }
+     $order->get('coupons')->appendItem($coupon);
+     $order->save();
+     $form_state->setRebuild();
+     drupal_set_message($element['#submit_message']);
++
+   }
+ 
+   /**
+@@ -278,6 +317,7 @@ public static function validateForm(array &$element, FormStateInterface $form_st
+         return;
+       }
+     }
++
+     if (!$coupon->available($order)) {
+       $form_state->setErrorByName($code_path, t('Coupon is invalid'));
+       return;
+@@ -289,7 +329,7 @@ public static function validateForm(array &$element, FormStateInterface $form_st
+ 
+     $form_state->setValueForElement($element, $coupon);
+   }
+-
++  
+   /**
+    * Adjustments table builder.
+    *
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Coupon.php b/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Coupon.php
+index d5b105a..378427e 100644
+--- a/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Coupon.php
++++ b/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Coupon.php
+@@ -88,6 +88,20 @@ public function setUsageLimit($usage_limit) {
+   /**
+    * {@inheritdoc}
+    */
++  public function getPromocodeQuantity() {
++    return $this->get('promocode_quantity_limit')->value;
++  }
++  /**
++   * {@inheritdoc}
++   */
++  public function setPromocodeQuantity($promocode_quantity) {
++    $this->set('promocode_quantity_limit', $promocode_quantity);
++    return $this;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
+   public function isEnabled() {
+     return (bool) $this->getEntityKey('status');
+   }
+@@ -118,6 +132,14 @@ public function available(OrderInterface $order) {
+       }
+     }
+ 
++//    if ($promocode_quantity = $this->getPromocodeQuantity()) {
++//      /** @var \Drupal\commerce_promotion\PromocodeQuantityInterface $pro_quantity */
++//      $pro_quantity = \Drupal::service('commerce_promotion.promocode_quantity');
++//      if ($promocode_quantity <= $pro_quantity->getUsage($this->getPromotion(), $this)) {
++//        return FALSE;
++//      }
++//    }
++
+     return TRUE;
+   }
+ 
+@@ -165,6 +187,16 @@ public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
+         'weight' => 4,
+       ]);
+ 
++    $fields['promocode_quantity_limit'] = BaseFieldDefinition::create('integer')
++      ->setLabel(t('Promocode Quantity'))
++      ->setDescription(t('The Quantity set for that coupon'))
++      ->setDefaultValue(0)
++      ->setDisplayOptions('form', [
++        'type' => 'commerce_promocode_quantity',
++        'weight' => 6,
++      ]);
++
++
+     $fields['status'] = BaseFieldDefinition::create('boolean')
+       ->setLabel(t('Status'))
+       ->setDescription(t('Whether the coupon is enabled.'))
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/src/Entity/CouponInterface.php b/docroot/modules/contrib/commerce/modules/promotion/src/Entity/CouponInterface.php
+index 09fe327..4ba7b0a 100644
+--- a/docroot/modules/contrib/commerce/modules/promotion/src/Entity/CouponInterface.php
++++ b/docroot/modules/contrib/commerce/modules/promotion/src/Entity/CouponInterface.php
+@@ -66,6 +66,26 @@ public function getUsageLimit();
+   public function setUsageLimit($usage_limit);
+ 
+   /**
++   * Gets the coupon quantity limit.
++   *
++   * Represents the maximum quantity the coupon can be have.
++   *
++   * @return int
++   *   The promotion usage limit.
++   */
++  public function getPromocodeQuantity();
++
++  /**
++   * Sets the coupon quantity limit.
++   *
++   * @param int $promocode_quantity
++   *   The coupon quantity limit.
++   *
++   * @return $this
++   */
++  public function setPromocodeQuantity($promocode_quantity);
++
++  /**
+    * Gets whether the coupon is enabled.
+    *
+    * @return bool
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Promotion.php b/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Promotion.php
+index 14d9376..8850776 100644
+--- a/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Promotion.php
++++ b/docroot/modules/contrib/commerce/modules/promotion/src/Entity/Promotion.php
+@@ -262,6 +262,20 @@ public function setUsageLimit($usage_limit) {
+   /**
+    * {@inheritdoc}
+    */
++  public function getPromocodeQuantity() {
++    return $this->get('promocode_quantity_limit')->value;
++  }
++  /**
++   * {@inheritdoc}
++   */
++  public function setPromocodeQuantity($promocode_quantity) {
++    $this->set('promocode_quantity_limit', $promocode_quantity);
++    return $this;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
+   public function getStartDate() {
+     return $this->get('start_date')->date;
+   }
+@@ -364,6 +378,14 @@ public function available(OrderInterface $order) {
+       if ($usage_limit <= $usage->getUsage($this)) {
+         return FALSE;
+       }
++      
++      if ($promocode_quantity = $this->getPromocodeQuantity()) {
++        /** @var \Drupal\commerce_promotion\PromocodeQuantityInterface $pro_quantity */
++        $pro_quantity = \Drupal::service('commerce_promotion.promocode_quantity');
++        if ($promocode_quantity <= $pro_quantity->getUsage($this->getPromotion(), $this)) {
++          return TRUE;
++        }
++      }
+     }
+ 
+     return TRUE;
+@@ -644,6 +666,15 @@ public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
+         'weight' => 4,
+       ]);
+ 
++    $fields['promocode_quantity_limit'] = BaseFieldDefinition::create('integer')
++      ->setLabel(t('Promocode Quantity'))
++      ->setDescription(t('The Quantity set for that promotion.'))
++      ->setDefaultValue(0)
++      ->setDisplayOptions('form', [
++        'type' => 'commerce_promocode_quantity',
++        'weight' => 7,
++      ]);
++
+     $fields['status'] = BaseFieldDefinition::create('boolean')
+       ->setLabel(t('Status'))
+       ->setDescription(t('Whether the promotion is enabled.'))
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/src/Plugin/Field/FieldWidget/PromocodeQuantityWidget.php b/docroot/modules/contrib/commerce/modules/promotion/src/Plugin/Field/FieldWidget/PromocodeQuantityWidget.php
+new file mode 100644
+index 0000000..986b601
+--- /dev/null
++++ b/docroot/modules/contrib/commerce/modules/promotion/src/Plugin/Field/FieldWidget/PromocodeQuantityWidget.php
+@@ -0,0 +1,127 @@
++<?php
++
++namespace Drupal\commerce_promotion\Plugin\Field\FieldWidget;
++
++use Drupal\commerce_promotion\PromocodeQuantityInterface;
++use Drupal\Core\Field\FieldDefinitionInterface;
++use Drupal\Core\Field\FieldItemListInterface;
++use Drupal\Core\Field\WidgetBase;
++use Drupal\Core\Form\FormStateInterface;
++use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
++use Symfony\Component\DependencyInjection\ContainerInterface;
++
++/**
++ * Plugin implementation of 'commerce_promocode_quantity'.
++ *
++ * @FieldWidget(
++ *   id = "commerce_promocode_quantity",
++ *   label = @Translation("Promocode Quantity"),
++ *   field_types = {
++ *     "integer"
++ *   }
++ * )
++ */
++class PromocodeQuantityWidget extends WidgetBase implements ContainerFactoryPluginInterface {
++
++  /**
++   * The promotion usage.
++   *
++   * @var \Drupal\commerce_promotion\PromocodeQuantityInterface
++   */
++  protected $quantity;
++
++  /**
++   * Constructs a new UsageLimitWidget object.
++   *
++   * @param string $plugin_id
++   *   The plugin_id for the widget.
++   * @param mixed $plugin_definition
++   *   The plugin implementation definition.
++   * @param \Drupal\Core\Field\FieldDefinitionInterface $field_definition
++   *   The definition of the field to which the widget is associated.
++   * @param array $settings
++   *   The widget settings.
++   * @param array $third_party_settings
++   *   Any third party settings.
++   * @param \Drupal\commerce_promotion\PromocodeQuantityInterface $quantity
++   *   The promotion usage.
++   */
++  public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, array $third_party_settings, PromocodeQuantityInterface $quantity) {
++    parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $third_party_settings);
++
++    $this->quantity = $quantity;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    return new static(
++      $plugin_id,
++      $plugin_definition,
++      $configuration['field_definition'],
++      $configuration['settings'],
++      $configuration['third_party_settings'],
++      $container->get('commerce_promotion.promocode_quantity')
++    );
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
++    $field_name = $this->fieldDefinition->getName();
++    /** @var \Drupal\commerce_promotion\Entity\PromotionInterface $promotion */
++    $promotion = $items[$delta]->getEntity();
++    $value = isset($items[$delta]->value) ? $items[$delta]->value : NULL;
++    $quantity = $this->formatPlural($this->quantity->getUsage($promotion), '1 use', '@count uses');
++
++    $element['quantity'] = [
++      '#type' => 'radios',
++      '#title' => $this->t('Total available'),
++      '#options' => [
++        0 => $this->t('Unlimited'),
++        1 => $this->t('Limited number of quantity'),
++      ],
++      '#default_value' => $value ? 1 : 0,
++    ];
++    $element['promocode_quantity_limit'] = [
++      '#type' => 'number',
++      '#title' => $this->t('Number of quantity'),
++      '#title_display' => 'invisible',
++      '#default_value' => $value ?: 10,
++      '#description' => $this->t('Current quantity: @usage.', ['@usage' => $quantity]),
++      '#states' => [
++        'invisible' => [
++          ':input[name="' . $field_name . '[0][quantity]"]' => ['value' => 0],
++        ],
++      ],
++    ];
++
++    return $element;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function massageFormValues(array $values, array $form, FormStateInterface $form_state) {
++    $new_values = [];
++    foreach ($values as $key => $value) {
++      if (empty($value['quantity'])) {
++        continue;
++      }
++      $new_values[$key] = $value['promocode_quantity_limit'];
++    }
++    return $new_values;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function isApplicable(FieldDefinitionInterface $field_definition) {
++    $entity_type = $field_definition->getTargetEntityTypeId();
++    $field_name = $field_definition->getName();
++    return $entity_type == 'commerce_promotion' && $field_name == 'promocode_quantity_limit';
++  }
++
++}
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/src/PromocodeQuantity.php b/docroot/modules/contrib/commerce/modules/promotion/src/PromocodeQuantity.php
+new file mode 100644
+index 0000000..51f2121
+--- /dev/null
++++ b/docroot/modules/contrib/commerce/modules/promotion/src/PromocodeQuantity.php
+@@ -0,0 +1,95 @@
++<?php
++
++namespace Drupal\commerce_promotion;
++
++use Drupal\commerce\EntityHelper;
++use Drupal\commerce_order\Entity\OrderInterface;
++use Drupal\commerce_promotion\Entity\CouponInterface;
++use Drupal\commerce_promotion\Entity\PromotionInterface;
++use Drupal\Core\Database\Connection;
++
++class PromocodeQuantity implements PromocodeQuantityInterface {
++
++  /**
++   * The database connection to use.
++   *
++   * @var \Drupal\Core\Database\Connection
++   */
++  protected $connection;
++
++  /**
++   * Constructs a PromotionUsage object.
++   *
++   * @param \Drupal\Core\Database\Connection $connection
++   *   The database connection to use.
++   */
++  public function __construct(Connection $connection) {
++    $this->connection = $connection;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function addUsage(OrderInterface $order, PromotionInterface $promotion, CouponInterface $coupon = NULL) {
++    $this->connection->insert('commerce_promotion_usage')
++      ->fields([
++        'promotion_id' => $promotion->id(),
++        'coupon_id' => $coupon ? $coupon->id() : 0,
++        'order_id' => $order->id(),
++        'mail' => $order->getEmail(),
++      ])
++      ->execute();
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function deleteUsage(array $promotions) {
++    $this->connection->delete('commerce_promotion_usage')
++      ->condition('promotion_id', EntityHelper::extractIds($promotions), 'IN')
++      ->execute();
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getUsage(PromotionInterface $promotion, CouponInterface $coupon = NULL, $mail = NULL) {
++    $coupons = $coupon ? [$coupon] : [];
++    $usages = $this->getUsageMultiple([$promotion], $coupons, $mail);
++    return $usages[$promotion->id()];
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getUsageMultiple(array $promotions, array $coupons = [], $mail = NULL) {
++    if (empty($promotions)) {
++      return [];
++    }
++    $promotion_ids = EntityHelper::extractIds($promotions);
++    $query = $this->connection->select('commerce_promotion_usage', 'cpu');
++    $query->addField('cpu', 'promotion_id');
++    $query->addExpression('COUNT(promotion_id)', 'count');
++    $query->condition('promotion_id', $promotion_ids, 'IN');
++    if (!empty($coupons)) {
++      $query->condition('coupon_id', EntityHelper::extractIds($coupons), 'IN');
++    }
++    if (!empty($mail)) {
++      $query->condition('mail', $mail);
++    }
++    $query->groupBy('promotion_id');
++    $result = $query->execute()->fetchAllAssoc('promotion_id', \PDO::FETCH_ASSOC);
++    // Ensure that each promotion ID gets a count, even if it's not present
++    // in the query due to non-existent usage.
++    $counts = [];
++    foreach ($promotion_ids as $promotion_id) {
++      $counts[$promotion_id] = 0;
++      if (isset($result[$promotion_id])) {
++        $counts[$promotion_id] = $result[$promotion_id]['count'];
++      }
++    }
++
++    return $counts;
++  }
++
++}
+diff --git a/docroot/modules/contrib/commerce/modules/promotion/src/PromocodeQuantityInterface.php b/docroot/modules/contrib/commerce/modules/promotion/src/PromocodeQuantityInterface.php
+new file mode 100644
+index 0000000..f63e6c2
+--- /dev/null
++++ b/docroot/modules/contrib/commerce/modules/promotion/src/PromocodeQuantityInterface.php
+@@ -0,0 +1,73 @@
++<?php
++
++namespace Drupal\commerce_promotion;
++
++use Drupal\commerce_order\Entity\OrderInterface;
++use Drupal\commerce_promotion\Entity\CouponInterface;
++use Drupal\commerce_promotion\Entity\PromotionInterface;
++
++/**
++ * Tracks promotion usage.
++ *
++ * The customer is tracked by storing the email, which allows tracking
++ * both authenticated and anonymous customers the same way.
++ */
++interface PromocodeQuantityInterface {
++
++  /**
++   * Add a promotion usage record.
++   *
++   * @param \Drupal\commerce_order\Entity\OrderInterface $order
++   *   The order.
++   * @param \Drupal\commerce_promotion\Entity\PromotionInterface $promotion
++   *   The promotion.
++   * @param \Drupal\commerce_promotion\Entity\CouponInterface $coupon
++   *   (Optional) The used coupon.
++   */
++  public function addUsage(OrderInterface $order, PromotionInterface $promotion, CouponInterface $coupon = NULL);
++
++  /**
++   * Deletes all usage records for the given promotions.
++   *
++   * @param \Drupal\commerce_promotion\Entity\PromotionInterface[] $promotions
++   *   The promotions.
++   */
++  public function deleteUsage(array $promotions);
++
++  /**
++   * Gets the usage for the given promotion.
++   *
++   * The optional $coupon and $mail parameters can be used to restrict the
++   * usage count to only the provided coupon / customer email.
++   *
++   * @param \Drupal\commerce_promotion\Entity\PromotionInterface $promotion
++   *   The promotion.
++   * @param \Drupal\commerce_promotion\Entity\CouponInterface $coupon
++   *   (Optional) The coupon.
++   * @param string $mail
++   *   (Optional) The customer email.
++   *
++   * @return int
++   *   The usage.
++   */
++  public function getUsage(PromotionInterface $promotion, CouponInterface $coupon = NULL, $mail = NULL);
++
++  /**
++   * Gets the usage for the given promotions.
++   *
++   * The optional $coupons and $mail parameters can be used to restrict the
++   * usage count to only the provided coupons / customer email.
++   *
++   * @param \Drupal\commerce_promotion\Entity\PromotionInterface[] $promotions
++   *   The promotions.
++   * @param \Drupal\commerce_promotion\Entity\CouponInterface[] $coupons
++   *   (Optional) The coupons.
++   * @param string $mail
++   *   (Optional) The customer email.
++   *
++   * @return array
++   *   The usage counts, keyed by promotion ID.
++   */
++  public function getUsageMultiple(array $promotions, array $coupons = [], $mail = NULL);
++
++}

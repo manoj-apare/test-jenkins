@@ -1,0 +1,14 @@
+uuid: 4aeaf94b-afc2-4b82-bd83-dcc5e66b1d64
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.direct_sales
+  module:
+    - user
+id: user_remove_role_action.direct_sales
+label: 'Remove the Direct Sales role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: direct_sales

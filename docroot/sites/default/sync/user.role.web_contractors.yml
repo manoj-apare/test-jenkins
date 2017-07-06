@@ -1,0 +1,9 @@
+uuid: 373784c2-9308-4b35-87f1-531aa69362ca
+langcode: en
+status: true
+dependencies: {  }
+id: web_contractors
+label: 'Web Contractors'
+weight: 29
+is_admin: null
+permissions: {  }

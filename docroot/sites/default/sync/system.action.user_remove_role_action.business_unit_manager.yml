@@ -1,0 +1,14 @@
+uuid: 9aa13fcf-2b62-47a7-823f-f4a892cdeab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.business_unit_manager
+  module:
+    - user
+id: user_remove_role_action.business_unit_manager
+label: 'Remove the Business Unit Manager role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: business_unit_manager

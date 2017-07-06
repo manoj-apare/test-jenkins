@@ -1,0 +1,14 @@
+uuid: 23f870c9-e9d6-49ed-a453-9851e4243033
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.marcom_director
+  module:
+    - user
+id: user_remove_role_action.marcom_director
+label: 'Remove the Marcom Director role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: marcom_director

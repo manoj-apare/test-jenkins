@@ -1,0 +1,9 @@
+uuid: fc688497-b052-4a43-be2d-035fa85dab2e
+langcode: en
+status: true
+dependencies: {  }
+id: endurance
+label: endurance
+weight: 12
+is_admin: null
+permissions: {  }

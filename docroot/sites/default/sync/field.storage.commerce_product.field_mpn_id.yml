@@ -1,0 +1,23 @@
+uuid: b41685c3-0dbb-478e-ab42-e3edfdd8510b
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: IdvdndYiM5Kv8QciG_267QbXr2DRjx6w2PvuRe035hU
+id: commerce_product.field_mpn_id
+field_name: field_mpn_id
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

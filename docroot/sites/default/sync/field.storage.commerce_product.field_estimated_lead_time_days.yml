@@ -1,0 +1,23 @@
+uuid: e510f51a-c2e5-4f35-aca0-9a024eeea3a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: e-yLfGsU4imlhrqHecuJ1N4dPalI99cAsn2BC9CPE3U
+id: commerce_product.field_estimated_lead_time_days
+field_name: field_estimated_lead_time_days
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

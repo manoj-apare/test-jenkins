@@ -1,0 +1,14 @@
+uuid: d1b9ed08-0453-4880-a50e-a1ed1712300d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.endurance
+  module:
+    - user
+id: user_remove_role_action.endurance
+label: 'Remove the endurance role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: endurance

@@ -1,0 +1,9 @@
+uuid: 076f8415-d915-40d7-a33d-3f63b3b4421e
+langcode: en
+status: true
+dependencies: {  }
+id: wrb_chairman
+label: 'WRB Chairman'
+weight: 25
+is_admin: null
+permissions: {  }

@@ -13,7 +13,7 @@
     <apply executable="php" taskname="lint" failonerror="true">
       <arg value="-l" />
 
-      <fileset dir="${basedir}">
+      <fileset dir="${basedir}/docroot/modules/custom">
         <include name="**/*.php" />
         <include name="**/*.module" />
         <include name="**/*.inc" />
@@ -33,7 +33,7 @@
       <arg value="--standard=Drupal" />
       <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
       <arg value="--ignore=autoload.php" />
-      <arg path="${basedir}" />
+      <arg path="${basedir}/docroot/modules/custom" />
     </exec>
 
     <property name="phpcs.done" value="true"/>

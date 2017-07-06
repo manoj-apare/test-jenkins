@@ -1,0 +1,20 @@
+uuid: e67b2059-fee1-429e-9559-195c221b5d0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: dEU3YLqZ9IK6tAkIBWSXxI14xhvGRBy9J7qQuu9oAxA
+id: commerce_product.field_price_five
+field_name: field_price_five
+entity_type: commerce_product
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: ea74ab73-8375-4e48-913a-6d9da706ff29
+langcode: en
+status: true
+dependencies: {  }
+id: web_marketing_manager
+label: 'Web Marketing Manager'
+weight: 24
+is_admin: null
+permissions: {  }

@@ -1,0 +1,9 @@
+uuid: c7c380eb-ec92-42e0-bea5-2bd219506ad4
+langcode: en
+status: true
+dependencies: {  }
+id: design_partner
+label: 'Design Partner'
+weight: 9
+is_admin: null
+permissions: {  }

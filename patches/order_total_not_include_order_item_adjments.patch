@@ -1,0 +1,12 @@
+diff --git a/docroot/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutFlow/CheckoutFlowBase.php b/docroot/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutFlow/CheckoutFlowBase.php
+index ca7d36f..56de469 100644
+--- a/docroot/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutFlow/CheckoutFlowBase.php
++++ b/docroot/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutFlow/CheckoutFlowBase.php
+@@ -275,6 +275,7 @@ public function submitForm(array &$form, FormStateInterface $form_state) {
+         // Place the order.
+         $transition = $this->order->getState()->getWorkflow()->getTransition('place');
+         $this->order->getState()->applyTransition($transition);
++        $this->order->setRefreshState('refresh_on_save');
+       }
+     }
+ 

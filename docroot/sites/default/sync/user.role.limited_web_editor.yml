@@ -1,0 +1,9 @@
+uuid: 523a9703-c482-4906-9370-0f882445484d
+langcode: en
+status: true
+dependencies: {  }
+id: limited_web_editor
+label: 'Limited Web Editor'
+weight: 16
+is_admin: null
+permissions: {  }

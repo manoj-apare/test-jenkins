@@ -1,0 +1,22 @@
+uuid: 842aa3fe-3a90-4362-bca9-df7ce13ef5ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - datetime
+_core:
+  default_config_hash: nggNcuSKTPz6x5ktXu68_A2Dvh5CHJwtK2i2iXpcpT4
+id: commerce_product.field_order_close
+field_name: field_order_close
+entity_type: commerce_product
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+diff --git a/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php b/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php
+index db83a23..fd00295 100644
+--- a/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php
++++ b/docroot/modules/contrib/commerce_paypal/src/Plugin/Commerce/PaymentGateway/Payflow.php
+@@ -317,7 +317,7 @@ protected function populateOrderParameters(array $parameters, OrderInterface $or
+ 
+   protected function populateBillingProfileParameters(array $parameters, ProfileInterface $profile) {
+     /** @var \Drupal\address\Plugin\Field\FieldType\AddressItem $address */
+-    $address = $profile->get('address')->first();
++    $address = $profile->get('field_contact_address')->first();
+ 
+     $default_parameters = [
+       'firstname' => $address->getGivenName(),
+@@ -342,7 +342,7 @@ protected function populateBillingProfileParameters(array $parameters, ProfileIn
+ 
+   protected function populateShippingProfileParameters(array $parameters, ProfileInterface $profile) {
+     /** @var \Drupal\address\Plugin\Field\FieldType\AddressItem $address */
+-    $address = $profile->get('address')->first();
++    $address = $profile->get('field_contact_address')->first();
+ 
+     $default_parameters = [
+       'firstname' => $address->getGivenName(),

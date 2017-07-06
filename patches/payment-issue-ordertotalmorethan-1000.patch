@@ -1,0 +1,50 @@
+diff --git a/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php b/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php
+index aeb2b8e..c4300f6 100644
+--- a/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php
++++ b/docroot/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/CheckoutPane/PaymentInformation.php
+@@ -135,6 +135,17 @@ public function buildPaneForm(array $pane_form, FormStateInterface $form_state,
+           '#default_value' => $payment_method,
+         ];
+       }
++      elseif (!empty($selected_option)) {
++        $payment_method_storage = $this->entityTypeManager->getStorage('commerce_payment_method');
++        $payment_method = $payment_method_storage->load($default_option);
++
++        $pane_form['add_payment_method'] = [
++          '#type' => 'commerce_payment_gateway_form',
++          '#operation' => 'add-payment-method',
++          '#profile_select_options' => $profile_select_options,
++          '#default_value' => $payment_method,
++        ];
++      }
+     }
+     else {
+       $store = $this->order->getStore();
+@@ -205,15 +216,18 @@ protected function buildPaymentMethodOptions(array $payment_gateways) {
+     //   }
+     // }
+     // 2) The order's payment method (if not listed above).
+-    // if ($order_payment_method && !isset($options[$order_payment_method->id()])) {
+-    //   $option_id = $order_payment_method->id();
+-    //   $options[$option_id] = [
+-    //     'id' => $option_id,
+-    //     'label' => $order_payment_method->label(),
+-    //     'payment_gateway' => $order_payment_method->getPaymentGatewayId(),
+-    //     'payment_method' => $order_payment_method->id(),
+-    //   ];
+-    // }
++     if ($order_payment_method && !isset($options[$order_payment_method->id()])) {
++       $option_id = $order_payment_method->id();
++       $options[$option_id] = [
++         'id' => $option_id,
++         'label' => $order_payment_method->label(),
++         'payment_gateway' => $order_payment_method->getPaymentGatewayId(),
++         'payment_method' => $order_payment_method->id(),
++       ];
++     }
++    if(!empty($options)) {
++      return $options;
++    }
+     // 3) "Create new $payment_method_type" options.
+     $payment_method_type_counts = [];
+     foreach ($payment_gateways_with_payment_methods as $payment_gateway) {

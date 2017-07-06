@@ -1,0 +1,14 @@
+uuid: 0b387281-d082-4471-a089-6f054ca6d3fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.wrb_chairman
+  module:
+    - user
+id: user_add_role_action.wrb_chairman
+label: 'Add the WRB Chairman role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: wrb_chairman

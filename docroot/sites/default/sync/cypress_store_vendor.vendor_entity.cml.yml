@@ -1,0 +1,7 @@
+uuid: 04caf0c2-d6fb-4a67-a4e9-def34d9c59ca
+langcode: en
+status: true
+dependencies: {  }
+id: cml
+label: CML
+description: "dev2:\r\n  customer_account_creation:\r\n    end_point: 'http://b2btest.cypress.com:5533/rest/CY_CYSTORE_ORACLE_XFER/custAcctCrt_RESTservice'\r\n    username: 'cystore'\r\n    password: 'cystore'\r\n  order_creation:\r\n    end_point: 'http://b2btest.cypress.com:5533/rest/CY_CYSTORE_ORACLE_XFER/sampOrderCreation_RESTservice'\r\n    username: 'cystore'\r\n    password: 'cystore'"

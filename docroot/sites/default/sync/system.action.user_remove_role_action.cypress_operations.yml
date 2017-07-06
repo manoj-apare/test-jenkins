@@ -1,0 +1,14 @@
+uuid: 9b44efeb-b390-4edf-9bb4-bfe5cb00ee17
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cypress_operations
+  module:
+    - user
+id: user_remove_role_action.cypress_operations
+label: 'Remove the Cypress Operations role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: cypress_operations

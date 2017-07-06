@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the completion message.
+ *
+ * Available variables:
+ * - order_entity: The order entity.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="order-complete">
+  <h2>Order Confirmation</h2>
+  <p>{{ 'Congratulations '}}<b>{{ '@username'|t({'@username': username})}}</b>{{'Your order has been placed' }}.</p>
+  <p>Thank you for your purchase.<b> {{ 'Your order number is @number '|t({'@number': order_entity.getOrderNumber}) }}</b>
+     We will send you an order confirmation email shortly.</p>
+  <div class="order-detail-msg">
+    <p>Manage Your Order:</p>
+    <ul>
+      <li><a class="status-myorders" href="{{ host }}/myorders">See the Status of all your Orders</a></li>
+      <li>To make a change to this order please <a class="external" href="http://www.cypress.com/webform/website-support">contact us</a> and select Cypress Store</li>
+    </ul>
+  </div>
+  <div class="col-md-12 col-sm-12">
+    <div class="continue-shopping col-md-6 col-sm-6 col-xs-12">
+      <a href="http://www.cypress.com/cypress-store">
+        {{ 'CONTINUE SHOPPING'|t }}
+      </a>
+    </div>
+    <div class="go-orders-page col-md-6 col-sm-6 col-xs-12">
+      <a href="/myorders">
+        {{ 'GO TO ORDERS PAGE'|t }}
+      </a>
+    </div>
+  </div>
+</div>

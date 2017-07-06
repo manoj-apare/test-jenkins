@@ -1,0 +1,5 @@
+name: Cypress Scheduler.
+type: module
+description: Custom module for Cypress Schedule Action.
+core: 8.x
+package: Custom

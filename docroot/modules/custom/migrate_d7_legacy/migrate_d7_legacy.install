@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains install functions for commerce coupon validation.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function migrate_d7_legacy_schema() {
+  $schema['migrate_d7_legacy_id'] = array(
+    'fields' => array(
+      'legacy_id' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+      ),
+      'user_mail' => array(
+        'type' => 'varchar',
+        'length' => DRUPAL_EXTENSION_NAME_MAX_LENGTH,
+        'NOT NULL' => TRUE,
+      ),
+    ),
+  );
+  return $schema;
+}

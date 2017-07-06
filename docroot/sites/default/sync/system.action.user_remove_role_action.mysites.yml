@@ -1,0 +1,14 @@
+uuid: 3d85d7fb-bc1e-4197-b66e-40017669c0cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mysites
+  module:
+    - user
+id: user_remove_role_action.mysites
+label: 'Remove the MySites role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mysites

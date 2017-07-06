@@ -1,0 +1,14 @@
+uuid: 3c4a69ac-4adb-41ca-a2a0-180fce6ac6c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.business_unit_manager
+  module:
+    - user
+id: user_add_role_action.business_unit_manager
+label: 'Add the Business Unit Manager role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: business_unit_manager

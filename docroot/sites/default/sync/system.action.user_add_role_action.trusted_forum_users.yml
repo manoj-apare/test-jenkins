@@ -1,0 +1,14 @@
+uuid: f81853f4-715b-4f0c-9045-b1772b7fcd3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trusted_forum_users
+  module:
+    - user
+id: user_add_role_action.trusted_forum_users
+label: 'Add the Trusted Forum Users role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: trusted_forum_users

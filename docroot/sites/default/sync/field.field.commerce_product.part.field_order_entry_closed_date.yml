@@ -1,0 +1,26 @@
+uuid: 8b9e8669-1420-48de-bb89-b7c3c7dcd051
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_order_entry_closed_date
+  module:
+    - datetime
+_core:
+  default_config_hash: W-Wn829lZAhleAa9Vo_KI2vqkNm14WDLNd9tFXprCns
+id: commerce_product.part.field_order_entry_closed_date
+field_name: field_order_entry_closed_date
+entity_type: commerce_product
+bundle: part
+label: 'Order Entry Closed Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

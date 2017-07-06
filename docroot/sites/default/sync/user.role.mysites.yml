@@ -1,0 +1,9 @@
+uuid: b5f98aea-dd3e-435a-9714-fdb481d88fbb
+langcode: en
+status: true
+dependencies: {  }
+id: mysites
+label: MySites
+weight: 30
+is_admin: null
+permissions: {  }

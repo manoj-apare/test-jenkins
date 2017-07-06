@@ -1,0 +1,21 @@
+uuid: 8a5c27de-ab41-43cf-acf0-753699063232
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_status_raw
+_core:
+  default_config_hash: Gy3VaRLO56bjPJ7K0P9gxvZ5traHT1Aa-QfwtjVEXXg
+id: commerce_product.part.field_status_raw
+field_name: field_status_raw
+entity_type: commerce_product
+bundle: part
+label: 'Status Raw'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+uuid: 7ce33156-9ade-4392-8d6c-42705f3c965c
+langcode: en
+status: true
+dependencies: {  }
+id: blog_owner
+label: 'Blog owner'
+weight: 6
+is_admin: null
+permissions: {  }

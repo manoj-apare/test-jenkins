@@ -1,0 +1,14 @@
+uuid: 29ddd937-a9a2-445e-a4ae-1e730d78f9b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.marketing_evp
+  module:
+    - user
+id: user_add_role_action.marketing_evp
+label: 'Add the Marketing EVP role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: marketing_evp

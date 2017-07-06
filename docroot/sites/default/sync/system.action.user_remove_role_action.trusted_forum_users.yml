@@ -1,0 +1,14 @@
+uuid: ffe5a064-a8ca-4e90-bb6d-959b22e8fc53
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trusted_forum_users
+  module:
+    - user
+id: user_remove_role_action.trusted_forum_users
+label: 'Remove the Trusted Forum Users role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: trusted_forum_users

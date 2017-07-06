@@ -1,0 +1,14 @@
+uuid: c149ef9a-0b4c-4a95-87fa-4384957559b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.page_administrator
+  module:
+    - user
+id: user_remove_role_action.page_administrator
+label: 'Remove the Page Administrator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: page_administrator

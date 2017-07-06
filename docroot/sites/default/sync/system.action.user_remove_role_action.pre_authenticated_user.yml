@@ -1,0 +1,14 @@
+uuid: a9ecf366-1fc6-4c08-9a3d-558096ce7dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pre_authenticated_user
+  module:
+    - user
+id: user_remove_role_action.pre_authenticated_user
+label: 'Remove the pre-authenticated user role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pre_authenticated_user

@@ -1,0 +1,25 @@
+uuid: a4ad3960-fb9c-4183-84af-a23c2d500640
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_can_sample
+_core:
+  default_config_hash: N5cruFnGvk6PQWf2a0iAkQpM5ykk_7osyi4oehbFZxU
+id: commerce_product.part.field_can_sample
+field_name: field_can_sample
+entity_type: commerce_product
+bundle: part
+label: 'Can sample'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

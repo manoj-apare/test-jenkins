@@ -1,0 +1,14 @@
+uuid: 7459cc85-bd44-4192-8526-9e258104bc20
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.web_contractors
+  module:
+    - user
+id: user_remove_role_action.web_contractors
+label: 'Remove the Web Contractors role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: web_contractors

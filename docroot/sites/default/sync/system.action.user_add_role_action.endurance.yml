@@ -1,0 +1,14 @@
+uuid: 7f757441-9f04-4ddb-aad2-11a26467e639
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.endurance
+  module:
+    - user
+id: user_add_role_action.endurance
+label: 'Add the endurance role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: endurance

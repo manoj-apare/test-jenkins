@@ -1,0 +1,35 @@
+uuid: eb7fc064-9eb1-40a7-8c96-60efbb543541
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.customer.address
+    - field.field.profile.customer.field_contact_address
+    - field.field.profile.customer.field_om_customer_site_use_id
+    - field.field.profile.customer.field_oracle_customer_site_id
+    - field.field.profile.customer.field_user_legacy_id
+    - profile.type.customer
+  enforced:
+    module:
+      - commerce_order
+  module:
+    - cypress_custom_address
+_core:
+  default_config_hash: '-D8G44VGLIAIFvoHm_u7-Awnie4iCenOWfldrpNy_ys'
+id: profile.customer.default
+targetEntityType: profile
+bundle: customer
+mode: default
+content:
+  field_contact_address:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: contact_default
+    region: content
+hidden:
+  address: true
+  field_om_customer_site_use_id: true
+  field_oracle_customer_site_id: true
+  field_user_legacy_id: true

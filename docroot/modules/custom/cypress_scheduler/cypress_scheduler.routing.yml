@@ -1,0 +1,17 @@
+
+cypress_scheduler.dashboard_controller_hello:
+  path: '/cypress_scheduler/hello/{name}'
+  defaults:
+    _controller: '\Drupal\cypress_scheduler\Controller\DashboardController::hello'
+    _title: '[]'
+  requirements:
+    _permission: 'access content'
+
+cypress_scheduler.dashboard_content:
+  path: 'admin/dashboard'
+  defaults:
+#    _form: '\Drupal\cypress_scheduler\Form\DashboardOrderSubmitForm'
+    _controller: '\Drupal\cypress_scheduler\Controller\DashboardController::cypressDashboardForms'
+  requirements:
+    _permission: 'access administration pages'
+

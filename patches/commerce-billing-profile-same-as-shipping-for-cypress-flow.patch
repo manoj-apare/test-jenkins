@@ -1,0 +1,15 @@
+diff --git a/docroot/modules/contrib/commerce/modules/order/commerce_order.module b/docroot/modules/contrib/commerce/modules/order/commerce_order.module
+index 23c062c..efe4c83 100644
+--- a/docroot/modules/contrib/commerce/modules/order/commerce_order.module
++++ b/docroot/modules/contrib/commerce/modules/order/commerce_order.module
+@@ -203,7 +203,10 @@ function commerce_order_get_shipping_profile(array $element, FormStateInterface
+     $profile = $storage['pane_shipping_information[shipping_profile]']['profile'];
+   } elseif (isset($complete_form['shipping_information']['shipping_profile']['#profile'])) {
+     $profile = $complete_form['shipping_information']['shipping_profile']['#profile'];
++  } elseif ($storage['shipping_profile']) {
++    $profile = $storage['shipping_profile'];
+   }
+ 
++
+   return $profile;
+ }

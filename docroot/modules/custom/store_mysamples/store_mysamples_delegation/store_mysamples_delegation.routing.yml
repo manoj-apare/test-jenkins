@@ -1,0 +1,7 @@
+store_mysamples_delegation.approvers_rto:
+  path: 'approvers/delegation-form'
+  defaults:
+    _form: '\Drupal\store_mysamples_delegation\Form\DelegationForm'
+    _title: 'Submit your Delegation Form'
+  requirements:
+    _permission: 'access content'

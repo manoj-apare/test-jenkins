@@ -1,0 +1,5 @@
+name: Progress Bar
+type: module
+description: Modules provide Progress bar formatter for textfields.
+core: 8.x
+package: Custom

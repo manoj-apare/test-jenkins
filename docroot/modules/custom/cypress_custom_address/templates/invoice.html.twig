@@ -1,0 +1,99 @@
+{#
+/**
+ * @file
+ * Template for orders invoice.
+ * @ingroup themeable.
+ */
+#}
+
+<div id ='invoice_data' class ="">
+     <h4>{{'Order Details'}}</h4>
+     <div class="order-fields">
+        <div class="col-md-12 order-placed">
+           <b class="col-md-2 col-sm-3 col-xs-6">{{'Order Placed: '}}</b><span class="col-md-2">{{order_date}}</span>
+        </div>
+        <div class="col-md-12 order-number">
+           <b class="col-md-2 col-sm-3 col-xs-6">{{'Order number: '}}</b><span class="col-md-2">{{order_id}}</span>
+        </div>
+        <div class="col-md-12 order-total">
+           <b class="col-md-2 col-sm-3 col-xs-6">{{'Order Total: '}}</b><span class="col-md-2">{{'$'}}{{total_price}}</span>
+        </div>
+     </div>
+
+    <div class="col-md-12 col-xs-12 item-details">
+        <div class="col-md-8 col-sm-6">
+          <b>{{'Items Ordered '}}</b>
+          <ul>
+            {% for key,value in order_titles %}
+              <li>{{ value }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 price-qty-details">
+          <div class="col-md-4 col-xs-4">
+            <p class ="quantity-title"><b>{{'Quantity'}}</b></p>
+            <ul class="quantity">
+              {% for key,value in quantity %}
+                <li>{{ value }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <p class ="price-titles"><b>{{'Unit Price'}}</b></p>
+            <ul class="price">
+              {% for key,value in unit_price %}
+                <li>{{ value }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-md-4 col-xs-4">
+           <p class ="price-titles"><b>{{'Total Price'}}</b></p>
+            <ul class="price">
+              {% for key,value in line_item_total %}
+                <li>{{ value }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+     </div>
+
+    <div class="col-md-12 col-sm-12 address-details">
+      <div class="col-md-4 col-sm-4">
+       <b>{{'Delivery Address'}}</b><br>
+        {% if shipping_address is not empty %}
+          {% for key,value in shipping_address %}
+            {% if value %}
+              {{ value }}<br>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+
+      <div class="col-md-4 col-sm-4">
+        <b>{{'Billing Address'}}</b><br>
+          {% if billing_info is not empty %}
+            {% for key,values in billing_info %}
+              {% if values %}
+                {{ values }}<br>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+      </div>
+      <div class="col-md-4 col-sm-4">
+       <b>{{'Order Summary'}}</b><br>
+        <ul class="invoice-order-summary">
+          <li><span><b>{{'Subtotal:'}}</b></span><span>{{'$'}}{{subtotal}}</span></li>
+          {% if adjustments %}
+            {% for key1,value1 in adjustments %}
+                {% for key2, value2 in value1 %}
+                  <li><span>{{ key1 }} {{':'}}</span><span>{{ value2 }}</span></li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+          {% endif %}
+        <div class="tot-amt tb"><span class="tb-c"><b>{{'Total:'}}</b></span><span class="tb-c">{{'$'}}{{total_price}}</span></div>
+      </div>
+     </div>
+</div>
+
+

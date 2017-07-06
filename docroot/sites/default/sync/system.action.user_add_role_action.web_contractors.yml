@@ -1,0 +1,14 @@
+uuid: 13e3eedf-230e-47e7-8b05-9dfb9902bdcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.web_contractors
+  module:
+    - user
+id: user_add_role_action.web_contractors
+label: 'Add the Web Contractors role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: web_contractors

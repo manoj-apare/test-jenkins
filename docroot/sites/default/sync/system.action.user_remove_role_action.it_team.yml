@@ -1,0 +1,14 @@
+uuid: 3d92f968-1888-421b-86d4-df0724e4da1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.it_team
+  module:
+    - user
+id: user_remove_role_action.it_team
+label: 'Remove the IT team role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: it_team

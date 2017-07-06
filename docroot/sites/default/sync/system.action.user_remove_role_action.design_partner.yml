@@ -1,0 +1,14 @@
+uuid: 28a52a48-b2c7-4c4d-81f4-59b480078793
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.design_partner
+  module:
+    - user
+id: user_remove_role_action.design_partner
+label: 'Remove the Design Partner role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: design_partner

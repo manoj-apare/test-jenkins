@@ -1,0 +1,25 @@
+uuid: 56863dba-87fe-45bf-84cd-8ed5aef177d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.part
+    - field.storage.commerce_product.field_price_one
+_core:
+  default_config_hash: zHdz3uTlpvT53nc80biMuQcUhx5cvQgiQVxu5ScwWJo
+id: commerce_product.part.field_price_one
+field_name: field_price_one
+entity_type: commerce_product
+bundle: part
+label: 'Price one'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

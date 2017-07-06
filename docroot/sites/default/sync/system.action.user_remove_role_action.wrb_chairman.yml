@@ -1,0 +1,14 @@
+uuid: 88201d62-2fc6-45e7-9e09-e2437f6d5199
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.wrb_chairman
+  module:
+    - user
+id: user_remove_role_action.wrb_chairman
+label: 'Remove the WRB Chairman role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: wrb_chairman

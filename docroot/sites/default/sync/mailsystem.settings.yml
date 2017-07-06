@@ -1,0 +1,13 @@
+theme: current
+defaults:
+  sender: SMTPMailSystem
+  formatter: swiftmailer
+_core:
+  default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
+modules:
+  swiftmailer: {  }
+  cypress_store_vendor: {  }
+  yamlform:
+    none:
+      formatter: yamlform_php_mail
+      sender: SMTPMailSystem

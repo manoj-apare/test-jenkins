@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements theme_preprocess_page(&$variables)
+ */
+function cypress_store_preprocess_page(&$variables) {
+  $order = \Drupal::service('commerce_cart.cart_provider')->getCartIds();
+  $order_id = $order['0'];
+  $path = \Drupal::service('path.current')->getPath();
+  if ($path == '/checkout/' . $order_id . '/address_select' || $path = '/addressbook') {
+    $variables['#attached']['library'][] = 'cypress_store/slick';
+  }
+}
+
+/**
+ * Implements theme_preprocess_commerce_order_receipt(&$variables)
+ */
+function cypress_store_preprocess_commerce_order_receipt(&$variables) {
+  $host = \Drupal::request()->getSchemeAndHttpHost();
+  $variables['host'] = $host;
+  $variables['user_data'] = \Drupal::currentUser()->getDisplayName();
+  $user_data = user_load_by_name($variables['user_data']);
+  if (!empty($user_data->field_first_name->value) && !empty($user_data->field_last_name->value)) {
+    $variables['username'] = $user_data->field_first_name->value . ' ' . $user_data->field_last_name->value;
+  }
+  else {
+    $variables['username'] = $user_data->name->value;
+  }
+  $order = $variables['order_entity'];
+  $order_items = $order->getItems();
+  $variables['logo_image'] = $host . '/themes/cypress_store/images/cypress_logo_mail.png';
+  foreach ($order_items as $key => $order_item) {
+    $variables['product_image'][$key] = \Drupal::service('cypress_checkout_flow.default')
+      ->getOrderItemImage($order_item);
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view_grid().
+ */
+function cypress_store_preprocess_views_view_grid(&$variables) {
+  $view = $variables['view'];
+  $view_title = $view->storage->id();
+  if ($view_title == 'delivery_address') {
+    $user = $view->getUser();
+    $uid = $user->id();
+    $view->header = $uid;
+    $variables['cypress_address'] = $view->header;
+  }
+}
+
+/**
+ * Implements hook_preprocess_commmerce_checkout_completion_message().
+ */
+function cypress_store_preprocess_commerce_checkout_completion_message(&$variables) {
+  $host = \Drupal::request()->getSchemeAndHttpHost();
+  $variables['host'] = $host;
+  // To get username in checkout order completion message.
+  $variables['user_data'] = \Drupal::currentUser()->getDisplayName();
+  $user_data = user_load_by_name($variables['user_data']);
+  if (!empty($user_data->field_first_name->value) && !empty($user_data->field_last_name->value)) {
+    $variables['username'] = $user_data->field_first_name->value . ' ' . $user_data->field_last_name->value . '! ';
+  }
+  else {
+    $variables['username'] = $user_data->name->value . '! ';
+  }
+}

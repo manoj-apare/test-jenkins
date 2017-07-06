@@ -1,0 +1,35 @@
+uuid: 1c97a802-cdd3-43e3-9319-b624c8eabfd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.delivery_address
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - cypress_store
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__delivery_address_block_1
+theme: cypress_store
+region: content
+weight: -17
+provider: null
+plugin: 'views_block:delivery_address-block_1'
+settings:
+  id: 'views_block:delivery_address-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*/address_select'
+    negate: false
+    context_mapping: {  }

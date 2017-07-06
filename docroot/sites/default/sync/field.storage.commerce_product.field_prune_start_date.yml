@@ -1,0 +1,22 @@
+uuid: 9f1f2905-1685-4895-8e82-304ea085a9f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - datetime
+_core:
+  default_config_hash: RPGLADBmlYYJkHfx7Zos6vJSAuj4REPNk25KvXShIbI
+id: commerce_product.field_prune_start_date
+field_name: field_prune_start_date
+entity_type: commerce_product
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

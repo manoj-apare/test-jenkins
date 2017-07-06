@@ -1,0 +1,39 @@
+store_mysamples.cypress_configuration:
+  path: '/admin/promocode_status'
+  defaults:
+    _controller: '\Drupal\store_mysamples\Controller\PromocodeStatus::content'
+    _title: 'Promocode Status'
+  requirements:
+    _permission: 'access administration pages'
+
+store_mysamples.promocode_status:
+  path: '/admin/promocode_status'
+  defaults:
+    _controller: '\Drupal\store_mysamples\Controller\PromocodeStatus::content'
+    _title: 'Promocode Status'
+  requirements:
+    _permission: 'access administration pages'
+
+store_mysamples.promocode_awaiting_my_approvals:
+  path: '/promocode/pending-approvals'
+  defaults:
+    _controller: '\Drupal\store_mysamples\Controller\PromocodeStatus::customContent'
+    _title: 'Promocode Awaiting Approval'
+  requirements:
+    _permission: 'access administration pages'
+
+store_mysamples.promocode_approve:
+  path: '/yamlform/submission/{yamlsubmissionid}/approve'
+  defaults:
+    _controller: '\Drupal\store_mysamples\Controller\PromocodeApprove::content'
+    _title: 'Promocode Approve Status'
+  requirements:
+    _permission: 'access content'
+
+store_mysamples.promocode_reject:
+  path: '/yamlform/submission/{yamlsubmissionid}/reject'
+  defaults:
+    _controller: '\Drupal\store_mysamples\Controller\PromocodeReject::content'
+    _title: 'Promocode Reject Status'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+cypress_checkout_flow.shipping_rate:
+  js:
+    js/cypress_shipping_rate.js: {}
+  dependencies:
+    - core/drupalSettings

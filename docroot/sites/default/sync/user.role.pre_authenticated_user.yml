@@ -1,0 +1,9 @@
+uuid: 57695868-8364-4a2a-8c39-28ff9555f587
+langcode: en
+status: true
+dependencies: {  }
+id: pre_authenticated_user
+label: 'pre-authenticated user'
+weight: 19
+is_admin: null
+permissions: {  }

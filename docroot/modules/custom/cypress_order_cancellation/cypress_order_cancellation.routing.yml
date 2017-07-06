@@ -1,0 +1,15 @@
+cypress_order_cancellation.content:
+  path: '/cancel-order/{profile_id}'
+  defaults:
+    _controller: 'Drupal\cypress_order_cancellation\Controller\CypressOrderCancellation::content'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+
+cypress_order_cancellation.order_cancellation_form:
+  path: '/cypress_order_cancellation/form/order_cancellation'
+  defaults:
+    _form: '\Drupal\cypress_order_cancellation\Form\OrderCancellationForm'
+    _title: 'OrderCancellationForm'
+  requirements:
+    _access: 'TRUE'
