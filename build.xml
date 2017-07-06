@@ -4,13 +4,21 @@
   <property name="phpcs" value="/root/.composer/vendor/bin/phpcs"/>
 
   <target name="full-build"
-  depends="lint,phpcs"
+  depends="prepare,lint,phpcs,log"
   description="Performs static analysis, runs the tests, and generates project documentation"/>
+
+  <target name="prepare"
+  unless="prepare.done"
+  description="Prepare for build">
+    <delete dir="${basedir}/build/logs"/>
+    <mkdir dir="${basedir}/build/logs"/>
+    <property name="prepare.done" value="true"/>
+  </target>
 
   <target name="lint"
   unless="lint.done"
   description="Perform syntax check of sourcecode files">
-    <apply executable="php" output="/dev/null" taskname="lint" failonerror="true">
+    <apply executable="php" output="${basedir}/build/logs/lint.log" taskname="lint" failonerror="true">
       <arg value="-l" />
 
       <fileset dir="${basedir}/docroot/modules/custom">
@@ -29,7 +37,7 @@
   <target name="phpcs"
   unless="phpcs.done"
   description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-    <exec executable="${phpcs}" output="/dev/null" taskname="phpcs" failonerror="true">
+    <exec executable="${phpcs}" output="${basedir}/build/logs/phpcs.log" taskname="phpcs" failonerror="true">
       <arg value="--standard=Drupal" />
       <arg value="--extensions=php,module,inc,install,test,profile,theme,js,css,info,txt" />
       <arg value="--ignore=autoload.php" />
@@ -37,5 +45,11 @@
     </exec>
 
     <property name="phpcs.done" value="true"/>
+  </target>
+  <target name="log"
+  unless="log.done"
+  description="Provide link to log files.">
+    <echo><a href="${basedir}/build/logs/lint.log">Linter Log.</a></echo>
+    <echo><a href="${basedir}/build/logs/phpcs.log">PHPCS Log.</a></echo>
   </target>
 </project>
