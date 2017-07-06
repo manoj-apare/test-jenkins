@@ -51,5 +51,6 @@
   description="Provide link to log files.">
     <echo><a href="${basedir}/build/logs/lint.log">Linter Log.</a></echo>
     <echo><a href="${basedir}/build/logs/phpcs.log">PHPCS Log.</a></echo>
+    <property name="log.done" value="true"/>
   </target>
 </project>
